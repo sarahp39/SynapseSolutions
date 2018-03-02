@@ -1,2 +1,6 @@
 # SynapseSystems
 2018 Capstone Project
+
+An electroencephalogram (EEG) is considered one of the most accessible and non-invasive methods to evaluate electrical activity in the brain. The Cognition and Cortical Dynamics Laboratory (CCDL) in the University of Washington’s (UW) Department of Psychology use EEG data in order to better understand how the brain changes, adapts, or deals with the ever present fluctuations in information processing demands. 
+
+Currently, the data is processed using scripting with the programming language R. The lab is sharing their scripting with others in Github. Therefore, this would not only affect the lab in University of Washington; additionally, researchers in California Polytechnic University who currently use this open source code will also be affected as well as other universities. However, their current code infrastructure is error prone and inflexible with no user interface. For this Capstone Project, we plan to create an API for the raw data. Afterwards, we aim to create a website utilizing the API while providing personalization for output statistics. We want to build something that both researchers and the common person can use and share.
