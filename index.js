@@ -9,6 +9,7 @@ window.onload = function() {
 			btnArr[i].onclick = myFunction;
 		}
 		
+		
 };
 
 function myFunction() {
