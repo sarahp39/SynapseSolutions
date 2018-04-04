@@ -28,6 +28,9 @@
 	height: 100%;
 }
 
+/* index page */
+
+
 #landingDisplay {
 	margin-top: 10px;
 	background-color: #B22222;
@@ -42,6 +45,89 @@
 	font-weight: bold;
 	font-size: 40px;
 }
+
+/* contribute page */
+
+#contributeMainArea {
+	text-align: center;
+
+	/*position: relative;
+	float: left;*/
+	
+	
+	width: 100%;
+}
+
+#contributeTitle {
+	color: #B22222;
+	font-size: 20px;
+	/*text-align: center;*/
+	font-weight: bold;
+	font-family: "Helvetica";
+	letter-spacing: 3px;
+}
+
+#contributeSubHeading {
+	/*text-align: center;*/
+	font-family: "Helvetica";
+	font-size: 18px;
+	font-weight: bold;
+}
+
+#contributeDesc {
+	/*text-align: center;*/
+	font-family: "Helvetica";
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#existingData {
+	border: 5px solid #B22222;
+	width: 100%;
+	/*height: 100px;*/
+	border-radius: 10px;
+	
+	/*display: flex;
+	flex-direction: column;
+	min-height: 100vh;*/
+}
+
+#existingData p {
+	margin: 5px;
+	
+	/*flex: 1;*/
+}
+
+#uploadData {
+	border: 5px solid #B22222;
+	width: 100%;
+	height: 200px;
+	border-radius: 10px;
+}
+
+#uploadData p {
+	margin: 5px;
+}
+
+#myDataBtn {
+	margin-top: 20px;
+	background-color: #F2B053;
+	font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+	margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 #bottomHalf {
 	text-align: center;

@@ -41,11 +41,55 @@
 			dropdowns();
 		?>
 		
-		<!-- landing page welcome images/texts/scroll bying stuff-->
-		<div id = "landingDisplay">
-			<p>
-				DATA-CONTRIBUTE
+		<!-- contribute page main area -->
+		<div id="contributeMainArea" > 
+			
+			<p id="contributeTitle" >
+				CONTRIBUTE
 			</p>
+			
+			
+			<!--
+			<p id = "contributeDesc" >
+				Contributing to our brain loving society has never been easier.			
+			</p>
+			-->
+			
+			
+			<div id = "existingData">
+				<p id = "contributeSubHeading" >
+					Already have data or reports?
+				</p>
+				
+				<p id = "contributeDesc" >
+					Just make it public by changing the folder settings.
+				</p>
+				
+				<button id = "myDataBtn">
+					Go to My Data
+				</button>
+				
+			
+			</div>
+			
+			<div id = "spaceBelowTopBanner">
+	
+			</div>
+			
+			
+			<div id = "uploadData">
+				<p id = "contributeSubHeading" >
+					Need to upload data or reports?
+				</p>
+				
+				<p id = "contributeDesc" >
+					Simply upload your data or reports using the form below.
+			
+				</p>
+			
+			</div>
+		
+		
 		</div>
 		
 		
