@@ -46,19 +46,18 @@
 	font-size: 40px;
 }
 
-/* contribute page */
+/* upload/analysis page */
 
-#contributeMainArea {
+#uploadMainArea {
 	text-align: center;
 
 	/*position: relative;
 	float: left;*/
 	
-	
 	width: 100%;
 }
 
-#contributeTitle {
+#uploadTitle {
 	color: #B22222;
 	font-size: 20px;
 	/*text-align: center;*/
@@ -67,14 +66,15 @@
 	letter-spacing: 3px;
 }
 
-#contributeSubHeading {
+#subHeading {
 	/*text-align: center;*/
 	font-family: "Helvetica";
 	font-size: 18px;
 	font-weight: bold;
+	margin-top: 5px;
 }
 
-#contributeDesc {
+#uploadDesc {
 	/*text-align: center;*/
 	font-family: "Helvetica";
 	font-size: 14px;

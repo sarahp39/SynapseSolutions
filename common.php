@@ -9,8 +9,8 @@
 			
 			<div id="dataDropdown" class="dropdown-content"> <!-- id = "myDropdown-->
 				<a href="dataExplore.php">EXPLORE</a>
-				<a href="dataContribute.php">CONTRIBUTE</a>
-				<a href="myData.php">MY DATA</a>
+				<a href="dataLog.php">DATA LOG</a>
+				<a href="dataUploadAnalysis.php">UPLOAD/ANALYSIS</a>
 			</div>
 			
 			

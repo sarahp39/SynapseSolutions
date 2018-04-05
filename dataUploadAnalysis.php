@@ -41,11 +41,11 @@
 			dropdowns();
 		?>
 		
-		<!-- contribute page main area -->
-		<div id="contributeMainArea" > 
+		<!-- upload/analysis page main area -->
+		<div id="uploadMainArea" > 
 			
-			<p id="contributeTitle" >
-				CONTRIBUTE
+			<p id="uploadTitle" >
+				DATA UPLOAD/ANALYSIS
 			</p>
 			
 			
@@ -57,11 +57,11 @@
 			
 			
 			<div id = "existingData">
-				<p id = "contributeSubHeading" >
+				<p id = "subHeading" >
 					Already have data or reports?
 				</p>
 				
-				<p id = "contributeDesc" >
+				<p id = "uploadDesc" >
 					Just make it public by changing the folder settings.
 				</p>
 				
@@ -78,11 +78,11 @@
 			
 			
 			<div id = "uploadData">
-				<p id = "contributeSubHeading" >
+				<p id = "subHeading" >
 					Need to upload data or reports?
 				</p>
 				
-				<p id = "contributeDesc" >
+				<p id = "uploadDesc" >
 					Simply upload your data or reports using the form below.
 			
 				</p>
