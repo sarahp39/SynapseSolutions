@@ -1,18 +1,11 @@
 <?php
 	
 	include("common.php");
+	
+	head();
 ?>
 
-<!DOCTYPE html>
-<!-- -->
-<html>
-	<head>
-		<title>Synapse Systems</title>
-		
-		<link rel="stylesheet" type="text/css" href="index.css" />
-		<script type="text/javascript" src="index.js"></script>
-		
-	</head>
+
 	
 	
 	<div id="topBanner">

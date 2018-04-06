@@ -1,26 +1,34 @@
 <?php
 	
 	include("common.php");
+	
+	head();
 ?>
-
-
-<!DOCTYPE html>
-<!-- -->
-<html>
-	<head>
-		<title>Synapse Systems</title>
-		
-		<link rel="stylesheet" type="text/css" href="index.css" />
-		<script type="text/javascript" src="index.js"></script>
-		
-	</head>
 	
 	
 	<div id="topBanner">
 		<div>
 		<!-- sign in/sign up buttons -->
-		<button id = "login">Sign in / Sign up</button>
+		<button id = "loginBtn" >Sign in / Sign up</button> <!-- myBtn -->
 		</div>
+		
+		
+		<div id = "loginModal" class = "modal" > <!-- myModal -->
+			<form id="sign-in"> <!-- modal content -->
+			
+				<span class = "close">&times;</span>
+				
+				<fieldset>
+					<legend>Sign In:</legend>
+					Email: <input id="si-email" type="text"><br>
+					Password: <input id="si-password" type="password"><br>
+					<input type="submit" name="Submit">
+				</fieldset>
+				
+			</form>
+			
+		</div>
+		
 	</div>
 	
 	
