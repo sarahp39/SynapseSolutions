@@ -33,7 +33,7 @@
 	
 	
 	<div id = "spaceBelowTopBanner">
-	
+	<!-- only necessary if the top banner has a fixed position -->
 	</div>
 	
 	
@@ -58,13 +58,25 @@
 		
 		
 		<div id = "bottomHalf">
+		
 			<p>
 			With Synapse Systems, you can . . .
 			</p>
 			
-			<button id = "startBtn">
-				Start for Free
-			</button>
+			<div id= "imgs">
+				<img src = "ReportsFeatureBadge.png" alt = "Reports Feature Badge" >
+				
+				<img src = "ShareDataBadge.png" alt = "Reports Feature Badge" >
+				
+				<img src = "InputDataBadge.png" alt = "Reports Feature Badge" >
+			</div>
+			
+			<div id = "startBtnDiv" >
+				<button id = "startBtn">
+					Start for Free
+				</button>
+			</div>
+			
 		</div>
 		
 		
