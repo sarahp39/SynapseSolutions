@@ -30,7 +30,7 @@
 		<div id = "aboutMain">
 			<img src = "aboutLandingImg.jpg" id = "aboutLandingImg"> <!-- change image -->
 			
-			<p id = "missionText" >OUR MISSION IS TO HELP RESERACHES WITH THEIR EEG DATA WHILE GIVING EVERYONE ACCESS TO EXCITING DATA</p>
+			<p id = "missionText" >OUR MISSION IS TO HELP RESERACHERS WITH THEIR EEG DATA WHILE GIVING EVERYONE ACCESS TO EXCITING DATA</p>
 			
 			
 			<div id = "us">
