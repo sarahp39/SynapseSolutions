@@ -3,17 +3,9 @@
 	include("common.php");
 	
 	head();
+	
+	topBanner();
 ?>
-
-
-	
-	
-	<div id="topBanner">
-		<div>
-		<!-- sign in/sign up buttons -->
-		<button id = "login">Sign in / Sign up</button>
-		</div>
-	</div>
 	
 	
 	<div id = "spaceBelowTopBanner">

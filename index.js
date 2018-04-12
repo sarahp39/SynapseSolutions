@@ -81,6 +81,56 @@ window.onload = function() {
 		});
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		document.getElementById("sign-up").onsubmit = (function(e) {
+        e.preventDefault();
+        var ajax = new XMLHttpRequest();
+
+        var email = document.getElementById("su-email").value;
+        var username = document.getElementById("su-username").value;
+        var fname = document.getElementById("su-fname").value;
+        var lname = document.getElementById("su-lname").value;
+        var password = document.getElementById("su-password").value;
+        var passwordconf = document.getElementById("su-passwordconf").value;
+
+        var obj = {
+            "Email": email,
+            "UserName": username,
+            "FirstName": fname,
+            "LastName": lname,
+            "Password": password,
+            "PasswordConf": passwordconf
+        };
+
+        var json = JSON.stringify(obj);
+
+        ajax.open("POST", "https://api.synapse-solutions.net/v1/users/", true);
+        ajax.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status < 300) {
+                var auth = this.getResponseHeader("Authorization");
+                console.log(auth);
+                localStorage.setItem('auth', auth);
+                //location.reload(); refreshes page
+            } else if (this.readyState == 4 && this.status >= 300) {
+                var err = document.getElementById("err");
+                err.innerHTML = "error: " + this.responseText;
+            }
+        }
+        ajax.send(json);
+    });
+		
+		
 };
 
 function myFunction() {

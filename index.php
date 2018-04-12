@@ -3,34 +3,10 @@
 	include("common.php");
 	
 	head();
+	
+	topBanner();
 ?>
-	
-	
-	<div id="topBanner">
-		<div>
-		<!-- sign in/sign up buttons -->
-		<button id = "loginBtn" >Sign in / Sign up</button> <!-- myBtn -->
-		</div>
 		
-		
-		<div id = "loginModal" class = "modal" > <!-- myModal -->
-			<form id="sign-in"> <!-- modal content -->
-			
-				<span class = "close">&times;</span>
-				
-				<fieldset>
-					<legend>Sign In:</legend>
-					Email: <input id="si-email" type="text"><br>
-					Password: <input id="si-password" type="password"><br>
-					<input type="submit" name="Submit">
-				</fieldset>
-				
-			</form>
-			
-		</div>
-		
-	</div>
-	
 	
 	<div id = "spaceBelowTopBanner">
 	<!-- only necessary if the top banner has a fixed position -->

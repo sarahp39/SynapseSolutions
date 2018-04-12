@@ -25,8 +25,17 @@ html {
 #loginBtn {
 	float: right;
 	margin-top: 5px;
-	margin-right: 5px;
+	margin-right: 10px;
+	color: white;
+	background-color: #B22222;
+	border: none;
+	font-size: 16px;
+	/*font-weight: bold;*/
+	font-family: "Helvetica";
+	letter-spacing: 3px;
 }
+
+
 
 
 
@@ -53,6 +62,11 @@ html {
     width: 80%; /* Could be more or less, depending on screen size */
 }
 
+#sign-in input {
+	
+	margin-bottom: 10px;
+}
+
 /* The Close Button */
 .close {
     color: #aaa;
@@ -67,6 +81,9 @@ html {
     text-decoration: none;
     cursor: pointer;
 }
+
+
+
 
 
 
@@ -96,6 +113,78 @@ html {
 	font-size: 40px;
 }
 
+
+
+
+
+
+
+
+
+
+
+/* about us page */
+
+#aboutMain {
+	
+}
+
+#aboutLandingImg {
+	height: 200px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+#missionText {
+	text-align: center;
+	color: #B22222;
+	font-weight: bold;
+	font-size: 12pt;
+}
+
+#theTeam {
+	font-weight: bold;
+}
+
+#us {
+	margin-top: 50px;
+}
+
+#profilePics {
+	text-align: center;
+}
+
+#profilePics img {
+	height: 225px;
+	width: 250px;
+	display: inline-block;
+	margin-right: 95px;
+	margin-left: 95px;
+	
+}
+
+#teamBios div {
+	height: 225px;
+	width: 250px;
+	display: inline-block;
+	margin-right: 95px;
+	margin-left: 100px;
+	
+}
+
+#teamBios div p {
+	text-align: center;
+	font-weight: bold;
+}
+
+#SSDesc {
+	text-align: center;
+	font-weight: bold;
+	font-size: 12pt;
+}
+
+
+
 /* upload/analysis page */
 
 #uploadMainArea {
@@ -105,6 +194,50 @@ html {
 	float: left;*/
 	
 	width: 100%;
+	height: 100%;
+}
+
+#existingData {
+	border: 5px solid #B22222;
+	width: 100%;
+	padding: 20px;
+	/*height: 100px;*/
+	border-radius: 10px;
+	margin-bottom: 20px;
+	
+	/*display: flex;
+	flex-direction: column;
+	min-height: 100vh;*/
+}
+
+#uploadData {
+	border: 5px solid #B22222;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	
+	/*overflow: auto;*/
+}
+
+#existingData p {
+	margin: 5px;
+	
+	/*flex: 1;*/
+}
+
+#dataSpec {
+	align: left;
+	width: 50%;
+}
+
+#dataSpec p {
+	text-align: left;
+}
+
+#uploadData p {
+	margin: 5px;
 }
 
 #uploadTitle {
@@ -114,6 +247,8 @@ html {
 	font-weight: bold;
 	font-family: "Helvetica";
 	letter-spacing: 3px;
+	margin-top: 10px;
+	margin-bottom: 20px;
 }
 
 #subHeading {
@@ -121,7 +256,6 @@ html {
 	font-family: "Helvetica";
 	font-size: 18px;
 	font-weight: bold;
-	margin-top: 5px;
 }
 
 #uploadDesc {
@@ -129,43 +263,16 @@ html {
 	font-family: "Helvetica";
 	font-size: 14px;
 	font-weight: bold;
-}
-
-#existingData {
-	border: 5px solid #B22222;
-	width: 100%;
-	/*height: 100px;*/
-	border-radius: 10px;
-	
-	/*display: flex;
-	flex-direction: column;
-	min-height: 100vh;*/
-}
-
-#existingData p {
-	margin: 5px;
-	
-	/*flex: 1;*/
-}
-
-#uploadData {
-	border: 5px solid #B22222;
-	width: 100%;
-	height: 200px;
-	border-radius: 10px;
-}
-
-#uploadData p {
-	margin: 5px;
+	padding-bottom: 20px; /*because p tags are weird */
 }
 
 #myDataBtn {
-	margin-top: 20px;
+	margin-top: 10px;
 	background-color: #F2B053;
 	font-weight: bold;
     padding: 10px;
     border-radius: 10px;
-	margin-bottom: 5px;
+	margin-bottom: 20px;
 }
 
 
@@ -186,8 +293,8 @@ html {
 #imgs img {
 	height: 250px;
 	width: 250px;
-	margin-right: 40px;
-	margin-left: 40px;
+	margin-right: 50px;
+	margin-left: 50px;
 }
 
 #bottomHalf p {
@@ -199,7 +306,7 @@ html {
 }
 
 #startBtnDiv {
-	margin-top: 20px;
+	margin-top: 40px;
 	margin-bottom: 40px;
 }
 
@@ -236,7 +343,7 @@ html {
 }
 
 #dropdown button {
-	margin-left: 50px;
+	margin-left: 70px;
 }
 
 .dropbtn {

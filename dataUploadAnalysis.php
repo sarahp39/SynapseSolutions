@@ -1,27 +1,12 @@
 <?php
 	
 	include("common.php");
+	
+	head();
+	
+	topBanner();
 ?>
 
-<!DOCTYPE html>
-<!-- -->
-<html>
-	<head>
-		<title>Synapse Systems</title>
-		
-		<link rel="stylesheet" type="text/css" href="index.css" />
-		<script type="text/javascript" src="index.js"></script>
-		
-	</head>
-	
-	
-	<div id="topBanner">
-		<div>
-		<!-- sign in/sign up buttons -->
-		<button id = "login">Sign in / Sign up</button>
-		</div>
-	</div>
-	
 	
 	<div id = "spaceBelowTopBanner">
 	
@@ -72,9 +57,9 @@
 			
 			</div>
 			
-			<div id = "spaceBelowTopBanner">
+			<!--<div id = "spaceBelowTopBanner">
 	
-			</div>
+			</div>-->
 			
 			
 			<div id = "uploadData">
@@ -86,6 +71,34 @@
 					Simply upload your data or reports using the form below.
 			
 				</p>
+				
+				<div id = "dataSpec" > <!--class from bootstrap -->
+				
+					<form action=""> <!-- inside quotes, put /page.php -->
+						
+						<p> What is the format of your file? </p>
+						
+						<label class = "radio-inline"><input type="radio" name="fileFormat" value="csv" checked> CSV </label>
+						<label class = "radio-inline"><input type="radio" name="fileFormat" value="doc"> DOC </label>
+						<label class = "radio-inline"><input type="radio" name="fileFormat" value="edf"> EDF </label>
+						
+						
+						
+						<p> Do you want this to be public or private (please refer to our privacy policy)? </p>
+						
+						<label class = "radio-inline"><input type="radio" name="filePrivacy" value="private" checked> Private </label>
+						<label class = "radio-inline"><input type="radio" name="filePrivacy" value="public"> Public </label>
+						
+						<div id = "dataSubmit">
+							<input type="submit" value="Submit">
+						</div>
+					</form>
+					
+					
+					
+					
+				
+				</div>
 			
 			</div>
 		
