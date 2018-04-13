@@ -30,46 +30,46 @@
 		<div id = "aboutMain">
 			<img src = "aboutLandingImg.jpg" id = "aboutLandingImg"> <!-- change image -->
 			
-			<p id = "missionText" >OUR MISSION IS TO HELP RESERACHERS WITH THEIR EEG DATA WHILE GIVING EVERYONE ACCESS TO EXCITING DATA</p>
+			<p id = "missionText" >OUR MISSION IS TO HELP RESEARCHERS WITH THEIR EEG DATA WHILE GIVING EVERYONE ACCESS TO EXCITING DATA</p>
 			
 			
 			<div id = "us">
 				<p id = "theTeam"> THE TEAM: </p>
 				
 				<div id = "profilePics" >
-					<img src = "sarah.jpg" alt = "Sarah Phillips" >
-					<img src = "fred.jpg" alt = "Frederick Wijaya" >
-					<img src = "mathi.jpg" alt = "Mathi Manavalan" >
+					<img src = "sarah.png" alt = "Sarah Phillips" >
+					<img src = "fred.png" alt = "Frederick Wijaya" >
+					<img src = "mathi.png" alt = "Mathi Manavalan" >
 				
 				</div>
 				
 				<div id = "teamBios">
 					<div id = "sarahBio">
-						<p id = "name"> Sarah Phillips <br>
+						<p class = "name"> Sarah Phillips <br>
 							Project Manager & Designer
 						</p>
 						
-						<p>Sarah enjoys using her creativity and problem-solving skills at work. She is a dedicated team player who enjoys constantly learning new things. In her spare time, she plays ultimate frisbee, fantasy football, and appreciates all things art.
+						<p class = "desc" >Sarah enjoys using her creativity and problem-solving skills at work. She is a dedicated team player who enjoys constantly learning new things. In her spare time, she plays ultimate frisbee, fantasy football, and appreciates all things art.
 						</p>
 					
 					</div>
 					
 					<div id = "fredBio">
-						<p id = "name"> Frederick Wijaya <br>
+						<p class = "name"> Frederick Wijaya <br>
 							Developer
 						</p>
 						
-						<p>Fred is a passionate and persistent critical thinker. He has a desire to learn new methods of problem solbing and enjoys learning new languages in his spare time.
+						<p class = "desc" >Fred is a passionate and persistent critical thinker. He has a desire to learn new methods of problem solbing and enjoys learning new languages in his spare time.
 						</p>
 					
 					</div>
 					
 					<div id = "mathiBio">
-						<p id = "name"> Mathi Manavalan <br>
+						<p class = "name"> Mathi Manavalan <br>
 							Developer
 						</p>
 						
-						<p>Mathi is an avid learned with a background in both information technology and neuroscience researach. In her spare time, she loves to go on runs with her dog and go bouldering with friends.
+						<p class = "desc" >Mathi is an avid learned with a background in both information technology and neuroscience researach. In her spare time, she loves to go on runs with her dog and go bouldering with friends.
 						</p>
 					
 					</div>
@@ -83,6 +83,16 @@
 			</p>
 		</div>
 		
+		<div id = "careersBtn">
+			<a href = "aboutCareers.php">
+		
+				<button class = "navBtn">
+					Go to Careers
+				</button>
+			
+			</a>
+			
+		</div>
 		
 		
 	</div> <!-- body id-->

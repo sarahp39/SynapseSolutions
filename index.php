@@ -48,7 +48,7 @@
 			</div>
 			
 			<div id = "startBtnDiv" >
-				<button id = "startBtn">
+				<button class = "navBtn" id = "startBtn" >
 					Start for Free
 				</button>
 			</div>

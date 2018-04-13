@@ -53,11 +53,15 @@ html {
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
+#loginModal {
+	margin: auto;
+}
+
 /* Modal Content/Box (model-content) */
 #sign-in {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-	margin-left: 20%;
+	/*margin: auto;*/
+    margin-left: 25%; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     width: 25%; /* Could be more or less, depending on screen size */
@@ -66,14 +70,15 @@ html {
 
 #sign-up {
     background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+    /*margin: auto;  15% from the top and centered */
+	/*margin: auto;*/
     padding: 20px;
     border: 1px solid #888;
-    width: 40%; /* Could be more or less, depending on screen size */
+    width: 25%; /* Could be more or less, depending on screen size */
 	display: inline-block;
 }
 
-#sign-in input {
+#loginModal input {
 	
 	margin-bottom: 10px;
 }
@@ -184,14 +189,27 @@ html {
 }
 
 #teamBios div p {
-	text-align: center;
 	font-weight: bold;
+}
+
+.name {
+	text-align: center;
+}
+
+.desc {
+	text-align: left;
 }
 
 #SSDesc {
 	text-align: center;
 	font-weight: bold;
 	font-size: 12pt;
+}
+
+#careersBtn {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	text-align: center;
 }
 
 
@@ -321,11 +339,11 @@ html {
 	margin-bottom: 40px;
 }
 
-#startBtn {
+.navBtn {
 	background-color: #F2B053;
 	font-weight: bold;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
 	/*display: block;*/
 }
 

@@ -31,12 +31,14 @@
 		<div id = "loginModal" class = "modal" > <!-- myModal -->
 			<form id="sign-in"> <!-- modal content -->
 			
-				<span class = "close">&times;</span>
+				<!--<span class = "close">&times;</span>-->
 				
 				<fieldset>
 					<legend>Sign In</legend>
+					
 					Email <br> <input id="si-email" type="text"><br>
 					Password <br> <input id="si-password" type="password"><br>
+					
 					<input type="submit" name="Submit">
 				</fieldset>
 				
@@ -47,14 +49,19 @@
 			
 						
 			<form id="sign-up">
+				
+				<span class = "close">&times;</span>
+			
 				<fieldset>
 					<legend>Sign Up:</legend>
-					Email: <input id="su-email" type="text"><br>
-					Username: <input id="su-username" type="text"><br>
-					First Name: <input id="su-fname" type="text">
-					Last Name: <input id="su-lname" type="text"><br>
-					Password: <input id="su-password" type="password"><br>
-					Password Confirmation: <input id="su-passwordconf" type="password"><br>
+					
+					Email <br> <input id="su-email" type="text"><br>
+					Username <br> <input id="su-username" type="text"><br>
+					First Name <br> <input id="su-fname" type="text"><br>
+					Last Name <br> <input id="su-lname" type="text"><br>
+					Password <br> <input id="su-password" type="password"><br>
+					Password Confirmation <br> <input id="su-passwordconf" type="password"><br>
+					
 					<input type="submit" name="Submit">
 				</fieldset>
 			</form>
