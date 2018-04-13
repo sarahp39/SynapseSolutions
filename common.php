@@ -97,7 +97,7 @@
 			
 			<div id="resourcesDropdown" class="dropdown-content"> <!-- id = "myDropdown-->
 				<a href="resourcesHowTo.php">HOW TOS</a>
-				<a href="resourcesWhitepapers.php">WHITEPAPERS</a>
+				<a href="resourcesPublications.php">PUBLICATIONS</a>
 				<a href="resourcesBlogs.php">BLOGS</a>
 				<a href="resourcesTerms.php">TERMS OF USE</a>
 			</div>

@@ -61,6 +61,42 @@
 	
 	<div id = "bottomBanner">
 	
+		<div id = "links">
+			<div id = "dataDiv">
+				DATA<br><br>
+				
+				<a href = "dataExplore.php">EXPLORE</a><br>
+				<a href = "dataLog.php">DATA LOG</a><br>
+				<a href = "dataUploadAnalysis.php">UPLOAD/ANALYSIS</a>
+			
+			</div>
+			
+			<div id = "resourcesDiv">
+				RESOURCES<br><br>
+				
+				<a href = "resourcesHowTo.php">HOW TOS</a><br>
+				<a href = "resourcesPublications.php">PUBLICATIONS</a><br>
+				<a href = "resourcesBlogs.php">BLOGS</a><br>
+				<a href = "resourcesTerms.php">TERMS OF USE</a>
+			
+			</div>
+			
+			<div id = "aboutDiv">
+				ABOUT<br><br>
+				
+				<a href = "aboutUs.php">ABOUT US</a><br>
+				<a href = "aboutPricing.php">PRICING</a><br>
+				<a href = "aboutNews.php">NEWS</a><br>
+				<a href = "aboutCareers.php">CAREERS</a><br>
+				<a href = "aboutContact.php">CONTACT</a>
+			
+			</div>
+			
+			<div id = "socialMediaDiv">
+			
+			</div>
+	
+		</div>
 	</div>
 	
 </html>
