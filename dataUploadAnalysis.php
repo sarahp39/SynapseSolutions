@@ -76,7 +76,8 @@
 				
 				<div id = "dataSpec" > <!--class from bootstrap -->
 				
-					<form action=""> <!-- inside quotes, put /page.php -->
+				<!--
+					<form action="">  inside quotes, put /page.php
 						
 						<p> What is the format of your file? </p>
 						
@@ -94,9 +95,28 @@
 						<div id = "dataSubmit">
 							<input type="submit" value="Submit">
 						</div>
+						
 					</form>
+					-->
 					
-					
+					<form id="upload-file" enctype="multipart/form-data" class="uploadForm">
+						<p> What is the format of your file? </p>
+						
+						<label class = "radio-inline"><input type="radio" name="fileFormat" value=".csv" checked> CSV </label>
+						<label class = "radio-inline"><input type="radio" name="fileFormat" value=".txt"> TXT </label>
+						<label class = "radio-inline"><input type="radio" name="fileFormat" value=".edf"> EDF </label>
+						
+						
+						
+						<p> Do you want this to be public or private (please refer to our privacy policy)? </p>
+						
+						<label class = "radio-inline"><input type="radio" name="filePrivacy" value="private" checked> Private </label>
+						<label class = "radio-inline"><input type="radio" name="filePrivacy" value="public"> Public </label>
+						
+						<input class="uploadForm__input" type="file" name="file" id="inputFile" accept=".txt">
+						
+						
+					</form>
 					
 					
 				

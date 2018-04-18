@@ -132,9 +132,11 @@ window.onload = function() {
 	var myDataBtn = document.getElementById("myDataBtn");
 	
 	if (myDataBtn != null ) {
-	
-		myDataBtn.onsubmit = (function(e) {
-			var xml = new XMLHttpRequest(); //ajax
+		
+		myDataBtn.onclick = (function(e) { //onsubmit
+			//e.preventDefault(); //since button is linking to diff page
+			/*var xml = new XMLHttpRequest(); //ajax
+			console.log("enter my data btn");
 			
 			xml.open("GET", "https://api.synapse-solutions.net/v1/sumfile/?subject=test&session=rest", true); //specfile
 			
@@ -146,24 +148,70 @@ window.onload = function() {
 					//document.getElementById("myDataMainArea").innerHTML = content;
 					//console.log(content);
 					
-				
-					
 					console.log(content.Subject); 
 				}
 			}
 			
 			xml.send();
+			console.log("my data js file done");*/
 			
 		});
 		
-		console.log("my data js file done");
+		
 	
 	}
 	
 	
 	
-	console.log("windown onload done");
+	
+	// FILE UPLOAD
+	
+	var inputFile = document.getElementById("inputFile");
+	if (inputFile != null) {
+		inputFile.addEventListener("change", addFile);
+	}
+	
+	
+	console.log("window onload done");
 }	
+
+
+
+
+
+	
+	
+	
+	function addFile(e) {
+		e.preventDefault();
+		var file = e.target.files[0];
+		if(!file){
+			return;
+		}
+		var ajax = new XMLHttpRequest();
+
+		var auth = localStorage.getItem("auth");
+
+		var formData = new FormData()
+		formData.append("file", file)
+
+		ajax.open("POST", "https://api.synapse-solutions.net" + "/v1/upload", true);
+		ajax.setRequestHeader("Authorization", auth);
+		ajax.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status < 300) {
+				var auth = this.getResponseHeader("Authorization");
+				console.log("done");
+			} else if (this.readyState == 4 && this.status >= 300) {
+				var err = document.getElementById("err");
+				err.innerHTML = "error: " + this.responseText;
+			}
+		}
+		ajax.send(formData);
+}
+	
+	
+	
+	
 	
 	
 
