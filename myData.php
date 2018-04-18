@@ -2,10 +2,21 @@
 	
 	include("common.php");
 	
-	head();
+	//head();
 	
 	topBanner();
 ?>
+		<!DOCTYPE html>
+<!-- -->
+<html>
+	<head>
+		<title>Synapse Systems</title>
+		
+		<link rel="stylesheet" type="text/css" href="index.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script type="text/javascript" src="myData.js"></script>
+		
+	</head>
 
 
 	

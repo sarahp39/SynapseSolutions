@@ -127,25 +127,9 @@ window.onload = function() {
 	
 	
 	
-	// DISPLAYING SUMMARY DATA ON MY DATA PAGE
-	document.getElementById("myDataBtn").onsubmit = (function(e) {
-		var xml = new XMLHttpRequest(); //ajax
-		
-		xml.open("GET", "https://api.synapse-solutions.net/v1/specfile/?subject=test&session=rest", true);
-		
-		console.log("accessing data");
-		
-		xml.onreadystatechange = function() {
-			if (this.readyState == 4 && this.status == 200) {
-				var content = JSON.parse(this.responseText);
-				document.getElementById("myDataMainArea").innerHTML = content;
-			}
-		}
-		
-		xml.send();
-		
-	});
 	
+	
+	console.log("windown onload done");
 }	
 	
 	
