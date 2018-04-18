@@ -66,7 +66,7 @@
 				DATA<br><br>
 				
 				<a href = "dataExplore.php">EXPLORE</a><br>
-				<a href = "dataLog.php">DATA LOG</a><br>
+				<a href = "myData.php">MY DATA</a><br>
 				<a href = "dataUploadAnalysis.php">UPLOAD/ANALYSIS</a>
 			
 			</div>

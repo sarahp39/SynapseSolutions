@@ -28,10 +28,18 @@
 		?>
 		
 		<!-- landing page welcome images/texts/scroll bying stuff-->
-		<div id = "landingDisplay">
-			<p>
+		<div class = "mainArea">
+			<p class = "mainTitle" >
 				MY DATA
 			</p>
+			
+			<div id = "myDataMainArea" class = "generalBorder" >
+			
+				
+				
+			</div>
+			
+			
 		</div>
 		
 		

@@ -50,10 +50,6 @@ window.onload = function() {
 		
 		
 		
-		
-		
-		
-		
 		document.getElementById("sign-in").onsubmit = (function(e) {
 			e.preventDefault();
 			//console.log("signing in!");
@@ -87,16 +83,6 @@ window.onload = function() {
 			
 			ajax.send(json);
 		});
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
 		
 		
@@ -137,9 +123,32 @@ window.onload = function() {
         }
         ajax.send(json);
     });
+	
+	
+	
+	
+	// DISPLAYING SUMMARY DATA ON MY DATA PAGE
+	document.getElementById("myDataBtn").onsubmit = (function(e) {
+		var xml = new XMLHttpRequest(); //ajax
 		
+		xml.open("GET", "https://api.synapse-solutions.net/v1/specfile/?subject=test&session=rest", true);
 		
-};
+		console.log("accessing data");
+		
+		xml.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+				var content = JSON.parse(this.responseText);
+				document.getElementById("myDataMainArea").innerHTML = content;
+			}
+		}
+		
+		xml.send();
+		
+	});
+	
+}	
+	
+	
 
 function myFunction() {
 	
