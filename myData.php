@@ -47,7 +47,13 @@
 			
 			<div id = "myDataMainArea" class = "generalBorder" >
 			
+				<div id = "key">
 				
+				</div>
+				
+				<div id = "value">
+				
+				</div>
 				
 			</div>
 			

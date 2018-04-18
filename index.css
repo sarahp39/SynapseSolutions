@@ -254,6 +254,39 @@ html {
 
 
 
+
+
+/* my data page */
+
+#myDataMainArea {
+	overflow: hidden; /* so that the key and value floating divs are actually contained by this border */
+}
+
+#key {
+	text-align: left;
+	font-weight: bold;
+	display: inline-block;
+	margin-left: 100px;
+	
+	float: left;
+}
+
+#value {
+	display: inline-block;
+	text-align: right;
+
+	float: right;
+	margin-right: 100px;
+}
+
+
+
+
+
+
+
+
+
 /* upload/analysis page */
 
 #uploadMainArea {

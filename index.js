@@ -133,7 +133,7 @@ window.onload = function() {
 	
 	if (myDataBtn != null ) {
 		
-		myDataBtn.onclick = (function(e) { //onsubmit
+		myDataBtn.onclick = (function(e) { //onsubmit -- doing nothing here, button just to navigate to the my data page
 			//e.preventDefault(); //since button is linking to diff page
 			/*var xml = new XMLHttpRequest(); //ajax
 			console.log("enter my data btn");
