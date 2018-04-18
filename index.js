@@ -1,4 +1,4 @@
-var model;
+var modal;
 
 window.onload = function() {
 		//document.getElementById("dropdown").onclick = myFunction;
@@ -6,10 +6,12 @@ window.onload = function() {
 		var btnArr = document.getElementsByClassName("dropbtn");
 		
 		for (i = 0, len = btnArr.length; i < len; i++){
-			//console.log("hi");
+			
 			
 			btnArr[i].onclick = myFunction;
 		}
+		
+		console.log("hi");
 		
 		
 		
@@ -18,7 +20,7 @@ window.onload = function() {
 		
 		
 		
-				// Get the modal
+		// Get the modal
 		modal = document.getElementById("loginModal");
 
 		// Get the button that opens the modal
@@ -35,9 +37,10 @@ window.onload = function() {
 		loginBtn.onclick = function() {
 			modal.style.display = "block";
 		}
-		
-		startBtn.onclick = function() {
-			modal.style.display = "block";
+		if (startBtn != null) {
+			startBtn.onclick = function() {
+				modal.style.display = "block";
+			}
 		}
 		
 
@@ -125,7 +128,37 @@ window.onload = function() {
     });
 	
 	
+	// DISPLAYING SUMMARY DATA ON MY DATA PAGE
+	var myDataBtn = document.getElementById("myDataBtn");
 	
+	if (myDataBtn != null ) {
+	
+		myDataBtn.onsubmit = (function(e) {
+			var xml = new XMLHttpRequest(); //ajax
+			
+			xml.open("GET", "https://api.synapse-solutions.net/v1/sumfile/?subject=test&session=rest", true); //specfile
+			
+			console.log("accessing data");
+			
+			xml.onreadystatechange = function() {
+				if (this.readyState == 4 && this.status == 200) {
+					var content = JSON.parse(this.responseText);
+					//document.getElementById("myDataMainArea").innerHTML = content;
+					//console.log(content);
+					
+				
+					
+					console.log(content.Subject); 
+				}
+			}
+			
+			xml.send();
+			
+		});
+		
+		console.log("my data js file done");
+	
+	}
 	
 	
 	
@@ -149,6 +182,7 @@ function myFunction() {
 	document.getElementById(this.id.slice(0,-3).concat("Dropdown")).classList.toggle("show");
     //document.getElementById("resourcesDropdown").classList.toggle("show"); // id was myDropdown
 }
+
 
 
 // Close the dropdown menu if the user clicks outside of it

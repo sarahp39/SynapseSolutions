@@ -14,7 +14,8 @@
 		
 		<link rel="stylesheet" type="text/css" href="index.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<script type="text/javascript" src="myData.js"></script>
+		<script type="text/javascript" src="index.js"></script>
+		<!--<script type="text/javascript" src="myData.js"></script>-->
 		
 	</head>
 
