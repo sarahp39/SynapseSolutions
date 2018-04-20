@@ -33,6 +33,10 @@
 			</p>
 			
 			<div id = "myDataMainArea" class = "generalBorder" >
+				
+				<div id = "files">
+				
+				</div>
 			
 				<div id = "key">
 				

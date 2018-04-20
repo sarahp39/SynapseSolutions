@@ -165,12 +165,17 @@ window.onload = function() {
 	
 	
 	// FILE UPLOAD
+	if (document.getElementById("fileSubmitBtn") != null) {
+		document.getElementById("fileSubmitBtn").addEventListener("click", addFile);
+	}
 	
+	
+	/*
 	var inputFile = document.getElementById("inputFile");
 	if (inputFile != null) {
 		inputFile.addEventListener("change", addFile);
 	}
-	
+	*/
 	
 	console.log("window onload done");
 }	
@@ -184,7 +189,7 @@ window.onload = function() {
 	
 	function addFile(e) {
 		e.preventDefault();
-		var file = e.target.files[0];
+		var file = document.getElementById("inputFile").files[0]; //e.target.files[0]; // get element inputFile
 		if(!file){
 			return;
 		}
@@ -200,7 +205,12 @@ window.onload = function() {
 		ajax.onreadystatechange = function() {
 			if (this.readyState == 4 && this.status < 300) {
 				var auth = this.getResponseHeader("Authorization");
+				
+				//change pages here
+				window.location.href = "myData.php";
+				
 				console.log("done");
+				
 			} else if (this.readyState == 4 && this.status >= 300) {
 				var err = document.getElementById("err");
 				err.innerHTML = "error: " + this.responseText;

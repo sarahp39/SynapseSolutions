@@ -101,11 +101,11 @@
 						
 					</form>
 					
-					<a href = "myData.php">
+					
 						<button id = "fileSubmitBtn" >
 							Submit
 						</button>
-					</a>
+					
 					
 				
 				</div>

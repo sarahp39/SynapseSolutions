@@ -18,7 +18,7 @@
 				document.getElementById("value").innerHTML += content[t] + "<br>";
 			}
 			
-			console.log(content);
+			//console.log(content);
 			
 			//console.log(content.Subject); 
 		}
@@ -26,3 +26,28 @@
 			
 	xml.send();
 	console.log("my data js file done");
+	
+	
+	
+	
+	var xmlFiles = new XMLHttpRequest();
+	var auth = localStorage.getItem("auth");
+	
+	xmlFiles.open("GET", "https://api.synapse-solutions.net/v1/upload", true);
+	xmlFiles.setRequestHeader("Authorization", auth);
+	
+	console.log("new xml request");
+	
+	xmlFiles.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+			var fileNames = JSON.parse(this.responseText).fileNames; //the 'filenames' key in the JSON array
+			
+		
+			for (t in fileNames) { 
+				document.getElementById("files").innerHTML += fileNames[t] + "<br>";
+				
+			}
+		}
+	}
+	
+	xmlFiles.send();
