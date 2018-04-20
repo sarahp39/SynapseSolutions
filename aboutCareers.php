@@ -28,11 +28,19 @@
 		?>
 		
 		<!-- landing page welcome images/texts/scroll bying stuff-->
-		<div id = "landingDisplay">
-			<p>
-				ABOUT-CAREERS
-			</p>
+		<div id = "careersMain">
+		
+			<div id = "joinUs" >
+			
+			</div>
+			
+			<div id = "careers" > 
+			
+			</div>
+			
 		</div>
+		
+		
 		
 		
 		

@@ -5,26 +5,11 @@
 	head();
 	
 	topBanner();
-?>
+
 		
-	
-	<div id = "spaceBelowTopBanner">
-	<!-- only necessary if the top banner has a fixed position -->
-	</div>
+	dropdowns();
 	
 	
-	<div id = "body">
-		<!-- <h1>Synapse Systems</h1> -->
-		<a href = "index.php">
-		
-			<img src = "logo.jpg" alt="Synapse Systems logo" > <!-- looks blurry, get a better copy -->
-			
-		</a>
-		
-		
-		<?php
-		
-			dropdowns();
 		?>
 		
 		<!-- landing page welcome images/texts/scroll bying stuff-->
@@ -74,10 +59,8 @@
 			<div id = "resourcesDiv">
 				RESOURCES<br><br>
 				
-				<a href = "resourcesHowTo.php">HOW TOS</a><br>
+				<a href = "resourcesTutorials.php">HOW TOS</a><br>
 				<a href = "resourcesPublications.php">PUBLICATIONS</a><br>
-				<a href = "resourcesBlogs.php">BLOGS</a><br>
-				<a href = "resourcesTerms.php">TERMS OF USE</a>
 			
 			</div>
 			
@@ -86,9 +69,7 @@
 				
 				<a href = "aboutUs.php">ABOUT US</a><br>
 				<a href = "aboutPricing.php">PRICING</a><br>
-				<a href = "aboutNews.php">NEWS</a><br>
-				<a href = "aboutCareers.php">CAREERS</a><br>
-				<a href = "aboutContact.php">CONTACT</a>
+				<a href = "aboutTerms.php">TERMS OF USE</a>
 			
 			</div>
 			

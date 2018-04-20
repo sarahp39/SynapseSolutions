@@ -377,8 +377,14 @@ html {
 	margin-bottom: 20px;
 }
 
-
-
+#fileSubmitBtn {
+	margin-top: 10px;
+	background-color: #F2B053;
+	font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+	margin-bottom: 20px;
+}
 
 
 

@@ -67,14 +67,24 @@
 			</form>
 			
 			
-		</div>
-		
-		
-		
-		
-		
+		</div>	
 		
 	</div>
+	
+		
+	
+	<div id = "spaceBelowTopBanner">
+	<!-- only necessary if the top banner has a fixed position -->
+	</div>
+	
+	
+	<div id = "body">
+		<!-- <h1>Synapse Systems</h1> -->
+		<a href = "index.php">
+		
+			<img src = "logo.jpg" alt="Synapse Systems logo" > <!-- looks blurry, get a better copy -->
+			
+		</a>
 
 <?php
 	}
@@ -96,10 +106,8 @@
 			<button  class="dropbtn" id = "resourcesbtn" >RESOURCES</button>
 			
 			<div id="resourcesDropdown" class="dropdown-content"> <!-- id = "myDropdown-->
-				<a href="resourcesHowTo.php">HOW TOS</a>
+				<a href="resourcesTutorials.php">TUTORIALS</a>
 				<a href="resourcesPublications.php">PUBLICATIONS</a>
-				<a href="resourcesBlogs.php">BLOGS</a>
-				<a href="resourcesTerms.php">TERMS OF USE</a>
 			</div>
 			
 			<button  class="dropbtn" id = "aboutbtn" >ABOUT</button>
@@ -107,9 +115,7 @@
 			<div id="aboutDropdown" class="dropdown-content"> <!-- id = "myDropdown-->
 				<a href="aboutUs.php">ABOUT US</a>
 				<a href="aboutPricing.php">PRICING</a> <!-- prime? -->
-				<a href="aboutNews.php">NEWS</a>
-				<a href="aboutCareers.php">CAREERS</a>
-				<a href="aboutContact.php">CONTACT</a>
+				<a href="aboutTerms.php">TERMS OF USE</a>
 			</div>
 			
 		</div>
