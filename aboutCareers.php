@@ -1,26 +1,12 @@
 <?php
 	
 	include("common.php");
+	
+	head();
+	
+	topBanner();
 ?>
 
-<!DOCTYPE html>
-<!-- -->
-<html>
-	<head>
-		<title>Synapse Systems</title>
-		
-		<link rel="stylesheet" type="text/css" href="index.css" />
-		<script type="text/javascript" src="index.js"></script>
-		
-	</head>
-	
-	
-	<div id="topBanner">
-		<div>
-		<!-- sign in/sign up buttons -->
-		<button id = "login">Sign in / Sign up</button>
-		</div>
-	</div>
 	
 	
 	<div id = "spaceBelowTopBanner">
@@ -42,11 +28,19 @@
 		?>
 		
 		<!-- landing page welcome images/texts/scroll bying stuff-->
-		<div id = "landingDisplay">
-			<p>
-				ABOUT-CAREERS
-			</p>
+		<div id = "careersMain">
+		
+			<div id = "joinUs" >
+			
+			</div>
+			
+			<div id = "careers" > 
+			
+			</div>
+			
 		</div>
+		
+		
 		
 		
 		

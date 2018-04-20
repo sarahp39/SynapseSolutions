@@ -1,46 +1,15 @@
 <?php
 	
 	include("common.php");
-?>
+	
+	head();
+	
+	topBanner();
 
-
-<!DOCTYPE html>
-<!-- -->
-<html>
-	<head>
-		<title>Synapse Systems</title>
 		
-		<link rel="stylesheet" type="text/css" href="index.css" />
-		<script type="text/javascript" src="index.js"></script>
-		
-	</head>
+	dropdowns();
 	
 	
-	<div id="topBanner">
-		<div>
-		<!-- sign in/sign up buttons -->
-		<button id = "login">Sign in / Sign up</button>
-		</div>
-	</div>
-	
-	
-	<div id = "spaceBelowTopBanner">
-	
-	</div>
-	
-	
-	<div id = "body">
-		<!-- <h1>Synapse Systems</h1> -->
-		<a href = "index.php">
-		
-			<img src = "logo.jpg" alt="Synapse Systems logo" > <!-- looks blurry, get a better copy -->
-			
-		</a>
-		
-		
-		<?php
-		
-			dropdowns();
 		?>
 		
 		<!-- landing page welcome images/texts/scroll bying stuff-->
@@ -50,13 +19,25 @@
 		
 		
 		<div id = "bottomHalf">
+		
 			<p>
 			With Synapse Systems, you can . . .
 			</p>
 			
-			<button id = "startBtn">
-				Start for Free
-			</button>
+			<div id= "imgs">
+				<img src = "ReportsFeatureBadge.png" alt = "Reports Feature Badge" >
+				
+				<img src = "ShareDataBadge.png" alt = "Reports Feature Badge" >
+				
+				<img src = "InputDataBadge.png" alt = "Reports Feature Badge" >
+			</div>
+			
+			<div id = "startBtnDiv" >
+				<button class = "navBtn" id = "startBtn" >
+					Start for Free
+				</button>
+			</div>
+			
 		</div>
 		
 		
@@ -65,6 +46,38 @@
 	
 	<div id = "bottomBanner">
 	
+		<div id = "links">
+			<div id = "dataDiv">
+				DATA<br><br>
+				
+				<a href = "dataExplore.php">EXPLORE</a><br>
+				<a href = "myData.php">MY DATA</a><br>
+				<a href = "dataUploadAnalysis.php">UPLOAD/ANALYSIS</a>
+			
+			</div>
+			
+			<div id = "resourcesDiv">
+				RESOURCES<br><br>
+				
+				<a href = "resourcesTutorials.php">HOW TOS</a><br>
+				<a href = "resourcesPublications.php">PUBLICATIONS</a><br>
+			
+			</div>
+			
+			<div id = "aboutDiv">
+				ABOUT<br><br>
+				
+				<a href = "aboutUs.php">ABOUT US</a><br>
+				<a href = "aboutPricing.php">PRICING</a><br>
+				<a href = "aboutTerms.php">TERMS OF USE</a>
+			
+			</div>
+			
+			<div id = "socialMediaDiv">
+			
+			</div>
+	
+		</div>
 	</div>
 	
 </html>

@@ -5,14 +5,14 @@
 	head();
 	
 	topBanner();
-
+	
 	dropdowns();
 		?>
 		
 		<!-- landing page welcome images/texts/scroll bying stuff-->
 		<div id = "landingDisplay">
 			<p>
-				DATA-EXPLORE
+				RESOURCES-TERMS
 			</p>
 		</div>
 		

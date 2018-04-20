@@ -1,26 +1,11 @@
 <?php
 	
 	include("common.php");
+	
+	head();
+	
+	topBanner();
 ?>
-
-<!DOCTYPE html>
-<!-- -->
-<html>
-	<head>
-		<title>Synapse Systems</title>
-		
-		<link rel="stylesheet" type="text/css" href="index.css" />
-		<script type="text/javascript" src="index.js"></script>
-		
-	</head>
-	
-	
-	<div id="topBanner">
-		<div>
-		<!-- sign in/sign up buttons -->
-		<button id = "login">Sign in / Sign up</button>
-		</div>
-	</div>
 	
 	
 	<div id = "spaceBelowTopBanner">

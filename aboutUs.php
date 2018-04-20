@@ -1,53 +1,81 @@
 <?php
 	
 	include("common.php");
-?>
+	
+	head();
+	
+	topBanner();
 
-<!DOCTYPE html>
-<!-- -->
-<html>
-	<head>
-		<title>Synapse Systems</title>
-		
-		<link rel="stylesheet" type="text/css" href="index.css" />
-		<script type="text/javascript" src="index.js"></script>
-		
-	</head>
-	
-	
-	<div id="topBanner">
-		<div>
-		<!-- sign in/sign up buttons -->
-		<button id = "login">Sign in / Sign up</button>
-		</div>
-	</div>
-	
-	
-	<div id = "spaceBelowTopBanner">
-	
-	</div>
-	
-	
-	<div id = "body">
-		<!-- <h1>Synapse Systems</h1> -->
-		<a href = "index.php">
-		
-			<img src = "logo.jpg" alt="Synapse Systems logo" > <!-- looks blurry, get a better copy -->
-			
-		</a>
-		
-		
-		<?php
-			dropdowns();
+	dropdowns();
 		?>
 		
 		<!-- landing page welcome images/texts/scroll bying stuff-->
-		<div id = "landingDisplay">
-			<p>
-				ABOUT US
+		<div id = "aboutMain">
+			<img src = "aboutLandingImg.jpg" id = "aboutLandingImg"> <!-- change image -->
+			
+			<p id = "missionText" >OUR MISSION IS TO HELP RESEARCHERS WITH THEIR EEG DATA WHILE GIVING EVERYONE ACCESS TO EXCITING DATA</p>
+			
+			
+			<div id = "us">
+				<p id = "theTeam"> THE TEAM: </p>
+				
+				<div id = "profilePics" >
+					<img src = "sarah.png" alt = "Sarah Phillips" >
+					<img src = "fred.png" alt = "Frederick Wijaya" >
+					<img src = "mathi.png" alt = "Mathi Manavalan" >
+				
+				</div>
+				
+				<div id = "teamBios">
+					<div id = "sarahBio">
+						<p class = "name"> Sarah Phillips <br>
+							Project Manager & Designer
+						</p>
+						
+						<p class = "desc" >Sarah enjoys using her creativity and problem-solving skills at work. She is a dedicated team player who enjoys constantly learning new things. In her spare time, she plays ultimate frisbee, fantasy football, and appreciates all things art.
+						</p>
+					
+					</div>
+					
+					<div id = "fredBio">
+						<p class = "name"> Frederick Wijaya <br>
+							Developer
+						</p>
+						
+						<p class = "desc" >Fred is a passionate and persistent critical thinker. He has a desire to learn new methods of problem solbing and enjoys learning new languages in his spare time.
+						</p>
+					
+					</div>
+					
+					<div id = "mathiBio">
+						<p class = "name"> Mathi Manavalan <br>
+							Developer
+						</p>
+						
+						<p class = "desc" >Mathi is an avid learned with a background in both information technology and neuroscience researach. In her spare time, she loves to go on runs with her dog and go bouldering with friends.
+						</p>
+					
+					</div>
+				
+				</div>
+			
+			</div>
+			
+			
+			<p id = "SSDesc">Like a lot of tech companies, we hire the best and brightest people. But what sets us apart is our focus on the "whole employee". We encourage our team to have an excellent work-life balance which isn't hard because we love what we do.
 			</p>
 		</div>
 		
+		<div id = "careersBtn">
+			<a href = "aboutCareers.php">
+		
+				<button class = "navBtn">
+					Go to Careers
+				</button>
+			
+			</a>
+			
+		</div>
 		
 		
 	</div> <!-- body id-->
