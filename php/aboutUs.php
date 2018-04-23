@@ -11,7 +11,7 @@
 		
 		<!-- landing page welcome images/texts/scroll bying stuff-->
 		<div id = "aboutMain">
-			<img src = "aboutLandingImg.jpg" id = "aboutLandingImg"> <!-- change image -->
+			<img src = "../img/aboutLandingImg.jpg" id = "aboutLandingImg"> <!-- change image -->
 			
 			<p id = "missionText" >OUR MISSION IS TO HELP RESEARCHERS WITH THEIR EEG DATA WHILE GIVING EVERYONE ACCESS TO EXCITING DATA</p>
 			
@@ -20,9 +20,9 @@
 				<p id = "theTeam"> THE TEAM: </p>
 				
 				<div id = "profilePics" >
-					<img src = "sarah.png" alt = "Sarah Phillips" >
-					<img src = "fred.png" alt = "Frederick Wijaya" >
-					<img src = "mathi.png" alt = "Mathi Manavalan" >
+					<img src = "../img/sarah.png" alt = "Sarah Phillips" >
+					<img src = "../img/fred.png" alt = "Frederick Wijaya" >
+					<img src = "../img/mathi.png" alt = "Mathi Manavalan" >
 				
 				</div>
 				

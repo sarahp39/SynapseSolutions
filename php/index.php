@@ -25,11 +25,11 @@
 			</p>
 			
 			<div id= "imgs">
-				<img src = "ReportsFeatureBadge.png" alt = "Reports Feature Badge" >
+				<img src = "../img/ReportsFeatureBadge.png" alt = "Reports Feature Badge" >
 				
-				<img src = "ShareDataBadge.png" alt = "Reports Feature Badge" >
+				<img src = "../img/ShareDataBadge.png" alt = "Reports Feature Badge" >
 				
-				<img src = "InputDataBadge.png" alt = "Reports Feature Badge" >
+				<img src = "../img/InputDataBadge.png" alt = "Reports Feature Badge" >
 			</div>
 			
 			<div id = "startBtnDiv" >

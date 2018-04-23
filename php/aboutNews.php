@@ -6,7 +6,6 @@
 	
 	topBanner();
 ?>
-
 	
 	
 	<div id = "spaceBelowTopBanner">
@@ -18,7 +17,7 @@
 		<!-- <h1>Synapse Systems</h1> -->
 		<a href = "index.php">
 		
-			<img src = "logo.jpg" alt="Synapse Systems logo" > <!-- looks blurry, get a better copy -->
+			<img src = "../img/logo.jpg" alt="Synapse Systems logo" > <!-- looks blurry, get a better copy -->
 			
 		</a>
 		
@@ -30,7 +29,7 @@
 		<!-- landing page welcome images/texts/scroll bying stuff-->
 		<div id = "landingDisplay">
 			<p>
-				ABOUT-CONTACT
+				ABOUT-NEWS
 			</p>
 		</div>
 		

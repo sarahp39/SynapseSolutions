@@ -18,7 +18,7 @@
 		<!-- <h1>Synapse Systems</h1> -->
 		<a href = "index.php">
 		
-			<img src = "logo.jpg" alt="Synapse Systems logo" > <!-- looks blurry, get a better copy -->
+			<img src = "../img/logo.jpg" alt="Synapse Systems logo" > <!-- looks blurry, get a better copy -->
 			
 		</a>
 		
@@ -28,19 +28,11 @@
 		?>
 		
 		<!-- landing page welcome images/texts/scroll bying stuff-->
-		<div id = "careersMain">
-		
-			<div id = "joinUs" >
-			
-			</div>
-			
-			<div id = "careers" > 
-			
-			</div>
-			
+		<div id = "landingDisplay">
+			<p>
+				ABOUT-CONTACT
+			</p>
 		</div>
-		
-		
 		
 		
 		
