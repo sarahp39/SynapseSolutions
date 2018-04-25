@@ -76,20 +76,11 @@
 	<div id = "spaceBelowTopBanner">
 	<!-- only necessary if the top banner has a fixed position -->
 	</div>
-	
-	
-	<div id = "body">
-		<!-- <h1>Synapse Systems</h1> -->
-		<a href = "index.php">
-		
-			<img src = "../img/logo.jpg" alt="Synapse Systems logo" > <!-- looks blurry, get a better copy -->
-			
-		</a>
 
 <?php
 	}
-
-	function dropdowns() {
+	
+	function dropdowns() { //diff for index, links go to php/
 ?>
 
 		<div id="dropdown">
