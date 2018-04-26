@@ -54,13 +54,35 @@
 			
 		
 			for (t in fileNames) { 
-				document.getElementById("files").innerHTML += fileNames[t] + "<br>";
+				
+				var file = document.createElement('div');
+				file.class = 'file';
+				file.innerHTML = fileNames[t]; //thats how you get the actual name of the file to show up
+				
+				document.getElementById("files").appendChild(file);
+				
+				document.getElementById("files").innerHTML += '<img id = "fileIcon" src = "../img/file.png" alt="file icon" >' + '<span class = "close" id = "fileClose" >&times;</span>' + '<br>';
+				
+				
+				
+				
+				
 				
 			}
+			
+			//document.getElementById("files").innerHTML += '<img id = "fileIcon" src = "../img/file.png" alt="file icon" >';
+			
 		}
 	}
 	
 	xmlFiles.send();
+	
+	
+	
+	//DELETE SET UP
+	
+	var xmlDelete = new XMLHttpRequest();
+	
 	
 	
 	

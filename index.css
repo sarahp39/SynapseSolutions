@@ -279,7 +279,15 @@ html {
 	margin-right: 100px;
 }
 
+.file {
+	display: inline-block;
+	
+}
 
+#fileIcon {
+	height: 40px;
+	width: 40px;
+}
 
 
 
