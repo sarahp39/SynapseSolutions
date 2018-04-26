@@ -164,21 +164,7 @@ window.onload = function() {
 	
 	
 	
-	// FILE UPLOAD
-	if (document.getElementById("fileSubmitBtn") != null) {
-		document.getElementById("fileSubmitBtn").addEventListener("click", addFile);
-	}
 	
-	
-	/*
-	var inputFile = document.getElementById("inputFile");
-	if (inputFile != null) {
-		inputFile.addEventListener("change", addFile);
-	}
-	*/
-	
-	console.log("window onload done");
-}	
 
 
 
@@ -262,6 +248,8 @@ window.onclick = function(event) {
 		modal.style.display = "none";
 	}
   
+}
+
 }
 
 

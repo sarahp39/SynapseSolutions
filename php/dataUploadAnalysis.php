@@ -123,9 +123,11 @@
 		
 		</div>
 		
-		
+		<script type="text/javascript" src="../dataUploadAnalysis.js"></script>
 		
 	</div> <!-- body id-->
+	
+	
 	
 	
 	<div id = "bottomBanner">
