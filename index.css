@@ -275,7 +275,7 @@ html {
 
 /* my data page */
 
-#myDataMainArea {
+#myFiles {
 	overflow: hidden; /* so that the key and value floating divs are actually contained by this border */
 }
 
@@ -296,20 +296,35 @@ html {
 	margin-right: 100px;
 }
 
-.file {
-	display: inline-block;
-	
-}
-
 #fileIcon {
 	height: 40px;
 	width: 40px;
 }
 
+#myTeam {
+	/*display: inline-block;*/
+	float: left;
+	width: 60%;
+	margin-right: 10%;
+}
 
+#myAccount {
+	float: left;
+	width: 30%;
+}
 
+#fileOptionBtns {
+	float: right;
+}
 
+#fileOptionBtns button {
+	width: 100px;
+}
 
+#files {
+	float: left;
+	
+}
 
 
 /* upload/analysis page */
@@ -378,7 +393,7 @@ html {
 	margin-bottom: 20px;
 }
 
-#subHeading {
+.subHeading {
 	/*text-align: center;*/
 	font-family: "Helvetica";
 	font-size: 18px;

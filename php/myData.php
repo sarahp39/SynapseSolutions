@@ -26,30 +26,67 @@
 				MY DATA
 			</p>
 			
-			<div id = "myDataMainArea" class = "generalBorder" >
-			
-				<div id = "myTeam"  class = "generalBorder" >
+			<div id = "myTeam"  class = "generalBorder" >
 					MY TEAM INFO
+			</div>
+				
+				
+			<div id = "myAccount"  class = "generalBorder" >
+				MY ACCOUNT INFO
+			</div>
+			
+			
+			
+			
+			
+			<div id = "myFiles" class = "generalBorder" >
+				<p class = "subHeading" >
+					My Files
+				</p>
+				
+
+				<!-- the four big buttons -->
+				<div id = "fileOptionBtns">
+					<button class = "navBtn" id = "viewBtn" >
+						View
+					</button>
+				
+					<button class = "navBtn" id = "compareBtn" >
+						Compare
+					</button>
+					
+					<br>
+				
+					<button class = "navBtn" id = "cleanBtn" >
+						Clean
+					</button>
+				
+					<button class = "navBtn" id = "shareBtn" >
+						Share
+					</button>
+			
 				</div>
-				
-				
-				<div id = "myAccount"  class = "generalBorder" >
-					MY ACCOUNT INFO
-				</div>
-				
-				
+			
+			
+			<!-- the four radio buttons -->
+			<div id = "filterOptions">
+			
+			</div>
 				
 				
 				<div id = "files">
 				
 				</div>
+				
+				<div id = "fileContent">
 			
-				<div id = "key">
-				
-				</div>
-				
-				<div id = "value">
-				
+					<div id = "key">
+					
+					</div>
+					
+					<div id = "value">
+					
+					</div>
 				</div>
 				
 			</div>

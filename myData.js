@@ -11,7 +11,9 @@
 	// IF USER IS CURRENTLY LOGGED IN
 	if (localStorage.getItem("auth") != null) { //A USER IS LOGGED IN
 	
-	
+		document.getElementById("viewBtn").onclick = function() {
+			window.location.href = "fileContent.php";
+		}
 	
 		// DISPLAYING A SPECIFIC FILE
 		

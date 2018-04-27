@@ -33,7 +33,7 @@
 			
 			
 			<div id = "existingData" class = "generalBorder" >
-				<p id = "subHeading" >
+				<p class = "subHeading" >
 					Already have data or reports?
 				</p>
 				
@@ -56,7 +56,7 @@
 			
 			
 			<div id = "uploadData" class = "generalBorder" >
-				<p id = "subHeading" >
+				<p class = "subHeading" >
 					Need to upload data or reports?
 				</p>
 				
