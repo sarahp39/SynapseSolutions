@@ -1,7 +1,12 @@
 var modal;
 
+var auth;
+
 window.onload = function() {
 		//document.getElementById("dropdown").onclick = myFunction;
+		
+		console.log("onload toggle");
+		logToggle();
 		
 		var btnArr = document.getElementsByClassName("dropbtn");
 		
@@ -50,7 +55,7 @@ window.onload = function() {
 		}
 		
 		
-		
+		//var auth; //so its accessible outside
 		
 		
 		document.getElementById("sign-in").onsubmit = (function(e) {
@@ -73,9 +78,12 @@ window.onload = function() {
 			ajax.onreadystatechange = function() {
 				if (this.readyState == 4 && this.status < 300) {
 					
-					var auth = this.getResponseHeader("Authorization");
+					auth = this.getResponseHeader("Authorization");
 					console.log(auth);
 					localStorage.setItem('auth', auth);
+					
+					logToggle();
+					
 					//location.reload();
 				} else if (this.readyState == 4 && this.status >= 300) {
 					var err = document.getElementById("err");
@@ -85,6 +93,10 @@ window.onload = function() {
 			
 			
 			ajax.send(json);
+			
+			//console.log("sign in toggle, " + auth);
+			
+			document.getElementById("loginModal").style.display = "none";
 		});
 		
 		
@@ -115,9 +127,12 @@ window.onload = function() {
         ajax.open("POST", "https://api.synapse-solutions.net/v1/users/", true);
         ajax.onreadystatechange = function() {
             if (this.readyState == 4 && this.status < 300) {
-                var auth = this.getResponseHeader("Authorization");
+                auth = this.getResponseHeader("Authorization");
                 console.log(auth);
                 localStorage.setItem('auth', auth);
+				
+				logToggle();
+				
                 //location.reload(); refreshes page
             } else if (this.readyState == 4 && this.status >= 300) {
                 var err = document.getElementById("err");
@@ -125,7 +140,53 @@ window.onload = function() {
             }
         }
         ajax.send(json);
+		
+		console.log("sign up toggle");
+		
+		document.getElementById("loginModal").style.display = "none";
     });
+	
+	
+	
+	// to make modal disappear after sign in and show username and user icon instead of sign in/sign up button
+	
+	
+	
+	
+	
+	//LOGOUT
+	
+	document.getElementById("logoutBtn").onclick = (function() {
+        var ajax = new XMLHttpRequest();
+
+        auth = localStorage.getItem("auth");
+
+        ajax.open("DELETE", "https://api.synapse-solutions.net/v1/sessions/mine/", true);
+        ajax.setRequestHeader("Authorization", auth);
+        ajax.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status < 300) {
+                console.log(this.responseText);
+                localStorage.removeItem("auth");
+				
+				logToggle();
+				
+                //location.reload();
+            } else if (this.readyState == 4 && this.status >= 300) {
+                var err = document.getElementById("err");
+                err.innerHTML = this.responseText;
+            }
+        }
+		
+        ajax.send();
+		
+		console.log("logout toggle");
+		
+		
+    });
+	
+	
+	
+	
 	
 	
 	// DISPLAYING SUMMARY DATA ON MY DATA PAGE
@@ -162,7 +223,7 @@ window.onload = function() {
 	}
 	
 	
-	
+}	
 	
 	
 
@@ -172,7 +233,7 @@ window.onload = function() {
 
 	
 	
-	
+/*
 	function addFile(e) {
 		e.preventDefault();
 		var file = document.getElementById("inputFile").files[0]; //e.target.files[0]; // get element inputFile
@@ -205,9 +266,23 @@ window.onload = function() {
 		ajax.send(formData);
 }
 	
+*/	
+	
+function logToggle() {
+	if (localStorage.getItem("auth") == null) { //meaning user is not signed in
+		console.log("toggle: signed out");
+		//show log in options
+		document.getElementById("loginBtn").style.display = "initial";
+		document.getElementById("logoutBtn").style.display = "none";
+		
+	} else { //signed in
+		console.log("toggle: signed in");
+		document.getElementById("loginBtn").style.display = "none";
+		document.getElementById("logoutBtn").style.display = "initial";
+	}
 	
 	
-	
+}
 	
 	
 
@@ -250,7 +325,7 @@ window.onclick = function(event) {
   
 }
 
-}
+
 
 
 // add links to each page that each link under each drop down links to

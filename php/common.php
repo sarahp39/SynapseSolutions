@@ -24,7 +24,10 @@
 		<div>
 		
 		<!-- sign in/sign up buttons -->
-		<button id = "loginBtn" >Sign in / Sign up</button> <!-- myBtn -->
+		<button id = "loginBtn" class = "logBtns" >Sign in / Sign up</button> <!-- myBtn -->
+		
+		<button id = "logoutBtn" class  = "logBtns" > Logout </button>
+		
 		</div>
 		
 		<!-- sign in/up div -->

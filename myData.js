@@ -61,11 +61,43 @@
 				
 				document.getElementById("files").appendChild(file);
 				
-				document.getElementById("files").innerHTML += '<img id = "fileIcon" src = "../img/file.png" alt="file icon" >' + '<span class = "close" id = "fileClose" >&times;</span>' + '<br>';
+				//file or files..
+				document.getElementById("files").innerHTML += '<img id = "fileIcon" src = "../img/file.png" alt="file icon" >' + '<span class = "close" >&times;</span>' + '<br>';
+								
+				document.getElementsByClassName("close").id = fileNames[t]; //id of x close is the file name
+				
+				//console.log(document.getElementsByClassName("close").id);
+						
+				/*
+				var theCloseX = document.getElementById(fileNames[t]);
+				console.log(theCloseX);
 				
 				
+				theCloseX.addEventListener("click", function() {
+		
+					var xmlDel = XMLHttpRequest();
+					
+					xmlDel.open("DELETE", "https://api.synapse-solutions.net/v1/upload", true);
+					
+					xmlDel.setRequestHeader("Authorization", auth);
+					
+					xmlDel.setRequestHeader("filename", filesNames[t]);
+					
+					
+					
+					xmlDel.onreadystatechange = function() {
+					
+						if (this.readyState == 4 && this.status == 200) {
+							document.getElementById(fileNames[t]).innerHTML = "";
+						}
+					}
+					
+					
+					xmlDel.send();
+					
+				});
 				
-				
+				*/
 				
 				
 			}
@@ -81,7 +113,7 @@
 	
 	//DELETE SET UP
 	
-	var xmlDelete = new XMLHttpRequest();
+	
 	
 	
 	
