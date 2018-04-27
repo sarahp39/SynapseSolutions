@@ -82,9 +82,9 @@ window.onload = function() {
 					console.log(auth);
 					localStorage.setItem('auth', auth);
 					
-					logToggle();
+					//logToggle();
 					
-					//location.reload();
+					location.reload(); //refreshes page, which then runs the logToggle function from the beginning of the onload function
 				} else if (this.readyState == 4 && this.status >= 300) {
 					var err = document.getElementById("err");
 					err.innerHTML = "error: " + this.responseText;
@@ -131,9 +131,9 @@ window.onload = function() {
                 console.log(auth);
                 localStorage.setItem('auth', auth);
 				
-				logToggle();
+				//logToggle();
 				
-                //location.reload(); refreshes page
+                location.reload(); //refreshes page
             } else if (this.readyState == 4 && this.status >= 300) {
                 var err = document.getElementById("err");
                 err.innerHTML = "error: " + this.responseText;
@@ -168,9 +168,9 @@ window.onload = function() {
                 console.log(this.responseText);
                 localStorage.removeItem("auth");
 				
-				logToggle();
+				//logToggle();
 				
-                //location.reload();
+                location.reload();
             } else if (this.readyState == 4 && this.status >= 300) {
                 var err = document.getElementById("err");
                 err.innerHTML = this.responseText;

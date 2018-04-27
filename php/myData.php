@@ -27,6 +27,18 @@
 			</p>
 			
 			<div id = "myDataMainArea" class = "generalBorder" >
+			
+				<div id = "myTeam"  class = "generalBorder" >
+					MY TEAM INFO
+				</div>
+				
+				
+				<div id = "myAccount"  class = "generalBorder" >
+					MY ACCOUNT INFO
+				</div>
+				
+				
+				
 				
 				<div id = "files">
 				
