@@ -28,6 +28,14 @@
 			
 			<div id = "contentArea"  class = "generalBorder" >
 					FILE CONTENT
+					
+					<div id = "key">
+					
+					</div>
+					
+					<div id = "value">
+					
+					</div>
 			</div>
 				
 			
@@ -40,7 +48,7 @@
 			
 		</div>
 		
-		<!--<script type="text/javascript" src="../myData.js"></script>-->
+		<script type="text/javascript" src="../fileContent.js"></script>
 		
 	</div> <!-- body id-->
 	

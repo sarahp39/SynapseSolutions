@@ -44,51 +44,48 @@
 					My Files
 				</p>
 				
-
-				<!-- the four big buttons -->
-				<div id = "fileOptionBtns">
-					<button class = "navBtn" id = "viewBtn" >
-						View
-					</button>
-				
-					<button class = "navBtn" id = "compareBtn" >
-						Compare
-					</button>
-					
-					<br>
-				
-					<button class = "navBtn" id = "cleanBtn" >
-						Clean
-					</button>
-				
-					<button class = "navBtn" id = "shareBtn" >
-						Share
-					</button>
-			
-				</div>
-			
-			
-			<!-- the four radio buttons -->
-			<div id = "filterOptions">
-			
-			</div>
-				
-				
 				<div id = "files">
-				
+				<!--WHERE THE LIST OF UPLOADED FILES ARE DISPLAYED-->
 				</div>
 				
-				<div id = "fileContent">
-			
-					<div id = "key">
+				<div id = "dataBtns">
+					<!-- the four big buttons -->
+					<div id = "fileOptionBtns">
+						<button class = "navBtn" id = "viewBtn" >
+							View
+						</button>
 					
+						<button class = "navBtn" id = "compareBtn" >
+							Compare
+						</button>
+						
+						<br>
+					
+						<button class = "navBtn" id = "cleanBtn" >
+							Clean
+						</button>
+					
+						<button class = "navBtn" id = "shareBtn" >
+							Share
+						</button>
+				
 					</div>
+				
+				
+					<!-- the four radio buttons -->
+					<div id = "filterOptions">
 					
-					<div id = "value">
-					
+						<label class = "radio-inline"><input type="radio" name="filter" value="all" checked> All </label>
+						<label class = "radio-inline"><input type="radio" name="filter" value="summary"> Summary </label>
+						<label class = "radio-inline"><input type="radio" name="filter" value="spectra"> Spectra </label>
+						<label class = "radio-inline"><input type="radio" name="filter" value="coherence"> Coherence </label>
+						
 					</div>
 				</div>
 				
+				
+				
+							
 			</div>
 			
 			

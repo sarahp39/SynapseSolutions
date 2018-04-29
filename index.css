@@ -273,10 +273,23 @@ html {
 
 
 
+
+/* FILE CONTENT PAGE */
+
+#contentArea {
+	overflow: hidden; /* so that the key and value floating divs are actually contained by this border */
+}
+
+
+
+
+
+
 /* my data page */
 
 #myFiles {
-	overflow: hidden; /* so that the key and value floating divs are actually contained by this border */
+	overflow: hidden;  /*so that the key and value floating divs are actually contained by this border */
+	
 }
 
 #key {
@@ -313,12 +326,25 @@ html {
 	width: 30%;
 }
 
+#dataBtns {
+	width: 60%;
+	margin-left: 50%;
+}
+
 #fileOptionBtns {
-	float: right;
+	/*float: right;*/
+	/*margin-right: 20px;*/
 }
 
 #fileOptionBtns button {
-	width: 100px;
+	width: 150px;
+	height: 50px;
+	margin-right: 40px;
+	margin-top: 20px;
+}
+
+#filterOptions {
+	margin-top: 20px;
 }
 
 #files {
