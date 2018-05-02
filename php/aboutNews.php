@@ -32,8 +32,8 @@
 	</div> <!-- body id-->
 	
 	
-	<div id = "bottomBanner">
-	
-	</div>
+<?php
+	bottomBanner();
+?>
 	
 </html>

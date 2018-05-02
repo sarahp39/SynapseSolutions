@@ -12,7 +12,7 @@ html {
 	right: 0;
 	background-color: #B22222;
 	width: 100%;
-	height: 40px;
+	height: 50px;
 	
 }
 /* only necessary if the top banner has position: fixed
@@ -24,8 +24,8 @@ html {
 
 .logBtns {
 	float: right;
-	margin-top: 5px;
-	margin-right: 10px;
+	margin-top: 10px;
+	margin-right: 30px;
 	color: white;
 	background-color: #B22222;
 	border: none;
@@ -110,8 +110,10 @@ html {
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-#loginModal {
-	margin: auto;
+#loginModal { /* height and width this correctly..*/
+	/*margin: auto;*/
+	margin-left: 40%;
+	margin-top: 10%;
 }
 
 /* Modal Content/Box (model-content) */
@@ -121,7 +123,7 @@ html {
     margin-left: 25%; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 25%; /* Could be more or less, depending on screen size */
+    /*width: 25%;  Could be more or less, depending on screen size */
 	display: inline-block;
 }
 
@@ -131,7 +133,7 @@ html {
 	/*margin: auto;*/
     padding: 20px;
     border: 1px solid #888;
-    width: 25%; /* Could be more or less, depending on screen size */
+    /*width: 25%; /* Could be more or less, depending on screen size */
 	display: inline-block;
 }
 
@@ -510,9 +512,14 @@ html {
 	margin-top: 20px;
 	width: 20%;
 	padding-left: 10%;
+	margin-bottom: 20px;
+	font-family: "Helvetica";
 }
 
-
+#links label, a { /* i could override the bootstrap for the links color, but then its not obvious that they're links..*/
+	color: white;
+	
+}
 
 
 

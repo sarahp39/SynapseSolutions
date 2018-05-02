@@ -23,13 +23,18 @@ window.onload = function() {
 		
 		// LOGIN SET UP; CONNECT START FOR FREE BTN AS WELL
 		
+		modal = document.getElementsByClassName("modal");
 		
 		
 		// Get the modal
-		modal = document.getElementById("loginModal");
+		var signInModal = document.getElementById("signInModal");
+		
+		var signUpModal = document.getElementById("signUpModal");
 
 		// Get the button that opens the modal
-		var loginBtn = document.getElementById("loginBtn");
+		var signInBtn = document.getElementById("signInBtn");
+		
+		var signUpBtn = document.getElementById("signUpBtn");
 		
 		// Get the other button that also opens the modal
 		var startBtn = document.getElementById("startBtn");
@@ -38,20 +43,31 @@ window.onload = function() {
 		var span = document.getElementsByClassName("close")[0];
 
 		
-		// When the user clicks on the button, open the modal 
-		loginBtn.onclick = function() {
-			modal.style.display = "block";
+		// When the user clicks on the button, open the modal
+		if (signInBtn != null && signUpBtn != null) {
+			signInBtn.onclick = function() {
+				signInModal.style.display = "block";
+				signUpModal.style.display = "none";
+			}
+			
+			signUpBtn.onclick = function() {
+				signUpModal.style.display = "block";
+				signInModal.style.display = "none";
+			}
 		}
+		
 		if (startBtn != null) {
 			startBtn.onclick = function() {
-				modal.style.display = "block";
+				signUpModal.style.display = "block";
+				signInModal.style.display = "none";
 			}
 		}
 		
 
 		// When the user clicks on <span> (x), close the modal
 		span.onclick = function() {
-			modal.style.display = "none";
+			signInModal.style.display = "none";
+			signUpModal.style.display = "none";
 		}
 		
 		
@@ -96,7 +112,8 @@ window.onload = function() {
 			
 			//console.log("sign in toggle, " + auth);
 			
-			document.getElementById("loginModal").style.display = "none";
+			document.getElementById("signInModal").style.display = "none";
+			document.getElementById("signUpModal").style.display = "none";
 		});
 		
 		
@@ -143,7 +160,9 @@ window.onload = function() {
 		
 		console.log("sign up toggle");
 		
-		document.getElementById("loginModal").style.display = "none";
+		//document.getElementById("loginModal").style.display = "none";
+		document.getElementById("signInModal").style.display = "none";
+		document.getElementById("signUpModal").style.display = "none";
     });
 	
 	
@@ -272,12 +291,14 @@ function logToggle() {
 	if (localStorage.getItem("auth") == null) { //meaning user is not signed in
 		console.log("toggle: signed out");
 		//show log in options
-		document.getElementById("loginBtn").style.display = "initial";
+		document.getElementById("signInBtn").style.display = "initial";
+		document.getElementById("signUpBtn").style.display = "initial";
 		document.getElementById("logoutBtn").style.display = "none";
 		
 	} else { //signed in
 		console.log("toggle: signed in");
-		document.getElementById("loginBtn").style.display = "none";
+		document.getElementById("signInBtn").style.display = "none";
+		document.getElementById("signUpBtn").style.display = "none";
 		document.getElementById("logoutBtn").style.display = "initial";
 	}
 	
@@ -320,7 +341,9 @@ window.onclick = function(event) {
   }
 
 	if (event.target == modal) {
-		modal.style.display = "none";
+		//modal.style.display = "none";
+		document.getElementById("signInModal").style.display = "none";
+		document.getElementById("signUpModal").style.display = "none";
 	}
   
 }

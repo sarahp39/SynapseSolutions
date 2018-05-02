@@ -98,7 +98,8 @@
 	
 		<div id = "links">
 			<div id = "dataDiv">
-				DATA<br><br>
+				<label>DATA</label>
+				<br><br>
 				
 				<a href = "php/dataExplore.php">EXPLORE</a><br>
 				<a href = "php/myData.php">MY DATA</a><br>
@@ -107,7 +108,8 @@
 			</div>
 			
 			<div id = "resourcesDiv">
-				RESOURCES<br><br>
+				<label>RESOURCES</label>
+				<br><br>
 				
 				<a href = "php/resourcesTutorials.php">HOW TOS</a><br>
 				<a href = "php/resourcesPublications.php">PUBLICATIONS</a><br>
@@ -115,7 +117,8 @@
 			</div>
 			
 			<div id = "aboutDiv">
-				ABOUT<br><br>
+				<label>ABOUT</label>
+				<br><br>
 				
 				<a href = "php/aboutUs.php">ABOUT US</a><br>
 				<a href = "php/aboutPricing.php">PRICING</a><br>
