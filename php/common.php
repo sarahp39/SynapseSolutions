@@ -38,7 +38,7 @@
 		<div id = "signInModal" class = "modal" > <!-- myModal -->
 			<form id="sign-in"> <!-- modal content -->
 			
-				<!--<span class = "close">&times;</span>-->
+				<span class = "close">&times;</span>
 				
 				<fieldset>
 					<legend>Sign In</legend>

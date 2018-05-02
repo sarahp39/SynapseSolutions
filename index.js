@@ -40,7 +40,7 @@ window.onload = function() {
 		var startBtn = document.getElementById("startBtn");
 
 		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
+		var span = document.getElementsByClassName("close");
 
 		
 		// When the user clicks on the button, open the modal
@@ -65,9 +65,12 @@ window.onload = function() {
 		
 
 		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() {
-			signInModal.style.display = "none";
-			signUpModal.style.display = "none";
+		for (var i = 0; i < span.length; i++) {
+			var s = span[i];
+			s.onclick = function() {
+				signInModal.style.display = "none";
+				signUpModal.style.display = "none";
+			}
 		}
 		
 		
