@@ -27,7 +27,32 @@
 			</p>
 			
 			<div id = "contentArea"  class = "generalBorder" >
+			
+				
+			
+			
 					FILE CONTENT
+					
+					<div class="tab"> <!-- MOVE ONCLICKS TO JS -->
+						<button class="tablinks" id = "summaryBtn" onclick="openCity(event, 'summary')">summary</button>
+						<button class="tablinks" id = "spectraBtn" onclick="openCity(event, 'spectra')">spectra</button>
+						<button class="tablinks" id = "coherenceBtn" onclick="openCity(event, 'coherence')">coherence</button>
+					</div>
+
+					<div id="summary" class="tabcontent">
+						<h3>summary</h3>
+						<p>summary is the capital city of England.</p>
+					</div>
+
+					<div id="spectra" class="tabcontent">
+						<h3>spectra</h3>
+						<p>spectra is the capital of France.</p> 
+					</div>
+
+					<div id="coherence" class="tabcontent">
+						<h3>coherence</h3>
+						<p>coherence is the capital of Japan.</p>
+					</div>
 					
 					<div id = "key">
 					

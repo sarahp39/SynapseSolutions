@@ -1,4 +1,21 @@
 
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    
+	for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    
+	tablinks = document.getElementsByClassName("tablinks");
+    
+	for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    
+	document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
 
 
 if (localStorage.getItem("auth") != null) { //A USER IS LOGGED IN
@@ -34,6 +51,12 @@ if (localStorage.getItem("auth") != null) { //A USER IS LOGGED IN
 				
 		xml.send();
 		console.log("my data js file done");
+		
+		
+		
+		
+		
+		
 		
 } else {
 	document.getElementById("myDataMainArea").innerHTML = "Please log in to view your data!";
