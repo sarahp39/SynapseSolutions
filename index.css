@@ -385,6 +385,14 @@ html {
 	width: 40px;
 }
 
+#welcome {
+	font-weight: bold;
+	font-size: 12pt;
+	font-family: "Helvetica";
+	letter-spacing: 3px;
+	margin-bottom: 20px;
+}
+
 #myTeam {
 	/*display: inline-block;*/
 	float: left;
@@ -420,8 +428,32 @@ html {
 
 #files {
 	float: left;
+	width: 300px;
+}
+
+#files div {
+	/*lign-item: left;*/
+	
 	
 }
+
+#files div label {
+	float: left;
+	text-align: left;
+	width: 200px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+#files div p {
+	width: 100px;
+	text-align: right;
+	height: 20px;
+}
+
+
 
 
 /* upload/analysis page */
