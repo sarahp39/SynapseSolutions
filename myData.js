@@ -19,6 +19,8 @@
 		
 		
 		
+		//HIDE TEAM INFO, HIDE ALL FROM PAGE? DON'T ALLOW TO REACH THIS PAGE???
+		
 		
 		
 		
@@ -44,15 +46,25 @@
 
 					// Adds a single filename div
 					var fileDiv = document.createElement("div");
-					fileDiv.innerHTML = fileNames[t];
+					
+					var name = document.createElement("label");
+					name.innerHTML = fileNames[t];
+					
+					fileDiv.appendChild(name);
+					
+					//fileDiv.innerHTML = fileNames[t];
 					fileDiv.id = fileNames[t];
 					fileList.appendChild(fileDiv);
 					
 					// fileClose
-					var fileClose = document.createElement("span");
+					var fileClose = document.createElement("p");
 					fileClose.classList.add("close");
 					fileClose.innerHTML = "&times;";
-
+					
+					fileDiv.appendChild(fileClose);
+					
+					//fileDiv.appendChild(document.createElement("br"));
+					
 					fileClose.addEventListener("click", function(e) {
 						e.preventDefault();
 						var xmlDel = new XMLHttpRequest();

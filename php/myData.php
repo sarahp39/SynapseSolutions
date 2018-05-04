@@ -26,8 +26,23 @@
 				MY DATA
 			</p>
 			
+			<p id = "welcome" >
+				Hello Mathi, welcome to your My Data page!
+			</p>
+			
 			<div id = "myTeam"  class = "generalBorder" >
-					MY TEAM INFO
+				<p class = "generalHeading" >
+					My Team
+				</p>
+				
+				<div id = "teamContact" ><!--<form action="">-->
+					<input type="radio" name="id" value="stocco"> Andrea Stocco<br>
+				    <input type="radio" name="id" value="manavalan"> Mathi Manavalan <br>
+					<input type="radio" name="id" value="phillips"> Sarah Phillips <br>
+					<input type="radio" name="id" value="wijaya"> Frederick Wijaya
+					
+				</div>
+				
 			</div>
 				
 				

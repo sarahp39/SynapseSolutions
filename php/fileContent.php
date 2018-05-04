@@ -45,8 +45,33 @@
 					</div>
 
 					<div id="spectra" class="tabcontent">
-						<h3>spectra</h3>
-						<p>spectra is the capital of France.</p> 
+						<h3>Distribution of Electrodes for Electroencephalogram</h3>
+						
+						<div id="layout">
+							<div id="visualization">
+								<h2 id="prompt">Please select the first channel</h2>
+								<button id="reset" type="submit">Reset</button>
+								<div id="brain-cont">
+									<img id="loading" src="../img/round.gif" alt="loading">
+									<object id="brain-svg" type="image/svg+xml" data="../brain.svg" width="500px" height="500px">
+										Your browser does not support SVG
+									</object>
+								</div>
+
+								<input id="stored1" type="hidden"/>
+								<input id="stored2" type="hidden"/>
+								
+								<div id="cont1">
+									<h2 id="title1"></h2>
+									<svg id="chart1" class="chart"></svg>
+								</div>
+								<div id="cont2">
+									<h2 id="title2"></h2>
+									<svg id="chart2" class="chart"></svg>
+								</div>
+							</div>
+						</div>
+						<!--<p>spectra is the capital of France.</p>-->
 					</div>
 
 					<div id="coherence" class="tabcontent">
@@ -74,6 +99,11 @@
 		</div>
 		
 		<script type="text/javascript" src="../fileContent.js"></script>
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+		<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+		<script src="../testParam.js"></script>
 		
 	</div> <!-- body id-->
 	
