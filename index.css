@@ -323,7 +323,7 @@ html {
 }
 
 #spectraBtn {
-	
+	margin-left: 30%;
 }
 
 #coherenceBtn {
@@ -395,7 +395,7 @@ html {
 }
 
 .clickable-svg {
-	background-color: greenyellow;
+	background-color: #F2B053l;
 }
 
 .nonclickable-svg {

@@ -15,7 +15,7 @@ var auth = localStorage.getItem('auth')
 
 document.getElementById('brain-svg').style.display = "none";
 
-d3.request('https://api.synapse-solutions.net/v1/specfile/?subject=28210&session=Lang1Pre1')
+d3.request('https://api.synapse-solutions.net/v1/specfile/?subject=test&session=rest')
     .header("Authorization", auth)
     .get(function(res) {
         var data = JSON.parse(res.responseText);
@@ -248,6 +248,7 @@ a.addEventListener("load",function(){
                     console.log("found");
 
                     firstCircle.setAttribute("style", "fill:#F2B053");
+					
 
                     // add behaviour
                     ts.addEventListener("mousedown",function(e){
@@ -295,7 +296,7 @@ window.addEventListener("load", function() {
                 for (var ch in channels) {
                     var ts = gees[i].querySelector("tspan");
                     if (ts != null && (ts.innerHTML == channels[ch])) {
-                        firstCircle.setAttribute("style", "fill:greenyellow");
+                        firstCircle.setAttribute("style", "fill:#F2B053");
                     }
                 }
             }
