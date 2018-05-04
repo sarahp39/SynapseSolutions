@@ -267,7 +267,7 @@ html {
 }
 
 .name {
-	text-align: center;
+	text-align: left;
 }
 
 .desc {
@@ -475,6 +475,16 @@ html {
 #myAccount {
 	float: left;
 	width: 30%;
+}
+
+#accountHeads {
+	float: left;
+	width: 50%;
+}
+
+#accountHeads p {
+	text-align: left;
+	
 }
 
 #teamContact input {

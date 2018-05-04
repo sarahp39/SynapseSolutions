@@ -47,7 +47,17 @@
 				
 				
 			<div id = "myAccount"  class = "generalBorder" >
-				MY ACCOUNT INFO
+				<p class = "generalHeading" >
+					My Account
+				</p>
+				
+				<div class = "accountHeads">
+					<p>mathi</p>
+					<p>mathi@uw.edu</p>
+					<p>*********</p>
+					<p>Standard Plan</p>
+				</div>
+				
 			</div>
 			
 			
