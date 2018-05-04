@@ -29,6 +29,8 @@ window.onload = function() {
 		// Get the modal
 		var signInModal = document.getElementById("signInModal");
 		
+		var or = document.getElementById("or");
+		
 		var signUpModal = document.getElementById("signUpModal");
 
 		// Get the button that opens the modal
@@ -296,12 +298,15 @@ function logToggle() {
 		//show log in options
 		document.getElementById("signInBtn").style.display = "initial";
 		document.getElementById("signUpBtn").style.display = "initial";
+		document.getElementById("or").style.display = "initial";
+		
 		document.getElementById("logoutBtn").style.display = "none";
 		
 	} else { //signed in
 		console.log("toggle: signed in");
 		document.getElementById("signInBtn").style.display = "none";
 		document.getElementById("signUpBtn").style.display = "none";
+		document.getElementById("or").style.display = "none";
 		document.getElementById("logoutBtn").style.display = "initial";
 	}
 	

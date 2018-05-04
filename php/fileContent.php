@@ -28,10 +28,7 @@
 			
 			<div id = "contentArea"  class = "generalBorder" >
 			
-				
-			
-			
-					FILE CONTENT
+				<!-- FILE CONTENT -->
 					
 					<div class="tab"> <!-- MOVE ONCLICKS TO JS -->
 						<button class="tablinks" id = "summaryBtn" onclick="openCity(event, 'summary')">summary</button>

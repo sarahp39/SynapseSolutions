@@ -26,7 +26,7 @@
 		<!-- sign in/sign up buttons -->
 		<button id = "signUpBtn" class = "logBtns" >Sign up</button> <!-- myBtn --> <!-- id = "loginBtn" -->
 		
-		<p class = "logBtns" >OR</p>
+		<p class = "logBtns" id = "or" >OR</p>
 		
 		<button id = "signInBtn" class = "logBtns" >Sign in</button>
 		
