@@ -12,7 +12,7 @@ html {
 	right: 0;
 	background-color: #B22222;
 	width: 100%;
-	height: 40px;
+	height: 50px;
 	
 }
 /* only necessary if the top banner has position: fixed
@@ -22,10 +22,10 @@ html {
 }
 */
 
-#loginBtn {
+.logBtns {
 	float: right;
-	margin-top: 5px;
-	margin-right: 10px;
+	margin-top: 10px;
+	margin-right: 30px;
 	color: white;
 	background-color: #B22222;
 	border: none;
@@ -33,6 +33,23 @@ html {
 	/*font-weight: bold;*/
 	font-family: "Helvetica";
 	letter-spacing: 3px;
+}
+
+#loginBtn {/*
+	float: right;
+	margin-top: 5px;
+	margin-right: 10px;
+	color: white;
+	background-color: #B22222;
+	border: none;
+	font-size: 16px;
+	font-family: "Helvetica";
+	letter-spacing: 3px;*/
+}
+
+#logoutBtn {
+
+	/*display: none;*/
 }
 
 
@@ -70,6 +87,10 @@ html {
 	flex-direction: column;
 	min-height: 100vh;*/
 }
+
+.generalHeading {
+	font-weight: bold;
+	font-size: 12pt;
 }
 
 
@@ -93,8 +114,10 @@ html {
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-#loginModal {
-	margin: auto;
+#loginModal { /* height and width this correctly..*/
+	/*margin: auto;*/
+	margin-left: 40%;
+	margin-top: 10%;
 }
 
 /* Modal Content/Box (model-content) */
@@ -104,7 +127,7 @@ html {
     margin-left: 25%; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 25%; /* Could be more or less, depending on screen size */
+    /*width: 25%;  Could be more or less, depending on screen size */
 	display: inline-block;
 }
 
@@ -114,7 +137,7 @@ html {
 	/*margin: auto;*/
     padding: 20px;
     border: 1px solid #888;
-    width: 25%; /* Could be more or less, depending on screen size */
+    /*width: 25%; /* Could be more or less, depending on screen size */
 	display: inline-block;
 }
 
@@ -198,8 +221,19 @@ html {
 	font-size: 12pt;
 }
 
-#theTeam {
-	font-weight: bold;
+#WebReqs {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	overflow: hidden;
+}
+
+#WebReqs div {
+	float: left;
+	width: 40%;
+	height: 300px;
+	margin-right: 5%;
+	margin-left: 5%;
+	
 }
 
 #us {
@@ -256,10 +290,77 @@ html {
 
 
 
+
+/* FILE CONTENT PAGE */
+
+#contentArea {
+	overflow: hidden; /* so that the key and value floating divs are actually contained by this border */
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+	border: 5px solid #B22222;
+	border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+	
+}
+
+#summaryBtn {
+	float: left;
+}
+
+#spectraBtn {
+	
+}
+
+#coherenceBtn {
+	float: right;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+	border-bottom: none;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+
+
+
+
+
+
+
 /* my data page */
 
-#myDataMainArea {
-	overflow: hidden; /* so that the key and value floating divs are actually contained by this border */
+#myFiles {
+	overflow: hidden;  /*so that the key and value floating divs are actually contained by this border */
+	
 }
 
 #key {
@@ -279,12 +380,48 @@ html {
 	margin-right: 100px;
 }
 
+#fileIcon {
+	height: 40px;
+	width: 40px;
+}
 
+#myTeam {
+	/*display: inline-block;*/
+	float: left;
+	width: 60%;
+	margin-right: 10%;
+}
 
+#myAccount {
+	float: left;
+	width: 30%;
+}
 
+#dataBtns {
+	width: 60%;
+	margin-left: 50%;
+}
 
+#fileOptionBtns {
+	/*float: right;*/
+	/*margin-right: 20px;*/
+}
 
+#fileOptionBtns button {
+	width: 150px;
+	height: 50px;
+	margin-right: 40px;
+	margin-top: 20px;
+}
 
+#filterOptions {
+	margin-top: 20px;
+}
+
+#files {
+	float: left;
+	
+}
 
 
 /* upload/analysis page */
@@ -353,7 +490,7 @@ html {
 	margin-bottom: 20px;
 }
 
-#subHeading {
+.subHeading {
 	/*text-align: center;*/
 	font-family: "Helvetica";
 	font-size: 18px;
@@ -444,9 +581,14 @@ html {
 	margin-top: 20px;
 	width: 20%;
 	padding-left: 10%;
+	margin-bottom: 20px;
+	font-family: "Helvetica";
 }
 
-
+#links label, a { /* i could override the bootstrap for the links color, but then its not obvious that they're links..*/
+	color: white;
+	
+}
 
 
 

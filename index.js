@@ -1,7 +1,12 @@
 var modal;
 
+var auth;
+
 window.onload = function() {
 		//document.getElementById("dropdown").onclick = myFunction;
+		
+		console.log("onload toggle");
+		logToggle();
 		
 		var btnArr = document.getElementsByClassName("dropbtn");
 		
@@ -18,39 +23,58 @@ window.onload = function() {
 		
 		// LOGIN SET UP; CONNECT START FOR FREE BTN AS WELL
 		
+		modal = document.getElementsByClassName("modal");
 		
 		
 		// Get the modal
-		modal = document.getElementById("loginModal");
+		var signInModal = document.getElementById("signInModal");
+		
+		var signUpModal = document.getElementById("signUpModal");
 
 		// Get the button that opens the modal
-		var loginBtn = document.getElementById("loginBtn");
+		var signInBtn = document.getElementById("signInBtn");
+		
+		var signUpBtn = document.getElementById("signUpBtn");
 		
 		// Get the other button that also opens the modal
 		var startBtn = document.getElementById("startBtn");
 
 		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
+		var span = document.getElementsByClassName("close");
 
 		
-		// When the user clicks on the button, open the modal 
-		loginBtn.onclick = function() {
-			modal.style.display = "block";
+		// When the user clicks on the button, open the modal
+		if (signInBtn != null && signUpBtn != null) {
+			signInBtn.onclick = function() {
+				signInModal.style.display = "block";
+				signUpModal.style.display = "none";
+			}
+			
+			signUpBtn.onclick = function() {
+				signUpModal.style.display = "block";
+				signInModal.style.display = "none";
+			}
 		}
+		
 		if (startBtn != null) {
 			startBtn.onclick = function() {
-				modal.style.display = "block";
+				signUpModal.style.display = "block";
+				signInModal.style.display = "none";
 			}
 		}
 		
 
 		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() {
-			modal.style.display = "none";
+		for (var i = 0; i < span.length; i++) {
+			var s = span[i];
+			s.onclick = function() {
+				signInModal.style.display = "none";
+				signUpModal.style.display = "none";
+			}
 		}
 		
 		
-		
+		//var auth; //so its accessible outside
 		
 		
 		document.getElementById("sign-in").onsubmit = (function(e) {
@@ -73,10 +97,13 @@ window.onload = function() {
 			ajax.onreadystatechange = function() {
 				if (this.readyState == 4 && this.status < 300) {
 					
-					var auth = this.getResponseHeader("Authorization");
+					auth = this.getResponseHeader("Authorization");
 					console.log(auth);
 					localStorage.setItem('auth', auth);
-					//location.reload();
+					
+					//logToggle();
+					
+					location.reload(); //refreshes page, which then runs the logToggle function from the beginning of the onload function
 				} else if (this.readyState == 4 && this.status >= 300) {
 					var err = document.getElementById("err");
 					err.innerHTML = "error: " + this.responseText;
@@ -85,6 +112,11 @@ window.onload = function() {
 			
 			
 			ajax.send(json);
+			
+			//console.log("sign in toggle, " + auth);
+			
+			document.getElementById("signInModal").style.display = "none";
+			document.getElementById("signUpModal").style.display = "none";
 		});
 		
 		
@@ -115,17 +147,68 @@ window.onload = function() {
         ajax.open("POST", "https://api.synapse-solutions.net/v1/users/", true);
         ajax.onreadystatechange = function() {
             if (this.readyState == 4 && this.status < 300) {
-                var auth = this.getResponseHeader("Authorization");
+                auth = this.getResponseHeader("Authorization");
                 console.log(auth);
                 localStorage.setItem('auth', auth);
-                //location.reload(); refreshes page
+				
+				//logToggle();
+				
+                location.reload(); //refreshes page
             } else if (this.readyState == 4 && this.status >= 300) {
                 var err = document.getElementById("err");
                 err.innerHTML = "error: " + this.responseText;
             }
         }
         ajax.send(json);
+		
+		console.log("sign up toggle");
+		
+		//document.getElementById("loginModal").style.display = "none";
+		document.getElementById("signInModal").style.display = "none";
+		document.getElementById("signUpModal").style.display = "none";
     });
+	
+	
+	
+	// to make modal disappear after sign in and show username and user icon instead of sign in/sign up button
+	
+	
+	
+	
+	
+	//LOGOUT
+	
+	document.getElementById("logoutBtn").onclick = (function() {
+        var ajax = new XMLHttpRequest();
+
+        auth = localStorage.getItem("auth");
+
+        ajax.open("DELETE", "https://api.synapse-solutions.net/v1/sessions/mine/", true);
+        ajax.setRequestHeader("Authorization", auth);
+        ajax.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status < 300) {
+                console.log(this.responseText);
+                localStorage.removeItem("auth");
+				
+				//logToggle();
+				
+                location.reload();
+            } else if (this.readyState == 4 && this.status >= 300) {
+                var err = document.getElementById("err");
+                err.innerHTML = this.responseText;
+            }
+        }
+		
+        ajax.send();
+		
+		console.log("logout toggle");
+		
+		
+    });
+	
+	
+	
+	
 	
 	
 	// DISPLAYING SUMMARY DATA ON MY DATA PAGE
@@ -162,23 +245,9 @@ window.onload = function() {
 	}
 	
 	
-	
-	
-	// FILE UPLOAD
-	if (document.getElementById("fileSubmitBtn") != null) {
-		document.getElementById("fileSubmitBtn").addEventListener("click", addFile);
-	}
-	
-	
-	/*
-	var inputFile = document.getElementById("inputFile");
-	if (inputFile != null) {
-		inputFile.addEventListener("change", addFile);
-	}
-	*/
-	
-	console.log("window onload done");
 }	
+	
+	
 
 
 
@@ -186,7 +255,7 @@ window.onload = function() {
 
 	
 	
-	
+/*
 	function addFile(e) {
 		e.preventDefault();
 		var file = document.getElementById("inputFile").files[0]; //e.target.files[0]; // get element inputFile
@@ -219,9 +288,25 @@ window.onload = function() {
 		ajax.send(formData);
 }
 	
+*/	
+	
+function logToggle() {
+	if (localStorage.getItem("auth") == null) { //meaning user is not signed in
+		console.log("toggle: signed out");
+		//show log in options
+		document.getElementById("signInBtn").style.display = "initial";
+		document.getElementById("signUpBtn").style.display = "initial";
+		document.getElementById("logoutBtn").style.display = "none";
+		
+	} else { //signed in
+		console.log("toggle: signed in");
+		document.getElementById("signInBtn").style.display = "none";
+		document.getElementById("signUpBtn").style.display = "none";
+		document.getElementById("logoutBtn").style.display = "initial";
+	}
 	
 	
-	
+}
 	
 	
 
@@ -259,10 +344,14 @@ window.onclick = function(event) {
   }
 
 	if (event.target == modal) {
-		modal.style.display = "none";
+		//modal.style.display = "none";
+		document.getElementById("signInModal").style.display = "none";
+		document.getElementById("signUpModal").style.display = "none";
 	}
   
 }
+
+
 
 
 // add links to each page that each link under each drop down links to

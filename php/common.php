@@ -24,14 +24,21 @@
 		<div>
 		
 		<!-- sign in/sign up buttons -->
-		<button id = "loginBtn" >Sign in / Sign up</button> <!-- myBtn -->
+		<button id = "signUpBtn" class = "logBtns" >Sign up</button> <!-- myBtn --> <!-- id = "loginBtn" -->
+		
+		<p class = "logBtns" >OR</p>
+		
+		<button id = "signInBtn" class = "logBtns" >Sign in</button>
+		
+		<button id = "logoutBtn" class  = "logBtns" > Logout </button>
+		
 		</div>
 		
 		<!-- sign in/up div -->
-		<div id = "loginModal" class = "modal" > <!-- myModal -->
+		<div id = "signInModal" class = "modal" > <!-- myModal -->
 			<form id="sign-in"> <!-- modal content -->
 			
-				<!--<span class = "close">&times;</span>-->
+				<span class = "close">&times;</span>
 				
 				<fieldset>
 					<legend>Sign In</legend>
@@ -46,7 +53,9 @@
 				
 				
 			</form>
-			
+		</div>
+		
+		<div id = "signUpModal" class = "modal" >
 						
 			<form id="sign-up">
 				
@@ -76,20 +85,11 @@
 	<div id = "spaceBelowTopBanner">
 	<!-- only necessary if the top banner has a fixed position -->
 	</div>
-	
-	
-	<div id = "body">
-		<!-- <h1>Synapse Systems</h1> -->
-		<a href = "index.php">
-		
-			<img src = "../img/logo.jpg" alt="Synapse Systems logo" > <!-- looks blurry, get a better copy -->
-			
-		</a>
 
 <?php
 	}
-
-	function dropdowns() {
+	
+	function dropdowns() { //diff for index, links go to php/
 ?>
 
 		<div id="dropdown">
@@ -121,5 +121,50 @@
 		</div>
 		
 <?php
+	}
+	
+	function bottomBanner() { // for all pages but index, cause the links are diff for index
+?>
+		<div id = "bottomBanner"> <!-- diff links from index page! -->
+	
+		<div id = "links">
+			<div id = "dataDiv">
+				<label>DATA</label>
+				<br><br>
+				
+				<a href = "dataExplore.php">EXPLORE</a><br>
+				<a href = "myData.php">MY DATA</a><br>
+				<a href = "dataUploadAnalysis.php">UPLOAD/ANALYSIS</a>
+			
+			</div>
+			
+			<div id = "resourcesDiv">
+				<label>RESOURCES</label>
+				<br><br>
+				
+				<a href = "resourcesTutorials.php">HOW TOS</a><br>
+				<a href = "resourcesPublications.php">PUBLICATIONS</a><br>
+			
+			</div>
+			
+			<div id = "aboutDiv">
+				<label>ABOUT</label>
+				<br><br>
+				
+				<a href = "aboutUs.php">ABOUT US</a><br>
+				<a href = "aboutPricing.php">PRICING</a><br>
+				<a href = "aboutTerms.php">TERMS OF USE</a>
+			
+			</div>
+			
+			<div id = "socialMediaDiv">
+			
+			</div>
+	
+		</div>
+	</div>
+
+<?php
+		
 	}
 ?>
