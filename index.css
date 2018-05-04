@@ -350,7 +350,79 @@ html {
 }
 
 
+/* TEST PARAM STYLING */
 
+.line {
+	fill: none;
+	stroke: navy;
+	stroke-width: 2px;
+	shape-rendering: crispEdges;
+}
+
+.axis line, .axis text {
+	fill: black;
+	font: 11px sans-serif;
+}
+
+.axis path {
+	fill: none;
+	stroke: #000;
+	shape-rendering: crispEdges;
+}
+
+.chart {
+	background-color: white;
+	border: 1px solid red;
+}
+
+#title {
+	background-color:white;
+	text-align: center;
+}
+
+#visualization {
+	text-align: center;
+}
+
+#brain-svg {
+	background-color: white;
+	border: 1px solid red;
+}
+
+#brain-cont {
+		fill: yellow;
+		padding: 5px;
+}
+
+.clickable-svg {
+	background-color: greenyellow;
+}
+
+.nonclickable-svg {
+	fill: grey;
+}
+
+#reset, #cont1, #cont2 {
+	display:inline-block;
+	text-align:center;
+}
+
+.overlay {
+	fill: none;
+	pointer-events: all;
+}
+
+.focus circle {
+	fill: #F1F3F3;
+	stroke: #6F257F;
+	stroke-width: 5px;
+}
+
+.hover-line {
+	stroke: #6F257F;
+	stroke-width: 2px;
+	stroke-dasharray: 3,3;
+}
 
 
 

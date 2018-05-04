@@ -247,14 +247,14 @@ a.addEventListener("load",function(){
                 if (ts != null && (ts.innerHTML == channels[ch])) {
                     console.log("found");
 
-                    firstCircle.setAttribute("style", "fill:greenyellow");
+                    firstCircle.setAttribute("style", "fill:#F2B053");
 
                     // add behaviour
                     ts.addEventListener("mousedown",function(e){
                         if (click < 2) {
                             var c = e.target.parentElement.parentElement.querySelector("circle");
                             console.log(e.target.parentElement);
-                            c.setAttribute("style", "fill:lightblue");
+                            c.setAttribute("style", "fill:#B22222");
                             var ch = e.target.innerHTML;
                             for (var k in dataset) {
                                 if (dataset[k]["Channel"] == ch) {
@@ -285,7 +285,7 @@ a.addEventListener("load",function(){
     console.log("svg done");
 }, false);
 
-window.onload = function() {
+window.addEventListener("load", function() {
     document.getElementById("reset").addEventListener("click", function() {
         var gees = a.contentDocument.querySelectorAll("g");
         for (var i = 0; i < 78; i++) {
@@ -309,4 +309,4 @@ window.onload = function() {
     }, false);
 
     console.log("done");
-};
+});
