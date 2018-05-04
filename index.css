@@ -87,6 +87,10 @@ html {
 	flex-direction: column;
 	min-height: 100vh;*/
 }
+
+.generalHeading {
+	font-weight: bold;
+	font-size: 12pt;
 }
 
 
@@ -217,8 +221,19 @@ html {
 	font-size: 12pt;
 }
 
-#theTeam {
-	font-weight: bold;
+#WebReqs {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	overflow: hidden;
+}
+
+#WebReqs div {
+	float: left;
+	width: 40%;
+	height: 300px;
+	margin-right: 5%;
+	margin-left: 5%;
+	
 }
 
 #us {

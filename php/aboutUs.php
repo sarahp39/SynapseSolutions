@@ -23,9 +23,40 @@
 			
 			<p id = "missionText" >OUR MISSION IS TO HELP RESEARCHERS WITH THEIR EEG DATA WHILE GIVING EVERYONE ACCESS TO EXCITING DATA</p>
 			
+			<div id = "WebReqs">
+				<div id = "problem" class = "generalBorder" >
+					<p class = "generalHeading">
+						THE PROBLEM:
+					</p>
+					<p>
+						The problem can best be described by a quote from our cofounder, Dr. Andrea Stocco.
+					</p>
+					<br>
+					<p>
+						"We currently have a terrible infrastructure for data analysis of EEG 
+						data. Our pipeline for resting state EEG is established and has lead to 
+						a lot of publications, but is very error-prone and written in R, with no 
+						flexibility and no user interface… our interface for data analysis, sharing, 
+						and Q/A is non-existent and rough."
+					</p>
+				</div>
+                
+				<div id = "solution" class = "generalBorder" >
+					<p class = "generalHeading">
+						THE SOLUTION:
+					</p>
+					<p>
+						Synapse Solutions is an online platform that provides researchers with 
+						a tool to work with and analyze electroencephalogram (EEG) data. This solution 
+						that we have created will allow for a user friendly and less error prone analysis with 
+						an interface that will provide an opportunity for customization of parameters. 
+					</p>
+				</div>
+            </div>
+			
 			
 			<div id = "us">
-				<p id = "theTeam"> THE TEAM: </p>
+				<p class = "generalHeading" > THE TEAM: </p>
 				
 				<div id = "profilePics" >
 					<img src = "../img/sarah.png" alt = "Sarah Phillips" >
