@@ -36,10 +36,10 @@
 				</p>
 				
 				<div id = "teamContact" ><!--<form action="">-->
-					<input type="radio" name="id" value="stocco"> Andrea Stocco<br>
-				    <input type="radio" name="id" value="manavalan"> Mathi Manavalan <br>
-					<input type="radio" name="id" value="phillips"> Sarah Phillips <br>
-					<input type="radio" name="id" value="wijaya"> Frederick Wijaya
+					<input type="radio" name="id" value="stocco"> <p class = "name" >  Andrea Stocco</p>
+				    <input type="radio" name="id" value="manavalan"> <p class = "name" >Mathi Manavalan</p>
+					<input type="radio" name="id" value="phillips"> <p class = "name" >Sarah Phillips</p>
+					<input type="radio" name="id" value="wijaya"> <p class = "name" >Frederick Wijaya</p>
 					
 				</div>
 				
@@ -47,7 +47,17 @@
 				
 				
 			<div id = "myAccount"  class = "generalBorder" >
-				MY ACCOUNT INFO
+				<p class = "generalHeading" >
+					My Account
+				</p>
+				
+				<div class = "accountHeads">
+					<p>mathi</p>
+					<p>mathi@uw.edu</p>
+					<p>*********</p>
+					<p>Standard Plan</p>
+				</div>
+				
 			</div>
 			
 			

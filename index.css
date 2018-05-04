@@ -267,7 +267,7 @@ html {
 }
 
 .name {
-	text-align: center;
+	text-align: left;
 }
 
 .desc {
@@ -315,7 +315,7 @@ html {
     padding: 14px 16px;
     transition: 0.3s;
     font-size: 17px;
-	
+	width: 200px;
 }
 
 #summaryBtn {
@@ -323,7 +323,7 @@ html {
 }
 
 #spectraBtn {
-	margin-left: 30%;
+	margin-left: 10%;
 }
 
 #coherenceBtn {
@@ -475,6 +475,26 @@ html {
 #myAccount {
 	float: left;
 	width: 30%;
+}
+
+#accountHeads {
+	float: left;
+	width: 50%;
+}
+
+#accountHeads p {
+	text-align: left;
+	
+}
+
+#teamContact input {
+	float: left;
+	margin-right: 10px;
+}
+
+#name {
+	text-align: left;
+	
 }
 
 #dataBtns {
