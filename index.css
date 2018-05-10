@@ -739,6 +739,18 @@ html {
 	margin-right: 70px;
 }
 
+#dataDropdown {
+	margin-left: 70px;
+}
+
+#resourcesDropdown {
+	margin-left: 200px;
+}
+
+#aboutDropdown {
+	margin-left: 385px;
+}
+
 #dropdown button {
 	margin-left: 70px;
 }
@@ -782,6 +794,8 @@ html {
     display: block;
 }
 
-.dropdown a:hover {background-color: #ddd}
+.dropdown a:hover {
+	background-color: #ddd
+}
 
 .show {display:block;}
