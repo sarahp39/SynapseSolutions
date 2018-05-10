@@ -44,6 +44,16 @@
 				</div>
 				
 			</div>
+			
+			<div id = "deleteFileModal" class = "modal">
+				<div id = "deleteFileDiv">
+					<p>Are you sure you want to delete this file?</p>
+					
+					<button id = "yesBtn"> Yes </button>
+					<button id = "noBtn"> No </button>
+				</div>
+				
+			</div>
 				
 				
 			<div id = "myAccount"  class = "generalBorder" >

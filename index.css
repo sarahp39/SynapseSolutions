@@ -124,7 +124,8 @@ html {
 #sign-in {
     background-color: #fefefe;
 	/*margin: auto;*/
-    margin-left: 25%; /* 15% from the top and centered */
+	margin-top: 15%;
+    margin-left: 40%; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
     /*width: 25%;  Could be more or less, depending on screen size */
@@ -133,7 +134,8 @@ html {
 
 #sign-up {
     background-color: #fefefe;
-    /*margin: auto;  15% from the top and centered */
+    margin-top: 15%;
+	margin-left: 40%;
 	/*margin: auto;*/
     padding: 20px;
     border: 1px solid #888;
@@ -144,6 +146,19 @@ html {
 #loginModal input {
 	
 	margin-bottom: 10px;
+}
+
+#deleteFileDiv {
+	background-color: #fefefe;
+    margin-top: 15%;
+	margin-left: auto;
+	margin-right: auto;
+	/*margin: auto;*/
+    padding: 20px;
+    border: 1px solid #888;
+	width: 25%;
+    /*width: 25%; /* Could be more or less, depending on screen size */
+	display: inline-block;
 }
 
 /* The Close Button */
@@ -724,6 +739,18 @@ html {
 	margin-right: 70px;
 }
 
+#dataDropdown {
+	margin-left: 70px;
+}
+
+#resourcesDropdown {
+	margin-left: 200px;
+}
+
+#aboutDropdown {
+	margin-left: 385px;
+}
+
 #dropdown button {
 	margin-left: 70px;
 }
@@ -767,6 +794,8 @@ html {
     display: block;
 }
 
-.dropdown a:hover {background-color: #ddd}
+.dropdown a:hover {
+	background-color: #ddd
+}
 
 .show {display:block;}
