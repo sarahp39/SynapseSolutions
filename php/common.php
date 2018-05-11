@@ -20,6 +20,7 @@
 ?>
 
 
+
 	<div id="topBanner">
 		<div>
 		
@@ -121,6 +122,20 @@
 		</div>
 		
 <?php
+	}
+	
+	function logoBodyStart() {
+?>
+
+<div id = "body"> <!-- REMOVE THIS BODY PORTION FROM COMMON PHP AND PUT BACK IN EVERY SEPARATE PHP FILE BC LOCATION OF IMG DEPENDS ON RELATIVE FILE -->
+		<!-- <h1>Synapse Systems</h1> -->
+		<a href = "../index.php">
+		
+			<img src = "../img/logo.png" alt="Synapse Systems logo" id = "logo" > <!-- looks blurry, get a better copy -->
+			
+		</a>
+<?php
+
 	}
 	
 	function bottomBanner() { // for all pages but index, cause the links are diff for index
