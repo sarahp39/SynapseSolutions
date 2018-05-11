@@ -22,6 +22,10 @@ html {
 }
 */
 
+#logo {
+	width: 25%;
+}
+
 .logBtns {
 	float: right;
 	margin-top: 10px;
@@ -544,7 +548,7 @@ html {
 	
 }
 
-#files div label {
+#files div a {
 	float: left;
 	text-align: left;
 	width: 200px;

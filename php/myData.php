@@ -5,20 +5,11 @@
 	head();
 	
 	topBanner();
+	
+	dropdowns();
+	
+	logoBodyStart();
 ?>
-
-	<div id = "body"> <!-- REMOVE THIS BODY PORTION FROM COMMON PHP AND PUT BACK IN EVERY SEPARATE PHP FILE BC LOCATION OF IMG DEPENDS ON RELATIVE FILE -->
-		<!-- <h1>Synapse Systems</h1> -->
-		<a href = "../index.php">
-		
-			<img src = "../img/logo.jpg" alt="Synapse Systems logo" > <!-- looks blurry, get a better copy -->
-			
-		</a>
-		
-		
-		<?php
-			dropdowns();
-		?>
 		
 		<!-- landing page welcome images/texts/scroll bying stuff-->
 		<div class = "mainArea">
@@ -127,6 +118,9 @@
 		</div>
 		
 		<script type="text/javascript" src="../myData.js"></script>
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
 		
 	</div> <!-- body id-->
 	
