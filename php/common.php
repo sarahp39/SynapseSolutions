@@ -93,32 +93,18 @@
 	function dropdowns() { //diff for index, links go to php/
 ?>
 
-		<div id="dropdown">
-			<!--onclick="myFunction()"-->
-			<button  class="dropbtn" id = "databtn" >DATA</button>
+		<div class="dropdown">
+						
+			<button class ="dropbtn"  style= "background-image: url('../img/drop.png');" >
 			
-			<div id="dataDropdown" class="dropdown-content"> <!-- id = "myDropdown-->
-				<a href="dataExplore.php">EXPLORE</a>
-				<a href="myData.php">MY DATA</a>
+			</button>
+			
+			<div id="myDropdown" class="dropdown-content">
 				<a href="dataUploadAnalysis.php">UPLOAD/ANALYSIS</a>
-			</div>
-			
-			
-			<button  class="dropbtn" id = "resourcesbtn" >RESOURCES</button>
-			
-			<div id="resourcesDropdown" class="dropdown-content"> <!-- id = "myDropdown-->
-				<a href="resourcesTutorials.php">TUTORIALS</a>
-				<a href="resourcesPublications.php">PUBLICATIONS</a>
-			</div>
-			
-			<button  class="dropbtn" id = "aboutbtn" >ABOUT</button>
-			
-			<div id="aboutDropdown" class="dropdown-content"> <!-- id = "myDropdown-->
-				<a href="aboutUs.php">ABOUT US</a>
-				<a href="aboutPricing.php">PRICING</a> <!-- prime? -->
 				<a href="aboutTerms.php">TERMS OF USE</a>
-			</div>
+				<a href="aboutUs.php">ABOUT US</a>
 			
+			</div>
 		</div>
 		
 <?php
