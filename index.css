@@ -758,6 +758,9 @@ html {
     position: relative;
     display: inline-block;
 	float: right;
+	
+	margin-top: 20px;
+	margin-right: 70px;
 }
 
 .dropdown-content {
