@@ -41,7 +41,7 @@
 			
 			<div id="myDropdown" class="dropdown-content">
 				<a href="php/dataUploadAnalysis.php">UPLOAD/ANALYSIS</a>
-				<a href="php/aboutTerms.php">TERMS OF USE</a>
+				<a href="php/terms.php">TERMS OF USE</a>
 				<a href="php/aboutUs.php">ABOUT US</a>
 			
 			</div>
@@ -159,7 +159,7 @@
 				
 				<a href = "php/aboutUs.php">ABOUT US</a><br>
 				<a href = "php/aboutPricing.php">PRICING</a><br>
-				<a href = "php/aboutTerms.php">TERMS OF USE</a>
+				<a href = "php/terms.php">TERMS OF USE</a>
 			
 			</div>
 			

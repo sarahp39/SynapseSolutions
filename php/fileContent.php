@@ -7,13 +7,10 @@
 	topBanner();
 	
 	logoBodyStart();
-?>
 
-
-		
-		
-		<?php
-			dropdowns();
+	dropdowns();
+	
+	
 		?>
 		
 		<!-- landing page welcome images/texts/scroll bying stuff-->
@@ -34,7 +31,15 @@
 
 					<div id="summary" class="tabcontent">
 						<h3>summary</h3>
-						<p>summary is the capital city of England.</p>
+						
+						<div id = "key">
+					
+						</div>
+						
+						<div id = "value">
+						
+						</div>
+					
 					</div>
 
 					<div id="spectra" class="tabcontent">
@@ -64,21 +69,13 @@
 								</div>
 							</div>
 						</div>
-						<!--<p>spectra is the capital of France.</p>-->
 					</div>
 
 					<div id="coherence" class="tabcontent">
 						<h3>coherence</h3>
-						<p>coherence is the capital of Japan.</p>
 					</div>
 					
-					<div id = "key">
 					
-					</div>
-					
-					<div id = "value">
-					
-					</div>
 			</div>
 				
 			
