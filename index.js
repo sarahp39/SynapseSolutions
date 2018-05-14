@@ -8,13 +8,17 @@ window.onload = function() {
 		console.log("onload toggle");
 		logToggle();
 		
-		var btnArr = document.getElementsByClassName("dropbtn");
+		var dropBtn = document.getElementsByClassName("dropbtn")[0];
 		
-		for (i = 0, len = btnArr.length; i < len; i++){
+		
+		
+		/*for (i = 0, len = btnArr.length; i < len; i++){
 			
 			
 			btnArr[i].onclick = myFunction;
-		}
+		}*/
+		
+		dropBtn.onclick = myFunction;
 		
 		console.log("hi");
 		
@@ -312,13 +316,38 @@ function logToggle() {
 	
 	
 }
+
+//DROPDOWN STUFF
+
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
 	
-	
+/*	
 
 function myFunction() {
 	
-	var btnArr = document.getElementsByClassName("dropbtn");
+	//var btnArr = document.getElementById("dropbtn");
 	
+	/*
 	for (j = 0; j < btnArr.length; j++) {
 		
 		if (btnArr[j].id != this.id) {
@@ -327,7 +356,13 @@ function myFunction() {
 		}
 	}
 	
-	document.getElementById(this.id.slice(0,-3).concat("Dropdown")).classList.toggle("show");
+	
+	document.getElementById("dataDropdown").classList.toggle("show");
+	
+	/*document.getElementById(btnArr[0].id.slice(0,-3).concat("Dropdown")).classList.remove("show");
+	
+	
+	//document.getElementById(this.id.slice(0,-3).concat("Dropdown")).classList.toggle("show");
     //document.getElementById("resourcesDropdown").classList.toggle("show"); // id was myDropdown
 }
 
@@ -336,7 +371,7 @@ function myFunction() {
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function(event) {
 	
-  if (!event.target.matches('.dropbtn')) { //if click anywhere other than a dropdown button, 'hide' all dropdowns
+  if (!event.target.matches('dropbtn')) { //if click anywhere other than a dropdown button, 'hide' all dropdowns
 
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
@@ -356,6 +391,7 @@ window.onclick = function(event) {
   
 }
 
+*/
 
 
 

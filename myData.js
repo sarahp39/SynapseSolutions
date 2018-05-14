@@ -6,72 +6,75 @@
     }
     
     */
-    var selectedFile;
-
-    window.addEventListener("load", function() {
-        $("#shareBtn").click(function() {
-            if (selectedFile != null) {
-                this.disabled = true;
-                var datatype = $("input[type='radio'][name='filter']:checked").val();
-                var auth = localStorage.getItem("auth");
-                var filename = selectedFile.split(".")[0];
-
-                var xhr = new XMLHttpRequest();
-                xhr.open("POST", "https://api.synapse-solutions.net/v1/" + datatype + "/?filename=" + filename);
-                xhr.setRequestHeader("Authorization", auth);
-                xhr.responseType = "arraybuffer";
-
-                xhr.onload = function () {
-                    if (this.status === 200) {
-                        $("#shareBtn").prop("disabled", false);
-                        var blob = new Blob([xhr.response], {type: "text/plain"});
-                        var objectUrl = URL.createObjectURL(blob);
-                        console.log("downloading...");
-                        var dlink = document.createElement('a');
-                        dlink.href = objectUrl;
-                        dlink.download = filename + '_' + datatype;
-                        dlink.click();
-                    }
-                };
-                xhr.send();
-            } else {
-                alert("please select a file");
-            }
-        })
-
-        $('#cleanBtn').on('click', function () {
-            if (selectedFile != null) {
-                var auth = localStorage.getItem("auth");
-                this.disabled = true;
-                var filename = selectedFile.split(".")[0];
-                // $('#default-loading').css("display", "inline-block");
-
-                var xhr = new XMLHttpRequest();
-                xhr.open("GET", "https://api.synapse-solutions.net/v1/clean/?filename=test_rest");
-                xhr.setRequestHeader("Authorization", auth);
-                xhr.responseType = "arraybuffer";
-
-                xhr.onload = function () {
-                    if (this.status === 200) {
-                        $("#cleanBtn").prop("disabled", false);
-                        var blob = new Blob([xhr.response], {type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"});
-                        var objectUrl = URL.createObjectURL(blob);
-                        console.log("cleaning...");
-                        var dlink = document.createElement('a');
-                        dlink.href = objectUrl;
-                        dlink.download = filename + '_cleaning';
-                        dlink.click();
-                    }
-                };
-                xhr.send();
-            } else {
-                alert("please select a file");
-            }
-        });
-    });
-    
-    // IF USER IS CURRENTLY LOGGED IN
+	
+	// IF USER IS CURRENTLY LOGGED IN
     if (localStorage.getItem("auth") != null) { //A USER IS LOGGED IN
+	
+		var selectedFile;
+
+		window.addEventListener("load", function() {
+			$("#shareBtn").click(function() {
+				if (selectedFile != null) {
+					this.disabled = true;
+					var datatype = $("input[type='radio'][name='filter']:checked").val();
+					var auth = localStorage.getItem("auth");
+					var filename = selectedFile.split(".")[0];
+
+					var xhr = new XMLHttpRequest();
+					xhr.open("POST", "https://api.synapse-solutions.net/v1/" + datatype + "/?filename=" + filename);
+					xhr.setRequestHeader("Authorization", auth);
+					xhr.responseType = "arraybuffer";
+
+					xhr.onload = function () {
+						if (this.status === 200) {
+							$("#shareBtn").prop("disabled", false);
+							var blob = new Blob([xhr.response], {type: "text/plain"});
+							var objectUrl = URL.createObjectURL(blob);
+							console.log("downloading...");
+							var dlink = document.createElement('a');
+							dlink.href = objectUrl;
+							dlink.download = filename + '_' + datatype;
+							dlink.click();
+						}
+					};
+					xhr.send();
+				} else {
+					alert("please select a file");
+				}
+			})
+
+			$('#cleanBtn').on('click', function () {
+				if (selectedFile != null) {
+					var auth = localStorage.getItem("auth");
+					this.disabled = true;
+					var filename = selectedFile.split(".")[0];
+					// $('#default-loading').css("display", "inline-block");
+
+					var xhr = new XMLHttpRequest();
+					xhr.open("GET", "https://api.synapse-solutions.net/v1/clean/?filename=test_rest");
+					xhr.setRequestHeader("Authorization", auth);
+					xhr.responseType = "arraybuffer";
+
+					xhr.onload = function () {
+						if (this.status === 200) {
+							$("#cleanBtn").prop("disabled", false);
+							var blob = new Blob([xhr.response], {type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"});
+							var objectUrl = URL.createObjectURL(blob);
+							console.log("cleaning...");
+							var dlink = document.createElement('a');
+							dlink.href = objectUrl;
+							dlink.download = filename + '_cleaning';
+							dlink.click();
+						}
+					};
+					xhr.send();
+				} else {
+					alert("please select a file");
+				}
+			});
+		});
+		
+    
     
         document.getElementById("viewBtn").onclick = function() {
             window.location.href = "fileContent.php";
@@ -121,8 +124,8 @@
 					//CLICK BEHAVIOR OF FILES
                     $("#files div a").click(function(e) {
                         selectedFile = e.target.innerHTML;
-                        $("#files div a").css("border", "none");
-                        e.target.style.border = "1px solid black";
+                        $("#files div a").css("backgroundColor", "white");
+                        e.target.style.backgroundColor = "#D3D3D3"; //.border
                         console.log(selectedFile);
                     });
                     
@@ -192,9 +195,16 @@
         }
         
         xmlFiles.send();
+		
+		// CLICKING ANYWHERE UNSELECTS THE FILE SELECTED (IF ANY)
+		window.onclick = function(event) {
+			if (!event.target.matches('a')) {
+				$("#files div a").css("backgroundColor", "white");
+			}
+		}
         
     } else {
-        document.getElementById("myDataMainArea").innerHTML = "Please log in to view your data!";
+        document.getElementById("contentArea").innerHTML = "Please log in to view your data!";
     }
     
     //DELETE SET UP

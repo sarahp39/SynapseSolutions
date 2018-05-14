@@ -32,33 +32,70 @@
 		</a>
 		
 		
+		
+		<div class="dropdown">
+						
+			<button class ="dropbtn"  style= "background-image: url('img/drop.png');" >
+			
+			</button>
+			
+			<div id="myDropdown" class="dropdown-content">
+				<a href="php/dataUploadAnalysis.php">UPLOAD/ANALYSIS</a>
+				<a href="php/terms.php">TERMS OF USE</a>
+				<a href="php/aboutUs.php">ABOUT US</a>
+			
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		<!--
 		<div id="dropdown">
-			<!--onclick="myFunction()"-->
+			onclick="myFunction()"
 			<button  class="dropbtn" id = "databtn" >DATA</button>
 			
-			<div id="dataDropdown" class="dropdown-content"> <!-- id = "myDropdown-->
-				<a href="php/dataExplore.php">EXPLORE</a>
-				<a href="php/myData.php">MY DATA</a>
+			<button id ="dropbtn"  style= "background-image: url('img/drop.png');" >
+			
+			</button>
+		
+			
+		</div>
+			
+			
+			
+			<div id="dataDropdown" class="dropdown-content"> 
 				<a href="php/dataUploadAnalysis.php">UPLOAD/ANALYSIS</a>
+				<a href="php/aboutTerms.php">TERMS OF USE</a>
+				<a href="php/aboutUs.php">ABOUT US</a>
+			
+			</div>
+				
+			
+				<a href="dataExplore.php">EXPLORE</a>
+				<a href="myData.php">MY DATA</a>
+				<a href="dataUploadAnalysis.php">UPLOAD/ANALYSIS</a>
 			</div>
 			
 			
 			<button  class="dropbtn" id = "resourcesbtn" >RESOURCES</button>
 			
-			<div id="resourcesDropdown" class="dropdown-content"> <!-- id = "myDropdown-->
-				<a href="php/resourcesTutorials.php">TUTORIALS</a>
-				<a href="php/resourcesPublications.php">PUBLICATIONS</a>
+			<div id="resourcesDropdown" class="dropdown-content">  id = "myDropdown
+				<a href="resourcesTutorials.php">TUTORIALS</a>
+				<a href="resourcesPublications.php">PUBLICATIONS</a>
 			</div>
 			
 			<button  class="dropbtn" id = "aboutbtn" >ABOUT</button>
 			
-			<div id="aboutDropdown" class="dropdown-content"> <!-- id = "myDropdown-->
-				<a href="php/aboutUs.php">ABOUT US</a>
-				<a href="php/aboutPricing.php">PRICING</a> <!-- prime? -->
-				<a href="php/aboutTerms.php">TERMS OF USE</a>
+			<div id="aboutDropdown" class="dropdown-content">  id = "myDropdown
+				<a href="aboutUs.php">ABOUT US</a>
+				<a href="aboutPricing.php">PRICING</a>  prime?
+				<a href="aboutTerms.php">TERMS OF USE</a>
 			</div>
 			
-		</div>
+			
+		</div> -->
 		
 		
 		
@@ -122,7 +159,7 @@
 				
 				<a href = "php/aboutUs.php">ABOUT US</a><br>
 				<a href = "php/aboutPricing.php">PRICING</a><br>
-				<a href = "php/aboutTerms.php">TERMS OF USE</a>
+				<a href = "php/terms.php">TERMS OF USE</a>
 			
 			</div>
 			

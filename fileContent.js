@@ -20,6 +20,8 @@ function openCity(evt, cityName) {
 
 if (localStorage.getItem("auth") != null) { //A USER IS LOGGED IN
 
+	
+
 	// DISPLAYING A SPECIFIC FILE
 		
 		var xml = new XMLHttpRequest(); //ajax
@@ -59,5 +61,5 @@ if (localStorage.getItem("auth") != null) { //A USER IS LOGGED IN
 		
 		
 } else {
-	document.getElementById("myDataMainArea").innerHTML = "Please log in to view your data!";
+	document.getElementById("contentArea").innerHTML = "Please log in to view your data!";
 }

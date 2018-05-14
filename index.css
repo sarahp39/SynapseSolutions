@@ -263,8 +263,15 @@ html {
 	text-align: center;
 }
 
+#teamPic {
+	height: 500px;
+	width: 900px;
+	display: block;
+	margin: auto;
+}
+
 #profilePics img {
-	height: 225px;
+	height: 250px;
 	width: 250px;
 	display: inline-block;
 	margin-right: 95px;
@@ -519,6 +526,7 @@ html {
 #dataBtns {
 	width: 60%;
 	margin-left: 50%;
+	
 }
 
 #fileOptionBtns {
@@ -539,13 +547,10 @@ html {
 
 #files {
 	float: left;
-	width: 300px;
-}
-
-#files div {
-	/*lign-item: left;*/
-	
-	
+	width: 350px;
+	height: 200px;
+	overflow: auto;
+	padding: 10px;
 }
 
 #files div a {
@@ -733,9 +738,64 @@ html {
 	
 }
 
+/*DROPDOWN STYLING NEW*/
+
+.dropbtn {
+    /*background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;*/
+    border: none;
+    cursor: pointer;
+	
+	height: 50px;
+	width: 50px;
+	
+	background-size: cover;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+	float: right;
+	
+	margin-top: 20px;
+	margin-right: 70px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+	background-color: #ddd;
+
+}
+
+.show {
+	display:block;
+}
 
 
-/* drop down styling */
+
+/* drop down styling OLD 
 
 #dropdown {
 	float: right;
@@ -743,10 +803,12 @@ html {
 	margin-right: 70px;
 }
 
-#dataDropdown {
-	margin-left: 70px;
-}
 
+
+#dataDropdown {
+	margin-left: 70px;	
+}
+/*
 #resourcesDropdown {
 	margin-left: 200px;
 }
@@ -759,27 +821,31 @@ html {
 	margin-left: 70px;
 }
 
-.dropbtn {
-    background-color: white;
+#dropBtn {
+   /*background-color: white;
     color: #B22222;
 	font-weight: bold;
 	font-family: "Helvetica";
-    /*padding: 16px;*/
+    padding: 16px;
     font-size: 16px;
     border: none;
     cursor: pointer;
+	height: 50px;
+	width: 50px;
+	
+	background-size: cover;
 }
 
 .dropbtn:hover, .dropbtn:focus {
     background-color: #B22222;
-	color: white;
+	/*color: white;*/
 
 }
 
 /*.dropdown {
     position: relative;
     display: inline-block;
-}*/
+}
 
 .dropdown-content {
     display: none;
@@ -803,3 +869,4 @@ html {
 }
 
 .show {display:block;}
+*/
