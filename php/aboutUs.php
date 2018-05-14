@@ -53,6 +53,8 @@
 			<div id = "us">
 				<p class = "generalHeading" > THE TEAM: </p>
 				
+				<img src = "../img/team.png" alt = "Team Picture" id  = "teamPic" >
+				
 				<div id = "profilePics" >
 					<img src = "../img/sarah.png" alt = "Sarah Phillips" >
 					<img src = "../img/fred.png" alt = "Frederick Wijaya" >

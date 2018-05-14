@@ -124,8 +124,8 @@
 					//CLICK BEHAVIOR OF FILES
                     $("#files div a").click(function(e) {
                         selectedFile = e.target.innerHTML;
-                        $("#files div a").css("border", "none");
-                        e.target.style.border = "1px solid black";
+                        $("#files div a").css("backgroundColor", "white");
+                        e.target.style.backgroundColor = "#D3D3D3"; //.border
                         console.log(selectedFile);
                     });
                     
@@ -195,6 +195,13 @@
         }
         
         xmlFiles.send();
+		
+		// CLICKING ANYWHERE UNSELECTS THE FILE SELECTED (IF ANY)
+		window.onclick = function(event) {
+			if (!event.target.matches('a')) {
+				$("#files div a").css("backgroundColor", "white");
+			}
+		}
         
     } else {
         document.getElementById("contentArea").innerHTML = "Please log in to view your data!";

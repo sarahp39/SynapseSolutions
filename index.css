@@ -263,8 +263,15 @@ html {
 	text-align: center;
 }
 
+#teamPic {
+	height: 500px;
+	width: 900px;
+	display: block;
+	margin: auto;
+}
+
 #profilePics img {
-	height: 225px;
+	height: 250px;
 	width: 250px;
 	display: inline-block;
 	margin-right: 95px;
@@ -540,13 +547,10 @@ html {
 
 #files {
 	float: left;
-	width: 300px;
-}
-
-#files div {
-	/*lign-item: left;*/
-	
-	
+	width: 350px;
+	height: 200px;
+	overflow: auto;
+	padding: 10px;
 }
 
 #files div a {

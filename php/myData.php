@@ -71,7 +71,7 @@
 						My Files
 					</p>
 					
-					<div id = "files">
+					<div id = "files" class = "generalBorder" >
 					<!--WHERE THE LIST OF UPLOADED FILES ARE DISPLAYED-->
 					</div>
 					
