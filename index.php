@@ -26,30 +26,19 @@
 	<div id = "body"> <!-- REMOVED THIS BODY PORTION FROM COMMON PHP AND PUT BACK IN EVERY SEPARATE PHP FILE BC LOCATION OF IMG DEPENDS ON RELATIVE FILE -->
 		<!-- <h1>Synapse Systems</h1> -->
 		<a href = "index.php">
-		
 			<img src = "img/logo.png" alt="Synapse Systems logo" id = "logo" >
-			
 		</a>
 		
-		
-		
-		<div class="dropdown">
-						
-			<button class ="dropbtn"  style= "background-image: url('img/drop.png');" >
-			
-			</button>
+		<div class="dropdown">			
+			<button class ="dropbtn"  style= "background-image: url('img/drop.png');" ></button>
 			
 			<div id="myDropdown" class="dropdown-content">
-				<a href="php/dataUploadAnalysis.php">UPLOAD/ANALYSIS</a>
+				<a href="php/dataUploadAnalysis.php">UPLOAD DATA</a>
+				<a href="php/myData.php">ANALYZE DATA</a>
 				<a href="php/terms.php">TERMS OF USE</a>
 				<a href="php/aboutUs.php">ABOUT US</a>
-			
 			</div>
 		</div>
-		
-		
-		
-		
 		
 		<!--
 		<div id="dropdown">
@@ -107,16 +96,19 @@
 		
 		<div id = "bottomHalf">
 		
-			<p>
-			With Synapse Systems, you can . . .
-			</p>
+		<p id="headerB">With Synapse Systems, you can . . .</p>
 			
-			<div id= "imgs">
-				<img src = "img/ReportsFeatureBadge.png" alt = "Reports Feature Badge" >
-				
-				<img src = "img/ShareDataBadge.png" alt = "Reports Feature Badge" >
-				
-				<img src = "img/InputDataBadge.png" alt = "Reports Feature Badge" >
+			<div id="col3">
+				<img src = "img/UploadIcon.png" alt = "Feature Badge" >
+				<p id="headerC"> Take your brain data and upload it into our platform.</p>
+			</div>
+			<div id="col3">
+				<img src = "img/AnalyzeIcon.png" alt = "Feature Badge" >
+				<p id="headerC"> Filter and clean your data. Analyze your results with customizable parameters.</p>
+			</div>
+			<div id="col3">
+				<img src = "img/ReportIcon.png" alt = "Feature Badge" >
+				<p id="headerC"> Export your analyzed data, share it with your colleagues, or create a publication/report. </p>
 			</div>
 			
 			<div id = "startBtnDiv" >
@@ -130,27 +122,15 @@
 		
 	</div> <!-- body id-->
 	
-	
-	<div id = "bottomBanner"> <!-- diff links from index page! -->
+	<!--
+	<div id = "bottomBanner"> 
 	
 		<div id = "links">
 			<div id = "dataDiv">
 				<label>DATA</label>
 				<br><br>
-				
-				<a href = "php/dataExplore.php">EXPLORE</a><br>
 				<a href = "php/myData.php">MY DATA</a><br>
 				<a href = "php/dataUploadAnalysis.php">UPLOAD/ANALYSIS</a>
-			
-			</div>
-			
-			<div id = "resourcesDiv">
-				<label>RESOURCES</label>
-				<br><br>
-				
-				<a href = "php/resourcesTutorials.php">HOW TOS</a><br>
-				<a href = "php/resourcesPublications.php">PUBLICATIONS</a><br>
-			
 			</div>
 			
 			<div id = "aboutDiv">
@@ -158,7 +138,6 @@
 				<br><br>
 				
 				<a href = "php/aboutUs.php">ABOUT US</a><br>
-				<a href = "php/aboutPricing.php">PRICING</a><br>
 				<a href = "php/terms.php">TERMS OF USE</a>
 			
 			</div>
@@ -169,5 +148,5 @@
 	
 		</div>
 	</div>
-	
+-->
 </html>

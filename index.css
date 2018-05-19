@@ -1,787 +1,68 @@
-/* 
+/* Starting with mobile first */ 
 
-html {
-	overflow: auto;
-}
-*/
-
+/* All pages */
 #topBanner {
-	/*position: fixed;*/
 	top: 0;
 	left: 0;
 	right: 0;
 	background-color: #B22222;
 	width: 100%;
-	height: 50px;
+	height: 100px;
+}
+#logo {
+	margin-left: 10px;
 	
 }
-/* only necessary if the top banner has position: fixed
-#spaceBelowTopBanner {
-	width: 100%;
-	height: 40px;
-}
-*/
-
-#logo {
-	width: 25%;
-}
-
 .logBtns {
 	float: right;
-	margin-top: 10px;
+	margin-top: 30px;
 	margin-right: 30px;
 	color: white;
 	background-color: #B22222;
 	border: none;
-	font-size: 16px;
+	font-size: 25px;
 	/*font-weight: bold;*/
 	font-family: "Helvetica";
 	letter-spacing: 3px;
 }
-
-#loginBtn {/*
-	float: right;
-	margin-top: 5px;
-	margin-right: 10px;
-	color: white;
-	background-color: #B22222;
-	border: none;
-	font-size: 16px;
-	font-family: "Helvetica";
-	letter-spacing: 3px;*/
-}
-
-#logoutBtn {
-
-	/*display: none;*/
-}
-
-
-/* general stuff bt pages */
-.mainArea {
-	text-align: center;
-
-	/*position: relative;
-	float: left;*/
-	
-	width: 100%;
-	height: 100%;
-}
-
-.mainTitle {
-	color: #B22222;
-	font-size: 20px;
-	/*text-align: center;*/
-	font-weight: bold;
-	font-family: "Helvetica";
-	letter-spacing: 3px;
-	margin-top: 10px;
-	margin-bottom: 20px;
-}
-
-.generalBorder {
-	border: 5px solid #B22222;
-	width: 100%;
-	padding: 20px;
-	/*height: 100px;*/
-	border-radius: 10px;
-	margin-bottom: 20px;
-	
-	/*display: flex;
-	flex-direction: column;
-	min-height: 100vh;*/
-}
-
-.generalHeading {
-	font-weight: bold;
-	font-size: 12pt;
-}
-
-
-
-
-
-
-
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-#loginModal { /* height and width this correctly..*/
-	/*margin: auto;*/
-	margin-left: 40%;
-	margin-top: 10%;
-}
-
-/* Modal Content/Box (model-content) */
-#sign-in {
-    background-color: #fefefe;
-	/*margin: auto;*/
-	margin-top: 15%;
-    margin-left: 40%; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    /*width: 25%;  Could be more or less, depending on screen size */
-	display: inline-block;
-}
-
-#sign-up {
-    background-color: #fefefe;
-    margin-top: 15%;
-	margin-left: 40%;
-	/*margin: auto;*/
-    padding: 20px;
-    border: 1px solid #888;
-    /*width: 25%; /* Could be more or less, depending on screen size */
-	display: inline-block;
-}
-
-#loginModal input {
-	
-	margin-bottom: 10px;
-}
-
-#deleteFileDiv {
-	background-color: #fefefe;
-    margin-top: 15%;
-	margin-left: auto;
-	margin-right: auto;
-	/*margin: auto;*/
-    padding: 20px;
-    border: 1px solid #888;
-	width: 25%;
-    /*width: 25%; /* Could be more or less, depending on screen size */
-	display: inline-block;
-}
-
-/* The Close Button */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-
-
-
-
-
-
-
-#body {
-	margin-left: 40px;
-	margin-right: 40px;
-	height: 100%;
-}
-
-/* index page */
-
-
-#landingDisplay {
-	margin-top: 10px;
-	background-color: #B22222;
-	height: 200px;
-	/*width: 100%;*/
-	margin-bottom: 50px;
-}
-
-#landingDisplay p {
-	text-align: center;
-	color: white;
-	font-weight: bold;
-	font-size: 40px;
-}
-
-
-
-
-
-
-
-
-
-
-
-/* about us page */
-
-#aboutMain {
-	
-}
-
-#aboutLandingImg {
-	height: 200px;
-	width: 100%;
-	margin-bottom: 20px;
-}
-
-#missionText {
-	text-align: center;
-	color: #B22222;
-	font-weight: bold;
-	font-size: 12pt;
-}
-
-#WebReqs {
-	margin-top: 50px;
-	margin-bottom: 50px;
-	overflow: hidden;
-}
-
-#WebReqs div {
-	float: left;
-	width: 40%;
-	height: 300px;
-	margin-right: 5%;
-	margin-left: 5%;
-	
-}
-
-#us {
-	margin-top: 50px;
-}
-
-#profilePics {
-	text-align: center;
-}
-
-#teamPic {
-	height: 500px;
-	width: 900px;
-	display: block;
-	margin: auto;
-}
-
-#profilePics img {
-	height: 250px;
-	width: 250px;
-	display: inline-block;
-	margin-right: 95px;
-	margin-left: 95px;
-	
-}
-
-#teamBios div {
-	height: 225px;
-	width: 250px;
-	display: inline-block;
-	margin-right: 95px;
-	margin-left: 100px;
-	
-}
-
-#teamBios div p {
-	font-weight: bold;
-}
-
-.name {
-	text-align: left;
-}
-
-.desc {
-	text-align: left;
-}
-
-#SSDesc {
-	text-align: center;
-	font-weight: bold;
-	font-size: 12pt;
-}
-
-#careersBtn {
-	margin-top: 40px;
-	margin-bottom: 40px;
-	text-align: center;
-}
-
-
-
-
-
-
-/* FILE CONTENT PAGE */
-
-#contentArea {
-	overflow: hidden; /* so that the key and value floating divs are actually contained by this border */
-}
-
-/* Style the tab */
-.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-}
-
-/* Style the buttons inside the tab */
-.tab button {
-    background-color: inherit;
-    float: left;
-	border: 5px solid #B22222;
-	border-radius: 10px;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-	width: 200px;
-}
-
-#summaryBtn {
-	float: left;
-}
-
-#spectraBtn {
-	margin-left: 25%;
-}
-
-#coherenceBtn {
-	float: right;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-    background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-    background-color: #ccc;
-	border-bottom: none;
-}
-
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-}
-
-
-/* TEST PARAM STYLING */
-
-.line {
-	fill: none;
-	stroke: navy;
-	stroke-width: 2px;
-	shape-rendering: crispEdges;
-}
-
-.axis line, .axis text {
-	fill: black;
-	font: 11px sans-serif;
-}
-
-.axis path {
-	fill: none;
-	stroke: #000;
-	shape-rendering: crispEdges;
-}
-
-.chart {
-	background-color: white;
-	border: 1px solid red;
-}
-
-#title {
-	background-color:white;
-	text-align: center;
-}
-
-#visualization {
-	text-align: center;
-}
-
-#brain-svg {
-	background-color: white;
-	border: 1px solid red;
-}
-
-#brain-cont {
-		fill: yellow;
-		padding: 5px;
-}
-
-.clickable-svg {
-	background-color: #F2B053l;
-}
-
-.nonclickable-svg {
-	fill: grey;
-}
-
-#reset, #cont1, #cont2 {
-	display:inline-block;
-	text-align:center;
-}
-
-.overlay {
-	fill: none;
-	pointer-events: all;
-}
-
-.focus circle {
-	fill: #F1F3F3;
-	stroke: #6F257F;
-	stroke-width: 5px;
-}
-
-.hover-line {
-	stroke: #6F257F;
-	stroke-width: 2px;
-	stroke-dasharray: 3,3;
-}
-
-
-
-
-
-/* my data page */
-
-#myFiles {
-	overflow: hidden;  /*so that the key and value floating divs are actually contained by this border */
-	
-}
-
-#key {
-	text-align: left;
-	font-weight: bold;
-	display: inline-block;
-	margin-left: 100px;
-	
-	float: left;
-}
-
-#value {
-	display: inline-block;
-	text-align: right;
-
-	float: right;
-	margin-right: 100px;
-}
-
-#fileIcon {
-	height: 40px;
-	width: 40px;
-}
-
-#welcome {
-	font-weight: bold;
-	font-size: 12pt;
-	font-family: "Helvetica";
-	letter-spacing: 3px;
-	margin-bottom: 20px;
-}
-
-#myTeam {
-	/*display: inline-block;*/
-	float: left;
-	width: 60%;
-	margin-right: 10%;
-}
-
-#myAccount {
-	float: left;
-	width: 30%;
-}
-
-#accountHeads {
-	float: left;
-	width: 50%;
-}
-
-#accountHeads p {
-	text-align: left;
-	
-}
-
-#teamContact input {
-	float: left;
-	margin-right: 10px;
-}
-
-#name {
-	text-align: left;
-	
-}
-
-#dataBtns {
-	width: 60%;
-	margin-left: 50%;
-	
-}
-
-#fileOptionBtns {
-	/*float: right;*/
-	/*margin-right: 20px;*/
-}
-
-#fileOptionBtns button {
-	width: 150px;
-	height: 50px;
-	margin-right: 40px;
-	margin-top: 20px;
-}
-
-#filterOptions {
-	margin-top: 20px;
-}
-
-#files {
-	float: left;
-	width: 350px;
-	height: 200px;
-	overflow: auto;
-	padding: 10px;
-}
-
-#files div a {
-	float: left;
-	text-align: left;
-	width: 200px;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	overflow: hidden;
-	margin-bottom: 10px;
-}
-
-#files div p {
-	width: 100px;
-	text-align: right;
-	height: 20px;
-}
-
-
-
-
-/* upload/analysis page */
-
-#uploadMainArea {
-	text-align: center;
-
-	/*position: relative;
-	float: left;*/
-	
-	width: 100%;
-	height: 100%;
-}
-
-#existingData {
-	border: 5px solid #B22222;
-	width: 100%;
-	padding: 20px;
-	/*height: 100px;*/
-	border-radius: 10px;
-	margin-bottom: 20px;
-	
-	/*display: flex;
-	flex-direction: column;
-	min-height: 100vh;*/
-}
-
-#uploadData {
-	border: 5px solid #B22222;
-	width: 100%;
-	height: 100%;
-	padding: 20px;
-	border-radius: 10px;
-	margin-bottom: 20px;
-	
-	/*overflow: auto;*/
-}
-
-#existingData p {
-	margin: 5px;
-	
-	/*flex: 1;*/
-}
-
-#dataSpec {
-	align: left;
-	width: 50%;
-}
-
-#dataSpec p {
-	text-align: left;
-}
-
-#uploadData p {
-	margin: 5px;
-}
-
-#uploadTitle {
-	color: #B22222;
-	font-size: 20px;
-	/*text-align: center;*/
-	font-weight: bold;
-	font-family: "Helvetica";
-	letter-spacing: 3px;
-	margin-top: 10px;
-	margin-bottom: 20px;
-}
-
-.subHeading {
-	/*text-align: center;*/
-	font-family: "Helvetica";
-	font-size: 18px;
-	font-weight: bold;
-}
-
-#uploadDesc {
-	/*text-align: center;*/
-	font-family: "Helvetica";
-	font-size: 14px;
-	font-weight: bold;
-	padding-bottom: 20px; /*because p tags are weird */
-}
-
-#myDataBtn {
-	margin-top: 10px;
-	background-color: #F2B053;
-	font-weight: bold;
-    padding: 10px;
-    border-radius: 10px;
-	margin-bottom: 20px;
-}
-
-#fileSubmitBtn {
-	margin-top: 10px;
-	background-color: #F2B053;
-	font-weight: bold;
-    padding: 10px;
-    border-radius: 10px;
-	margin-bottom: 20px;
-}
-
-
-
-
-
-
-
-
-
-#bottomHalf {
-	text-align: center;
-}
-
-#imgs img {
-	height: 250px;
-	width: 250px;
-	margin-right: 50px;
-	margin-left: 50px;
-}
-
-#bottomHalf p {
-	font-family: "Helvetica";
-	font-size: 20px;
-	font-weight: bold;
-	color: #B22222;
-	margin-bottom: 30px; 
-}
-
-#startBtnDiv {
-	margin-top: 40px;
-	margin-bottom: 40px;
-}
-
-.navBtn {
-	background-color: #F2B053;
-	font-weight: bold;
-    padding: 10px;
-    border-radius: 5px;
-	/*display: block;*/
-}
-
-
-#bottomBanner {
-	background-color: #B22222;
-    /*overflow: hidden;
-    position: fixed;*/
-    bottom: 0;
-	left: 0;
-	right: 0;
-    width: 100%;
-	/*height: 200px;*/
-}
-
-#links div {
-	display: inline-block;
-	vertical-align: top;
-	margin-top: 20px;
-	width: 20%;
-	padding-left: 10%;
-	margin-bottom: 20px;
-	font-family: "Helvetica";
-}
-
-#links label, a { /* i could override the bootstrap for the links color, but then its not obvious that they're links..*/
-	color: white;
-	
-}
-
 /*DROPDOWN STYLING NEW*/
-
 .dropbtn {
-    /*background-color: #3498DB;
-    color: white;
-    padding: 16px;
-    font-size: 16px;*/
-    border: none;
-    cursor: pointer;
-	
-	height: 50px;
-	width: 50px;
-	
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	height: 60px;
+	width: 60px;
 	background-size: cover;
+	margin-left: 45%; 
 }
-
+	
 .dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
+	background-color: #2980B9;
 }
 
 .dropdown {
-    position: relative;
-    display: inline-block;
-	float: right;
-	
-	margin-top: 20px;
-	margin-right: 100px;
+	display: inline-block;
+	width: 100%;
+	height: 60px;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+	display: none;
+	margin-left: 40%;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	overflow: auto;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
 }
 
 .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: center;
 }
 
 .dropdown a:hover {
@@ -792,81 +73,838 @@ html {
 .show {
 	display:block;
 }
-
-
-
-/* drop down styling OLD 
-
-#dropdown {
-	float: right;
-	margin-top: 20px;
-	margin-right: 70px;
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-
-
-#dataDropdown {
-	margin-left: 70px;	
-}
-/*
-#resourcesDropdown {
-	margin-left: 200px;
+#loginModal { /* height and width this correctly..*/
+	/*margin: auto;*/
+	margin-left: 40%;
+	margin-top: 10%;
 }
 
-#aboutDropdown {
-	margin-left: 385px;
+/* Modal Content/Box (model-content) */
+#sign-in {
+	background-color: #fefefe;
+	/*margin: auto;*/
+	margin-top: 15%;
+	margin-left: 40%; /* 15% from the top and centered */
+	padding: 20px;
+	border: 1px solid #888;
+	/*width: 25%;  Could be more or less, depending on screen size */
+	display: inline-block;
 }
 
-#dropdown button {
-	margin-left: 70px;
+#sign-up {
+	background-color: #fefefe;
+	margin-top: 15%;
+	margin-left: 40%;
+	/*margin: auto;*/
+	padding: 20px;
+	border: 1px solid #888;
+	/*width: 25%; /* Could be more or less, depending on screen size */
+	display: inline-block;
 }
 
-#dropBtn {
-   /*background-color: white;
-    color: #B22222;
-	font-weight: bold;
-	font-family: "Helvetica";
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-	height: 50px;
-	width: 50px;
+#loginModal input {
 	
-	background-size: cover;
+	margin-bottom: 10px;
 }
 
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #B22222;
-	/*color: white;*/
-
+#deleteFileDiv {
+	background-color: #fefefe;
+	margin-top: 15%;
+	margin-left: auto;
+	margin-right: auto;
+	/*margin: auto;*/
+	padding: 20px;
+	border: 1px solid #888;
+	width: 25%;
+	/*width: 25%; /* Could be more or less, depending on screen size */
+	display: inline-block;
 }
 
-/*.dropdown {
-    position: relative;
-    display: inline-block;
+/* The Close Button */
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
 }
 
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+/* Headers */
+.headerA{
+
+}
+#headerB{
+	margin: 20px;
+	font-size: 200%;
+	color: #B22222;
+	text-align: center;
+}
+#headerC{
+	margin: 20px;
+	font-size: 200%;
+	text-align: center;
+}
+.headerD{
+
+}
+#col3{
+	display: block;
+	margin: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#col3 img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	
 }
 
-.dropdown a:hover {
-	background-color: #ddd
-}
 
-.show {display:block;}
-*/
+
+
+/* Medium Screens */
+@media (min-width: 992px) {
+	#topBanner {
+		height: 50px;
+	
+	}
+	#logo {
+		margin-left: 0px;
+		width: 25%;
+	}
+	.logBtns {
+		margin-top: 15px;
+		font-size: 16px;
+	}
+
+	
+	
+	
+	
+	#loginBtn {/*
+		float: right;
+		margin-top: 5px;
+		margin-right: 10px;
+		color: white;
+		background-color: #B22222;
+		border: none;
+		font-size: 16px;
+		font-family: "Helvetica";
+		letter-spacing: 3px;*/
+	}
+	
+	#logoutBtn {
+	
+		/*display: none;*/
+	}
+	
+	
+	/* general stuff bt pages */
+	.mainArea {
+		text-align: center;
+	
+		/*position: relative;
+		float: left;*/
+		
+		width: 100%;
+		height: 100%;
+	}
+	
+	.mainTitle {
+		color: #B22222;
+		font-size: 20px;
+		/*text-align: center;*/
+		font-weight: bold;
+		font-family: "Helvetica";
+		letter-spacing: 3px;
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+	
+	.generalBorder {
+		border: 5px solid #B22222;
+		width: 100%;
+		padding: 20px;
+		/*height: 100px;*/
+		border-radius: 10px;
+		margin-bottom: 20px;
+		
+		/*display: flex;
+		flex-direction: column;
+		min-height: 100vh;*/
+	}
+	
+	.generalHeading {
+		font-weight: bold;
+		font-size: 12pt;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	#body {
+		margin-left: 40px;
+		margin-right: 40px;
+		height: 100%;
+	}
+	
+	/* index page */
+	
+	
+	#landingDisplay {
+		margin-top: 10px;
+		background-color: #B22222;
+		height: 200px;
+		/*width: 100%;*/
+		margin-bottom: 50px;
+	}
+	
+	#landingDisplay p {
+		text-align: center;
+		color: white;
+		font-weight: bold;
+		font-size: 40px;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/* about us page */
+	
+	#aboutMain {
+		
+	}
+	
+	#aboutLandingImg {
+		height: 200px;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	
+	#missionText {
+		text-align: center;
+		color: #B22222;
+		font-weight: bold;
+		font-size: 12pt;
+	}
+	
+	#WebReqs {
+		margin-top: 50px;
+		margin-bottom: 50px;
+		overflow: hidden;
+	}
+	
+	#WebReqs div {
+		float: left;
+		width: 40%;
+		height: 300px;
+		margin-right: 5%;
+		margin-left: 5%;
+		
+	}
+	
+	#us {
+		margin-top: 50px;
+	}
+	
+	#profilePics {
+		text-align: center;
+	}
+	
+	#teamPic {
+		height: 500px;
+		width: 900px;
+		display: block;
+		margin: auto;
+	}
+	
+	#profilePics img {
+		height: 250px;
+		width: 250px;
+		display: inline-block;
+		margin-right: 95px;
+		margin-left: 95px;
+		
+	}
+	
+	#teamBios div {
+		height: 225px;
+		width: 250px;
+		display: inline-block;
+		margin-right: 95px;
+		margin-left: 100px;
+		
+	}
+	
+	#teamBios div p {
+		font-weight: bold;
+	}
+	
+	.name {
+		text-align: left;
+	}
+	
+	.desc {
+		text-align: left;
+	}
+	
+	#SSDesc {
+		text-align: center;
+		font-weight: bold;
+		font-size: 12pt;
+	}
+	
+	#careersBtn {
+		margin-top: 40px;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+	
+	
+	
+	
+	
+	
+	/* FILE CONTENT PAGE */
+	
+	#contentArea {
+		overflow: hidden; /* so that the key and value floating divs are actually contained by this border */
+	}
+	
+	/* Style the tab */
+	.tab {
+		overflow: hidden;
+		border: 1px solid #ccc;
+		background-color: #f1f1f1;
+	}
+	
+	/* Style the buttons inside the tab */
+	.tab button {
+		background-color: inherit;
+		float: left;
+		border: 5px solid #B22222;
+		border-radius: 10px;
+		outline: none;
+		cursor: pointer;
+		padding: 14px 16px;
+		transition: 0.3s;
+		font-size: 17px;
+		width: 200px;
+	}
+	
+	#summaryBtn {
+		float: left;
+	}
+	
+	#spectraBtn {
+		margin-left: 25%;
+	}
+	
+	#coherenceBtn {
+		float: right;
+	}
+	
+	/* Change background color of buttons on hover */
+	.tab button:hover {
+		background-color: #ddd;
+	}
+	
+	/* Create an active/current tablink class */
+	.tab button.active {
+		background-color: #ccc;
+		border-bottom: none;
+	}
+	
+	/* Style the tab content */
+	.tabcontent {
+		display: none;
+		padding: 6px 12px;
+		border: 1px solid #ccc;
+		border-top: none;
+	}
+	
+	
+	/* TEST PARAM STYLING */
+	
+	.line {
+		fill: none;
+		stroke: navy;
+		stroke-width: 2px;
+		shape-rendering: crispEdges;
+	}
+	
+	.axis line, .axis text {
+		fill: black;
+		font: 11px sans-serif;
+	}
+	
+	.axis path {
+		fill: none;
+		stroke: #000;
+		shape-rendering: crispEdges;
+	}
+	
+	.chart {
+		background-color: white;
+		border: 1px solid red;
+	}
+	
+	#title {
+		background-color:white;
+		text-align: center;
+	}
+	
+	#visualization {
+		text-align: center;
+	}
+	
+	#brain-svg {
+		background-color: white;
+		border: 1px solid red;
+	}
+	
+	#brain-cont {
+			fill: yellow;
+			padding: 5px;
+	}
+	
+	.clickable-svg {
+		background-color: #F2B053;
+	}
+	
+	.nonclickable-svg {
+		fill: grey;
+	}
+	
+	#reset, #cont1, #cont2 {
+		display:inline-block;
+		text-align:center;
+	}
+	
+	.overlay {
+		fill: none;
+		pointer-events: all;
+	}
+	
+	.focus circle {
+		fill: #F1F3F3;
+		stroke: #6F257F;
+		stroke-width: 5px;
+	}
+	
+	.hover-line {
+		stroke: #6F257F;
+		stroke-width: 2px;
+		stroke-dasharray: 3,3;
+	}
+	
+	
+	
+	
+	
+	/* my data page */
+	
+	#myFiles {
+		overflow: hidden;  /*so that the key and value floating divs are actually contained by this border */
+		
+	}
+	
+	#key {
+		text-align: left;
+		font-weight: bold;
+		display: inline-block;
+		margin-left: 100px;
+		
+		float: left;
+	}
+	
+	#value {
+		display: inline-block;
+		text-align: right;
+	
+		float: right;
+		margin-right: 100px;
+	}
+	
+	#fileIcon {
+		height: 40px;
+		width: 40px;
+	}
+	
+	#welcome {
+		font-weight: bold;
+		font-size: 12pt;
+		font-family: "Helvetica";
+		letter-spacing: 3px;
+		margin-bottom: 20px;
+	}
+	
+	#myTeam {
+		/*display: inline-block;*/
+		float: left;
+		width: 60%;
+		margin-right: 10%;
+	}
+	
+	#myAccount {
+		float: left;
+		width: 30%;
+	}
+	
+	#accountHeads {
+		float: left;
+		width: 50%;
+	}
+	
+	#accountHeads p {
+		text-align: left;
+		
+	}
+	
+	#teamContact input {
+		float: left;
+		margin-right: 10px;
+	}
+	
+	#name {
+		text-align: left;
+		
+	}
+	
+	#dataBtns {
+		width: 60%;
+		margin-left: 50%;
+		
+	}
+	
+	#fileOptionBtns {
+		/*float: right;*/
+		/*margin-right: 20px;*/
+	}
+	
+	#fileOptionBtns button {
+		width: 150px;
+		height: 50px;
+		margin-right: 40px;
+		margin-top: 20px;
+	}
+	
+	#filterOptions {
+		margin-top: 20px;
+	}
+	
+	#files {
+		float: left;
+		width: 350px;
+		height: 200px;
+		overflow: auto;
+		padding: 10px;
+	}
+	
+	#files div a {
+		float: left;
+		text-align: left;
+		width: 200px;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		margin-bottom: 10px;
+	}
+	
+	#files div p {
+		width: 100px;
+		text-align: right;
+		height: 20px;
+	}
+	
+	
+	
+	
+	/* upload/analysis page */
+	
+	#uploadMainArea {
+		text-align: center;
+	
+		/*position: relative;
+		float: left;*/
+		
+		width: 100%;
+		height: 100%;
+	}
+	
+	#existingData {
+		border: 5px solid #B22222;
+		width: 100%;
+		padding: 20px;
+		/*height: 100px;*/
+		border-radius: 10px;
+		margin-bottom: 20px;
+		
+		/*display: flex;
+		flex-direction: column;
+		min-height: 100vh;*/
+	}
+	
+	#uploadData {
+		border: 5px solid #B22222;
+		width: 100%;
+		height: 100%;
+		padding: 20px;
+		border-radius: 10px;
+		margin-bottom: 20px;
+		
+		/*overflow: auto;*/
+	}
+	
+	#existingData p {
+		margin: 5px;
+		
+		/*flex: 1;*/
+	}
+	
+	#dataSpec {
+		align: left;
+		width: 50%;
+	}
+	
+	#dataSpec p {
+		text-align: left;
+	}
+	
+	#uploadData p {
+		margin: 5px;
+	}
+	
+	#uploadTitle {
+		color: #B22222;
+		font-size: 20px;
+		/*text-align: center;*/
+		font-weight: bold;
+		font-family: "Helvetica";
+		letter-spacing: 3px;
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+	
+	.subHeading {
+		/*text-align: center;*/
+		font-family: "Helvetica";
+		font-size: 18px;
+		font-weight: bold;
+	}
+	
+	#uploadDesc {
+		/*text-align: center;*/
+		font-family: "Helvetica";
+		font-size: 14px;
+		font-weight: bold;
+		padding-bottom: 20px; /*because p tags are weird */
+	}
+	
+	#myDataBtn {
+		margin-top: 10px;
+		background-color: #F2B053;
+		font-weight: bold;
+		padding: 10px;
+		border-radius: 10px;
+		margin-bottom: 20px;
+	}
+	
+	#fileSubmitBtn {
+		margin-top: 10px;
+		background-color: #F2B053;
+		font-weight: bold;
+		padding: 10px;
+		border-radius: 10px;
+		margin-bottom: 20px;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	#bottomHalf {
+		text-align: center;
+	}
+	
+	#imgs img {
+		height: 250px;
+		width: 250px;
+		margin-right: 50px;
+		margin-left: 50px;
+	}
+	
+	#bottomHalf p {
+		font-family: "Helvetica";
+		font-size: 20px;
+		font-weight: bold;
+		color: #B22222;
+		margin-bottom: 30px; 
+	}
+	
+	#startBtnDiv {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+	
+	.navBtn {
+		background-color: #F2B053;
+		font-weight: bold;
+		padding: 10px;
+		border-radius: 5px;
+		/*display: block;*/
+	}
+	
+	
+	#bottomBanner {
+		background-color: #B22222;
+		/*overflow: hidden;
+		position: fixed;*/
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		/*height: 200px;*/
+	}
+	
+	#links div {
+		display: inline-block;
+		vertical-align: top;
+		margin-top: 20px;
+		width: 20%;
+		padding-left: 10%;
+		margin-bottom: 20px;
+		font-family: "Helvetica";
+	}
+	
+	#links label, a { /* i could override the bootstrap for the links color, but then its not obvious that they're links..*/
+		color: white;
+		
+	}
+	
+	
+	
+	
+	
+	/* drop down styling OLD 
+	
+	#dropdown {
+		float: right;
+		margin-top: 20px;
+		margin-right: 70px;
+	}
+	
+	
+	
+	#dataDropdown {
+		margin-left: 70px;	
+	}
+	/*
+	#resourcesDropdown {
+		margin-left: 200px;
+	}
+	
+	#aboutDropdown {
+		margin-left: 385px;
+	}
+	
+	#dropdown button {
+		margin-left: 70px;
+	}
+	
+	#dropBtn {
+	   /*background-color: white;
+		color: #B22222;
+		font-weight: bold;
+		font-family: "Helvetica";
+		padding: 16px;
+		font-size: 16px;
+		border: none;
+		cursor: pointer;
+		height: 50px;
+		width: 50px;
+		
+		background-size: cover;
+	}
+	
+	.dropbtn:hover, .dropbtn:focus {
+		background-color: #B22222;
+		/*color: white;*/
+	
+	}
+	
+	/*.dropdown {
+		position: relative;
+		display: inline-block;
+	}
+	
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #f1f1f1;
+		min-width: 160px;
+		overflow: auto;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+	}
+	
+	.dropdown-content a {
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+	}
+	
+	.dropdown a:hover {
+		background-color: #ddd
+	}
+	
+	.show {display:block;}
+	*/
+}
