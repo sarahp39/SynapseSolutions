@@ -12,7 +12,6 @@
 		?>
 		
 
-		
 		<!-- upload/analysis page main area -->
 		<div id="uploadMainArea" class = "mainArea" > 
 			
@@ -114,6 +113,29 @@
 				
 				</div>
 			
+			</div>
+			
+			<!--<div id = "termsModal" class = "modal" > 
+			
+			
+				<span class = "close">&times;</span>
+				<p>I agree to the above stated terms and conditions.</p>
+				<input type="checkbox" id="termsCheckbox">
+				
+				
+			</div>-->
+			
+			<div id = "termsModal" class = "modal">
+					<div id = "termsDiv"> <!-- deleteFileDiv -->
+						
+						<p>I agree to the above stated terms and conditions.</p>
+						<input type="checkbox" id="termsCheckbox">
+						
+						<!--<button id = "yesBtn"> Yes </button>
+						<button id = "noBtn"> No </button>-->
+						
+					</div>
+					
 			</div>
 		
 		
