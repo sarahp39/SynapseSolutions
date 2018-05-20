@@ -10,8 +10,7 @@
 	height: 100px;
 }
 #logo {
-	margin-left: 10px;
-	
+	width: 50%;	
 }
 .logBtns {
 	float: right;
@@ -25,6 +24,13 @@
 	font-family: "Helvetica";
 	letter-spacing: 3px;
 }
+.startBtn{
+	background-color: #F2B053;
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 5px;
+}
+
 /*DROPDOWN STYLING NEW*/
 .dropbtn {
 	border: none;
@@ -73,6 +79,7 @@
 .show {
 	display:block;
 }
+
 /* The Modal (background) */
 .modal {
 	display: none; /* Hidden by default */
@@ -95,7 +102,7 @@
 
 /* Modal Content/Box (model-content) */
 #sign-in {
-	background-color: #fefefe;
+	background-color: grey;
 	/*margin: auto;*/
 	margin-top: 15%;
 	margin-left: 40%; /* 15% from the top and centered */
@@ -177,9 +184,31 @@
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 50%;
-	
+	width: 50%;	
 }
+#startBtnDiv {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.navBtn {
+	background-color: #F2B053;
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -198,28 +227,18 @@
 		margin-top: 15px;
 		font-size: 16px;
 	}
-
-	
-	
-	
-	
-	#loginBtn {/*
-		float: right;
-		margin-top: 5px;
-		margin-right: 10px;
-		color: white;
-		background-color: #B22222;
-		border: none;
-		font-size: 16px;
-		font-family: "Helvetica";
-		letter-spacing: 3px;*/
+	#col3{
+		display: inline-block;
+		margin: 20px;
+		margin-left: auto;
+		margin-right: auto;
 	}
-	
-	#logoutBtn {
-	
-		/*display: none;*/
+	#col3 img{
+		display: inline-block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 30%;	
 	}
-	
 	
 	/* general stuff bt pages */
 	.mainArea {
@@ -261,22 +280,6 @@
 		font-size: 12pt;
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	#body {
 		margin-left: 40px;
 		margin-right: 40px;
@@ -284,8 +287,6 @@
 	}
 	
 	/* index page */
-	
-	
 	#landingDisplay {
 		margin-top: 10px;
 		background-color: #B22222;
@@ -300,14 +301,6 @@
 		font-weight: bold;
 		font-size: 40px;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	
@@ -798,7 +791,6 @@
 		font-weight: bold;
 		padding: 10px;
 		border-radius: 5px;
-		/*display: block;*/
 	}
 	
 	
@@ -876,8 +868,6 @@
 	.dropbtn:hover, .dropbtn:focus {
 		background-color: #B22222;
 		/*color: white;*/
-	
-	}
 	
 	/*.dropdown {
 		position: relative;
