@@ -100,10 +100,10 @@
 			</button>
 			
 			<div id="myDropdown" class="dropdown-content">
-				<a href="dataUploadAnalysis.php">UPLOAD/ANALYSIS</a>
+				<a href="dataUploadAnalysis.php">UPLOAD DATA</a>
+				<a href="myData.php">ANALYZE DATA</a>
 				<a href="terms.php">TERMS OF USE</a>
 				<a href="aboutUs.php">ABOUT US</a>
-			
 			</div>
 		</div>
 		
