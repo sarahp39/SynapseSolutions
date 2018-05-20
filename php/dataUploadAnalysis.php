@@ -127,6 +127,15 @@
 			
 			<div id = "termsModal" class = "modal">
 					<div id = "termsDiv"> <!-- deleteFileDiv -->
+					
+						<div id = "terms" >
+<?php
+							terms();
+?>
+						
+						</div>
+						
+						<br>
 						
 						<p>I agree to the above stated terms and conditions.</p>
 						<input type="checkbox" id="termsCheckbox">
