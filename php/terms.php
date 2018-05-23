@@ -6,9 +6,11 @@
 	
 	topBanner();
 	
+	logoBodyStart();
+	
 	dropdowns();
 	
-	logoBodyStart();
+	
 	
 		?>
 	

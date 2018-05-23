@@ -96,19 +96,19 @@
 		
 		<div id = "bottomHalf">
 		
-		<p id="headerB">With Synapse Systems, you can . . .</p>
+		<p class="headerB">With Synapse Systems, you can . . .</p>
 			
 			<div id="col3">
 				<img src = "img/UploadIcon.png" alt = "Feature Badge" >
-				<p id="headerC"> Take your brain data and upload it into our platform.</p>
+				<p class="headerC"> Take your brain data and upload it into our platform.</p>
 			</div>
 			<div id="col3">
 				<img src = "img/AnalyzeIcon.png" alt = "Feature Badge" >
-				<p id="headerC"> Filter and clean your data. Analyze your results with customizable parameters.</p>
+				<p class="headerC"> Filter and clean your data. Analyze your results with customizable parameters.</p>
 			</div>
 			<div id="col3">
 				<img src = "img/ReportIcon.png" alt = "Feature Badge" >
-				<p id="headerC"> Export your analyzed data, share it with your colleagues, or create a publication/report. </p>
+				<p class="headerC"> Export your analyzed data, share it with your colleagues, or create a publication/report. </p>
 			</div>
 			
 			<div id = "startBtnDiv" >
