@@ -9,6 +9,15 @@
 	width: 100%;
 	height: 100px;
 }
+#bottomBanner {
+	background-color: #B22222;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100px;
+	display: block;
+}
 #logo {
 	width: 100%;	
 }
@@ -29,6 +38,13 @@
 	font-weight: bold;
 	padding: 10px;
 	border-radius: 5px;
+}
+.generalBorder {
+	border: 5px solid #B22222;
+	width: 100%;
+	padding: 20px;
+	border-radius: 10px;
+	margin-bottom: 20px;
 }
 
 /*DROPDOWN STYLING NEW*/
@@ -161,28 +177,28 @@
 }
 
 /* Headers */
-#headerA{
+.headerA{
 	margin: 20px;
 	font-size: 30px;
 	text-align: center; 
 }
-#headerB{
+.headerB{
 	margin: 20px;
 	font-size: 30px;
 	color: #B22222;
 	text-align: center;
 }
-#headerC{
+.headerC{
 	margin: 20px;
 	font-size: 25px;
 	text-align: center;
 }
-#headerD{
-	margin: 20px;
-	font-size: 25px;
+.headerD{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 20px;
 	color: darkgrey;
 }
-
 
 #col3{
 	display: block;
@@ -210,7 +226,29 @@
 	border-radius: 5px;
 }
 
+/* Terms of Use Page*/
 
+#TermsofUse{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* About Page*/
+.pic {
+	width: 100%;
+	display: block;
+	margin: auto;
+}
+#WebReqs{
+	width: 100%;
+	display: block;
+	margin: auto;
+}
+.stocco{
+	width: 80%;
+	margin: auto;
+}
 
 
 
@@ -231,6 +269,9 @@
 		height: 50px;
 	
 	}
+	#bottomBanner{
+		height: 50px;
+	}
 	#logo {
 		margin-left: 0px;
 		width: 25%;
@@ -245,7 +286,7 @@
 		margin: 20px;
 		margin-left: auto;
 		margin-right: auto;
-		width: 30%;
+		width: 33%;
 		vertical-align: 0%;
 	}
 	#col3 img{
@@ -260,19 +301,46 @@
 		
 	}
 	/* Headers */
-	#headerA{
+	.headerA{
 		font-size: 25px;
 	}
-	#headerB{
+	.headerB{
 		font-size: 20px;
 	}
-	#headerC{
+	.headerC{
 		font-size: 20px;
 	}
-	#headerD{
+	.headerD{
 		font-size: 20px;
 	}
-	
+	/* About Page*/
+	#probSol{
+		width: 50%;
+		margin:10px;
+		display: inline-block;
+		vertical-align: 0%;
+		
+	}
+	#probSol p{
+		display: block;
+	}
+	#WebReqs{
+		display: flex;
+	}
+	#teamBios{
+		display: flex;
+	}
+	#teamBios .headerC{
+		display: block;
+	}
+	#teamBios p{
+		display: block;
+		height: min-content;
+		width: 80%;
+		
+	}
+
+
 	/* general stuff bt pages */
 	.mainArea {
 		text-align: center;
@@ -299,13 +367,8 @@
 		border: 5px solid #B22222;
 		width: 100%;
 		padding: 20px;
-		/*height: 100px;*/
 		border-radius: 10px;
 		margin-bottom: 20px;
-		
-		/*display: flex;
-		flex-direction: column;
-		min-height: 100vh;*/
 	}
 	
 	.generalHeading {
@@ -334,104 +397,6 @@
 		font-weight: bold;
 		font-size: 40px;
 	}
-	
-	
-	
-	/* about us page */
-	
-	#aboutMain {
-		
-	}
-	
-	#aboutLandingImg {
-		height: 200px;
-		width: 100%;
-		margin-bottom: 20px;
-	}
-	
-	#missionText {
-		text-align: center;
-		color: #B22222;
-		font-weight: bold;
-		font-size: 12pt;
-	}
-	
-	#WebReqs {
-		margin-top: 50px;
-		margin-bottom: 50px;
-		overflow: hidden;
-	}
-	
-	#WebReqs div {
-		float: left;
-		width: 40%;
-		height: 300px;
-		margin-right: 5%;
-		margin-left: 5%;
-		
-	}
-	
-	#us {
-		margin-top: 50px;
-	}
-	
-	#profilePics {
-		text-align: center;
-	}
-	
-	#teamPic {
-		height: 500px;
-		width: 900px;
-		display: block;
-		margin: auto;
-	}
-	
-	#profilePics img {
-		height: 250px;
-		width: 250px;
-		display: inline-block;
-		margin-right: 95px;
-		margin-left: 95px;
-		
-	}
-	
-	#teamBios div {
-		height: 225px;
-		width: 250px;
-		display: inline-block;
-		margin-right: 95px;
-		margin-left: 100px;
-		
-	}
-	
-	#teamBios div p {
-		font-weight: bold;
-	}
-	
-	.name {
-		text-align: left;
-	}
-	
-	.desc {
-		text-align: left;
-	}
-	
-	#SSDesc {
-		text-align: center;
-		font-weight: bold;
-		font-size: 12pt;
-	}
-	
-	#careersBtn {
-		margin-top: 40px;
-		margin-bottom: 40px;
-		text-align: center;
-	}
-	
-	
-	
-	
-	
 	
 	/* FILE CONTENT PAGE */
 	
@@ -846,18 +811,6 @@
 		border-radius: 5px;
 	}
 	
-	
-	#bottomBanner {
-		background-color: #B22222;
-		/*overflow: hidden;
-		position: fixed;*/
-		bottom: 0;
-		left: 0;
-		right: 0;
-		width: 100%;
-		height: 100px;
-		/*height: 200px;*/
-	}
 	
 	#links div {
 		display: inline-block;

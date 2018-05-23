@@ -127,45 +127,7 @@
 	function bottomBanner() { // for all pages but index, cause the links are diff for index -NOT USED
 ?>
 
-		<div id = "bottomBanner"> 
-<!--
-		<div id = "links">
-			<div id = "dataDiv">
-				<label>DATA</label>
-				<br><br>
-				
-				<a href = "dataExplore.php">EXPLORE</a><br>
-				<a href = "myData.php">MY DATA</a><br>
-				<a href = "dataUploadAnalysis.php">UPLOAD/ANALYSIS</a>
-			
-			</div>
-			
-			<div id = "resourcesDiv">
-				<label>RESOURCES</label>
-				<br><br>
-				
-				<a href = "resourcesTutorials.php">HOW TOS</a><br>
-				<a href = "resourcesPublications.php">PUBLICATIONS</a><br>
-			
-			</div>
-			
-			<div id = "aboutDiv">
-				<label>ABOUT</label>
-				<br><br>
-				
-				<a href = "aboutUs.php">ABOUT US</a><br>
-				<a href = "aboutPricing.php">PRICING</a><br>
-				<a href = "terms.php">TERMS OF USE</a>
-			
-			</div>
-			
-			<div id = "socialMediaDiv">
-			
-			</div>
-	
-		</div>
-		-->
-	</div>
+		<div id = "bottomBanner"></div>
 
 <?php
 		
@@ -186,7 +148,7 @@
 	function terms() {
 ?>
 			
-				<p id = "headerA">Terms of Use</p>
+				<p class = "headerA">Terms of Use</p>
 
 				<p>Welcome to our company, Synapse Solutions™. It is a platform service, herefore referred to as the “Synapse Solution Services”, for anyone to easily upload, clean and manipulate electroencephalogram (EEG) data. 
 				These terms of use (“Terms”) are between Synapse Solutions and the subscribers to and users 
@@ -203,7 +165,7 @@
 				as well as individual users and creators acting for or on behalf of that organization.)
 				</p>
 
-				<p id = "headerC">Maintenance, Suspension, Termination, & Modification of Service</p>
+				<p class = "headerC">Maintenance, Suspension, Termination, & Modification of Service</p>
 
 				<p>Because the Synapse Solutions Services are evolving, we may change them or remove 
 				features at any time, without notice. The Synapse Solutions Services also may be 
@@ -216,7 +178,7 @@
 				may not be created, continued, enabled or supported with the Synapse Solutions Services.
 				</p>
 
-				<p id = "headerC">Users</p>
+				<p class = "headerC">Users</p>
 
 				<p>You must be 16 years or older to use the Synapse Solutions Services. Synapse Solutions is 
 				defined by data, configuration, and content ("Creator Content"). You retain all rights in and 
@@ -231,7 +193,7 @@
 				Solutions Services that are a component of Synapse Solutions Content (defined below), and that 
 				your rights in any Creator Content do not include any right to Synapse Solutions Content.
 				</p>
-				<p id = "headerD">How Synapse Solutions can use Creator Content</p>
+				<p class = "headerD">How Synapse Solutions can use Creator Content</p>
 				<p>You grant Synapse Solutions a non-exclusive, royalty-free, transferable, sublicensable, 
 				worldwide license to use, store, display, reproduce, save, modify, create derivative works, 
 				perform, and distribute your Creator Content on Synapse Solutions Services solely for the 
@@ -242,7 +204,7 @@
 				these Terms or our policies.
 				</p>
 
-				<p id = "headerC">Privacy</p>
+				<p class = "headerC">Privacy</p>
 				<p>We care about and respect the privacy of your data.
 				</p>
 				<p>Synapse Solutions' services asks for and stores some of your personal contact information, 
@@ -250,7 +212,7 @@
 				data across all its users. This privacy policy explains what data is recorded in each 
 				category and how this data is used.
 				</p>
-				<p id = "headerD">Uploaded Data</p>
+				<p class = "headerD">Uploaded Data</p>
 				<p>The data used and collected by your applications resides in a third-party storage 
 				provider (Amazon’s AWS). Our backend service does not persist this data. However, in order 
 				to improve performance, we may temporarily cache data, images and other files.
@@ -263,14 +225,14 @@
 				the client can be cached locally. This data is not visible to others excluding employees 
 				of Synapse Solutions and those you have chosen to share the data with (My Team). 
 				</p>
-				<p id = "headerD">Data Security and Durability</p>
+				<p class = "headerD">Data Security and Durability</p>
 				<p>We store user personal information and access tokens in databases hosted by 
 				cloud-computing hosting providers. We take reasonable technical steps to protect your 
 				information. However, we cannot guarantee that your information is immune to a breach in 
 				the security and privacy mechanisms implemented by us and the hosting providers.
 				</p>
 
-				<p id = "headerC">Synapse Solutions Content</p>
+				<p class = "headerC">Synapse Solutions Content</p>
 
 				<p>All content on Synapse Solutions except User Content and/or Creator Content is the 
 				proprietary property of Synapse Solutions. Subject to these Terms and any other applicable 
@@ -290,7 +252,7 @@
 				trademarks are protected by US and international trademark laws.
 				</p>
 
-				<p id = "headerC">No Warranties</p>
+				<p class = "headerC">No Warranties</p>
 
 				<p>Synapse Solutions, and all content, third-party content, products and services 
 				included in Synapse Solutions are provided “as is,” with no warranties whatsoever. Synapse 
@@ -303,7 +265,7 @@
 				any damage that results from your use of Synapse Solutions Services or Applications.
 				</p>
 
-				<p id = "headerC">Limitation of Liability</p>
+				<p class = "headerC">Limitation of Liability</p>
 
 				<p>Under no circumstances shall Synapse Solutions or its Suppliers be liable to you or 
 				anyone including without limitation subscribers, users or creators of the Synapse Solutions 
@@ -312,13 +274,13 @@
 				the interruption, suspension, or termination of the sites related to Synapse Solutions Services 
 				(and including such damages incurred by third parties).
 				</p>
-				<p id = "headerD">Disclaimer of Certain Damages</p>
+				<p class = "headerD">Disclaimer of Certain Damages</p>
 				<p>You agree that Synapse Solutions and its Suppliers, and each of their respective 
 				Officers, Directors, Stockholders, Members, and Employees are not and will not be liable 
 				to you for incidental, special, indirect, punitive or consequential damages, even if they 
 				were aware in advanced that such damages were possible.
 				</p>
-				<p id = "headerD">Limitation of Liability</p>
+				<p class = "headerD">Limitation of Liability</p>
 				<p>Limitation of Liability: In no event shall Synapse Solutions or its Suppliers, 
 				or their respective officers, directors, stockholders, members, and employees be liable to 
 				you for any damages arising out of your use of Synapse Solutions Services and Applications 
@@ -331,7 +293,7 @@
 				greatest extent permitted by applicable law.
 				</p>
 
-				<p id = "headerC">Indemnity</p>
+				<p class = "headerC">Indemnity</p>
 
 				<p>You agree to indemnify and hold Synapse Solutions and its Suppliers, their subsidiaries 
 				and affiliates, and each of their directors, officers, stockholders, members, agents, 
@@ -340,7 +302,7 @@
 				your use of Synapse Solutions Services.
 				</p>
 					
-				<p id = "headerC">Changes in Terms of Use</p>
+				<p class = "headerC">Changes in Terms of Use</p>
 
 				<p>We reserve the right to modify these Terms from time to time. If we modify these Terms, 
 				we will indicate that we have done so by updating the date above. Your continued access 
