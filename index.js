@@ -2,6 +2,10 @@ var modal;
 
 var auth;
 
+var username;
+
+var userEmail;
+
 window.onload = function() {
 		//document.getElementById("dropdown").onclick = myFunction;
 		
@@ -19,8 +23,6 @@ window.onload = function() {
 		}*/
 		
 		dropBtn.onclick = myFunction;
-		
-		console.log("hi");
 		
 		
 		
@@ -89,6 +91,8 @@ window.onload = function() {
 			var ajax = new XMLHttpRequest();
 
 			var email = document.getElementById("si-email").value;
+			//userEmail = email;
+			
 			var password = document.getElementById("si-password").value;
 
 			var obj = {
@@ -107,9 +111,15 @@ window.onload = function() {
 					console.log(auth);
 					localStorage.setItem('auth', auth);
 					
-					//logToggle();
 					
+					
+					
+					localStorage.setItem("userEmail", email);
+					//console.log(userEmail);
+					
+					//logToggle();
 					location.reload(); //refreshes page, which then runs the logToggle function from the beginning of the onload function
+					
 				} else if (this.readyState == 4 && this.status >= 300) {
 					var err = document.getElementById("err");
 					err.innerHTML = "error: " + this.responseText;
@@ -157,6 +167,8 @@ window.onload = function() {
                 console.log(auth);
                 localStorage.setItem('auth', auth);
 				
+				localStorage.setItem("userEmail", email);
+				
 				//logToggle();
 				
                 location.reload(); //refreshes page
@@ -195,6 +207,8 @@ window.onload = function() {
             if (this.readyState == 4 && this.status < 300) {
                 console.log(this.responseText);
                 localStorage.removeItem("auth");
+				
+				localStorage.removeItem("userEmail");
 				
 				//logToggle();
 				

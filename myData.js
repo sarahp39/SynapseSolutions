@@ -10,6 +10,14 @@
 	// IF USER IS CURRENTLY LOGGED IN
     if (localStorage.getItem("auth") != null) { //A USER IS LOGGED IN
 	
+	
+		//GRAB USER EMAIL TO WELCOME P TAG OF MY DATA PAGE
+		document.getElementById("welcome").innerHTML = "Hello, " + localStorage.getItem("userEmail") + " welcome to your Analysis page!";
+		
+		//document.getElementById("userName").innerHTML = localStorage.getItem( get the user name!
+		document.getElementById("userEmail").innerHTML = localStorage.getItem("userEmail");
+		
+	
 		var selectedFile;
 
 		window.addEventListener("load", function() {

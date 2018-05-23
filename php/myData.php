@@ -9,6 +9,8 @@
 	dropdowns();
 	
 	logoBodyStart();
+	
+	//hidden();
 ?>
 		
 		<!-- landing page welcome images/texts/scroll bying stuff-->
@@ -19,7 +21,7 @@
 			
 			<div id = "contentArea" >
 				<p id = "welcome" >
-					Hello Mathi, welcome to your Analysis page!
+					<!--content inserted by myData.js file-->
 				</p>
 				
 				<div id = "myTeam"  class = "generalBorder" >
@@ -54,10 +56,10 @@
 					</p>
 					
 					<div class = "accountHeads">
-						<p>mathi</p>
-						<p>mathi@uw.edu</p>
+						<p id = "userName" >mathi</p>
+						<p id = "userEmail" > </p>
 						<p>*********</p>
-						<p>Standard Plan</p>
+						<p id = "userPlan" >Standard Plan</p>
 					</div>
 					
 				</div>
@@ -119,9 +121,12 @@
 		</div>
 		
 		<script type="text/javascript" src="../myData.js"></script>
+		<!--<script type="text/javascript" src="index.js"></script>-->
 		<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+		
         <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
         <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+		
 		
 	</div> <!-- body id-->
 	

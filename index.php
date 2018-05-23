@@ -9,6 +9,7 @@
 		
 	//dropdowns(); diff links from index.php
 	
+	//hidden();
 	
 		?>
 <!DOCTYPE html>

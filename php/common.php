@@ -171,6 +171,18 @@
 		
 	}
 	
+	function hidden() {
+?>
+	<div id = "hiddenContent" >
+	
+		<p id = "userEmail">HIDDEN USER INFO IN COMMON</p>
+	
+	</div>
+
+<?php
+
+	}
+	
 	function terms() {
 ?>
 			
