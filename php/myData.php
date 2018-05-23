@@ -14,12 +14,12 @@
 		<!-- landing page welcome images/texts/scroll bying stuff-->
 		<div class = "mainArea">
 			<p class = "mainTitle" >
-				MY DATA
+				ANALYSIS
 			</p>
 			
 			<div id = "contentArea" >
 				<p id = "welcome" >
-					Hello Mathi, welcome to your My Data page!
+					Hello Mathi, welcome to your Analysis page!
 				</p>
 				
 				<div id = "myTeam"  class = "generalBorder" >
@@ -41,8 +41,8 @@
 					<div id = "deleteFileDiv">
 						<p>Are you sure you want to delete this file?</p>
 						
-						<button id = "yesBtn"> Yes </button>
-						<button id = "noBtn"> No </button>
+						<button class = "navBtn" id = "yesBtn"> Yes </button>
+						<button class = "navBtn" id = "noBtn"> No </button>
 					</div>
 					
 				</div>
