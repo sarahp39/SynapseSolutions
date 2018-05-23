@@ -122,7 +122,11 @@
 		
 	</div> <!-- body id-->
 	
-	<!--
+<?php
+	bottomBanner();
+?>
+	
+	<!--NOT USED
 	<div id = "bottomBanner"> 
 	
 		<div id = "links">

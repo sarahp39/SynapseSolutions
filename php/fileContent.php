@@ -118,10 +118,10 @@
 		<script src="../coherence.js"></script>
 		
 	</div> <!-- body id-->
-	
-	
+
 <?php
 	bottomBanner();
 ?>
+
 	
 </html>

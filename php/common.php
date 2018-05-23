@@ -124,10 +124,11 @@
 
 	}
 	
-	function bottomBanner() { // for all pages but index, cause the links are diff for index
+	function bottomBanner() { // for all pages but index, cause the links are diff for index -NOT USED
 ?>
-		<div id = "bottomBanner"> <!-- diff links from index page! -->
-	
+
+		<div id = "bottomBanner"> 
+<!--
 		<div id = "links">
 			<div id = "dataDiv">
 				<label>DATA</label>
@@ -163,6 +164,7 @@
 			</div>
 	
 		</div>
+		-->
 	</div>
 
 <?php

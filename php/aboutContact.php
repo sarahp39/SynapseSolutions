@@ -25,9 +25,8 @@
 		
 	</div> <!-- body id-->
 	
-	
 <?php
 	bottomBanner();
 ?>
-	
+
 </html>
