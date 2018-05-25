@@ -13,7 +13,9 @@ window.addEventListener("load", function() {
 					
 					termsModal.style.display = "block";
 					
-					
+					document.getElementById("closeTerms").onclick = function() {
+						termsModal.style.display = "none";
+					}
 					
 					//if (document.getElementById("termsCheckbox").checked) {
 					document.getElementById("termsCheckbox").onchange = function() {
