@@ -108,9 +108,9 @@
 						<div id = "filterOptions">
 						
 							<!--<label class = "radio-inline"><input type="radio" name="filter" value="all" checked> All </label>-->
-							<label class = "radio-inline"><input type="radio" name="filter" value="summary"> Summary </label>
-							<label class = "radio-inline"><input type="radio" name="filter" value="spectra" checked > Spectra </label>
-							<label class = "radio-inline"><input type="radio" name="filter" value="coherence"> Coherence </label>
+							<label class = "radio-inline"><input type="radio" name="filter" value="sumfile"> Summary </label>
+							<label class = "radio-inline"><input type="radio" name="filter" value="specfile" checked > Spectra </label>
+							<label class = "radio-inline"><input type="radio" name="filter" value="cohrfile"> Coherence </label>
 							
 						</div>
 					</div>
