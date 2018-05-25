@@ -87,6 +87,11 @@
         document.getElementById("viewBtn").onclick = function() {
             window.location.href = "fileContent.php";
         }
+		
+		
+		document.getElementById("uploadAgainBtn").onclick = function() {
+            window.location.href = "dataUploadAnalysis.php";
+        }
     
         // DISPLAYING A SPECIFIC FILE
         

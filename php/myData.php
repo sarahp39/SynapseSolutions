@@ -114,7 +114,11 @@
 						</div>
 					</div>
 					
-					
+					<div id = "uploadAgainBtnDiv">
+						<button id = "uploadAgainBtn" class = "navBtn">
+							Have another file to upload? Click here!
+						</button>
+					</div>
 					
 								
 				</div>

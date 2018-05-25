@@ -679,8 +679,19 @@
 		height: 20px;
 	}
 	
+	#uploadAgainBtnDiv {
+		clear: both;
+		
+	}
+	
+	#uploadAgainBtn {
+		float: left;
+	}
 	
 	
+	
+	
+
 	
 	/* upload/analysis page */
 	
