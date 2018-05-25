@@ -26,13 +26,12 @@
 
 .logBtns {
 	float: right;
-	margin-top: 30px;
-	margin-right: 30px;
+	margin-top: 20px;
+	margin-right: 20px;
 	color: white;
 	background-color: #B22222;
 	border: none;
-	font-size: 25px;
-	/*font-weight: bold;*/
+	font-size: 200%;
 	font-family: "Helvetica";
 	letter-spacing: 3px;
 }
@@ -55,13 +54,16 @@
 
 /*DROPDOWN STYLING NEW*/
 .dropbtn {
+	background-color: white;
 	border: none;
 	border-radius: 10px;
 	cursor: pointer;
 	height: 60px;
-	width: 60px;
-	background-size: cover;
-	margin-left: 47%; 
+	width: 10%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-left: 45%; 
+	
 }
 	
 .dropbtn:hover, .dropbtn:focus {
@@ -129,7 +131,6 @@
 /* Modal Content/Box (model-content) */
 #sign-in {
 	background-color: #fefefe;
-	/*margin: auto;*/
 	margin-top: 15%;
 	margin-left: 40%; /* 15% from the top and centered */
 	padding: 20px;
@@ -184,23 +185,23 @@
 /* Headers */
 .headerA{
 	margin: 20px;
-	font-size: 30px;
+	font-size: 200%;
 	text-align: center; 
 }
 .headerB{
 	margin: 20px;
-	font-size: 30px;
+	font-size: 200%;
 	color: #B22222;
 	text-align: center;
 }
 .headerC{
 	margin: 20px;
-	font-size: 25px;
+	font-size: 200%;
 	text-align: center;
 }
 .headerD{
 	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 200%;
 	font-size: 20px;
 	color: darkgrey;
 }
@@ -310,7 +311,7 @@
 	}
 	.logBtns {
 		margin-top: 15px;
-		font-size: 16px;
+		font-size: 100%;
 	}
 	.dropdown{
 		visibility: hidden;
@@ -355,6 +356,7 @@
 	/* Headers */
 	.headerA{
 		font-size: 25px;
+		font-weight: bold;
 	}
 	.headerB{
 		font-size: 20px;

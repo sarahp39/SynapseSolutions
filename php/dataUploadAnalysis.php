@@ -19,16 +19,9 @@
 		<!-- upload/analysis page main area -->
 		<div id="uploadMainArea" class = "mainArea" > 
 			
-			<p class="headerA" >
+			<p class="headerB" >
 				UPLOAD
 			</p>
-			
-			
-			<!--
-			<p id = "contributeDesc" >
-				Contributing to our brain loving society has never been easier.			
-			</p>
-			-->
 			
 			
 			<div id = "existingData" class = "generalBorder" >
@@ -41,7 +34,7 @@
 				</p>
 				
 				<a href = "myData.php">
-					<button id = "myDataBtn">
+					<button class = "navBtn">
 						Go to Analysis
 					</button>
 				</a>
