@@ -95,7 +95,7 @@
 							</button>
 						
 							<button class = "navBtn" id = "shareBtn" >
-								Share
+								Download
 							</button>
 					
 						</div>
@@ -104,9 +104,9 @@
 						<!-- the four radio buttons -->
 						<div id = "filterOptions">
 						
-							<label class = "radio-inline"><input type="radio" name="filter" value="all" checked> All </label>
+							<!--<label class = "radio-inline"><input type="radio" name="filter" value="all" checked> All </label>-->
 							<label class = "radio-inline"><input type="radio" name="filter" value="summary"> Summary </label>
-							<label class = "radio-inline"><input type="radio" name="filter" value="spectra"> Spectra </label>
+							<label class = "radio-inline"><input type="radio" name="filter" value="spectra" checked > Spectra </label>
 							<label class = "radio-inline"><input type="radio" name="filter" value="coherence"> Coherence </label>
 							
 						</div>
