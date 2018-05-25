@@ -109,7 +109,7 @@
 					</form>
 					
 					
-						<button class = "navBtn"  > <!--id = "fileSubmitBtn"-->
+						<button class = "navBtn" id = "fileSubmitBtn"-->
 							Submit
 						</button>
 					
