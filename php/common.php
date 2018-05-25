@@ -113,10 +113,10 @@
 	function dropdown2() {
 ?>
 		<div id = "dropdown2">
-			<a href="dataUploadAnalysis.php" >UPLOAD DATA</a>
-			<a href="myData.php" >ANALYZE DATA</a>
-			<a href="terms.php"  >TERMS OF USE</a>
 			<a href="aboutUs.php"  >ABOUT US</a>
+			<a href="terms.php"  >TERMS OF USE</a>
+			<a href="myData.php" >ANALYZE DATA</a>
+			<a href="dataUploadAnalysis.php" >UPLOAD DATA</a>
 		
 		</div>
 
