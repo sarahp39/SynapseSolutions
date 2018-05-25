@@ -49,24 +49,8 @@
 			</div>
 		</div>
 		
-
-		<!-- landing page welcome images/texts/scroll bying stuff-->
-		<div id = "landingDisplay">
-			<!-- CAROSEL -->
-			
-			<a href = "http://greymattersjournal.com/brain-machine-interfaces/">
-				<img src = "img/greymattersBCI.png" alt = "Grey Matters BCI article" id = "bciArticle" class = "mySlides" >
-			</a>
-			<a href = "http://greymattersjournal.com/cutting-for-the-competition-how-dehydration-affects-the-brain/">
-				<img src = "img/greymattersDehydration.png" alt = "Grey Matters dehydration article" id = "hyderationArticle" class = "mySlides" >
-			</a>
-			<a href = "http://greymattersjournal.com/rest-assured/">
-				<img src = "img/greymattersRest.png" alt = "Grey Matters rest article" id = "restArticle" class = "mySlides" >
-			</a>
-			
-			<!--buttons to scroll through articles -->
-			<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-			<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+		<div class="hpDisplay">
+			<img src = "img/homePage.png" alt = picture of a woman working with Synapse Solutions on her laptop>
 			
 		</div>
 		
@@ -93,6 +77,26 @@
 					Start for Free
 				</button>
 			</div>
+			
+		</div>
+
+		<!-- landing page welcome images/texts/scroll bying stuff-->
+		<div id = "landingDisplay">
+			<!-- CAROSEL -->
+			
+			<a href = "http://greymattersjournal.com/brain-machine-interfaces/">
+				<img src = "img/greymattersBCI.png" alt = "Grey Matters BCI article" id = "bciArticle" class = "mySlides" >
+			</a>
+			<a href = "http://greymattersjournal.com/cutting-for-the-competition-how-dehydration-affects-the-brain/">
+				<img src = "img/greymattersDehydration.png" alt = "Grey Matters dehydration article" id = "hyderationArticle" class = "mySlides" >
+			</a>
+			<a href = "http://greymattersjournal.com/rest-assured/">
+				<img src = "img/greymattersRest.png" alt = "Grey Matters rest article" id = "restArticle" class = "mySlides" >
+			</a>
+			
+			<!--buttons to scroll through articles -->
+			<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+			<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
 			
 		</div>
 		

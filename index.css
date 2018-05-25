@@ -230,6 +230,14 @@
 	padding: 10px;
 	border-radius: 5px;
 }
+/* Home Page*/
+
+.hpDisplay img{
+	display: block;
+	width: 90%;
+	margin: auto;
+	margin-top: 25px;
+}
 
 /* Terms of Use Page*/
 
@@ -268,6 +276,11 @@
 
 
 
+
+
+
+
+
 /* Medium Screens */
 @media (min-width: 992px) {
 	#topBanner {
@@ -287,6 +300,7 @@
 	}
 	.dropdown{
 		visibility: hidden;
+		height: 1px;
 	}
 	.dropdown2 {
 		visibility: visible;
@@ -337,6 +351,13 @@
 	.headerD{
 		font-size: 20px;
 	}
+	/* Home Page*/
+
+	.hpDisplay img{
+		width: 100%;
+		margin-top: 0px;
+	}
+	
 	/* About Page*/
 	#probSol{
 		width: 50%;
