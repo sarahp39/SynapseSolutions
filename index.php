@@ -30,7 +30,15 @@
 			<img src = "img/logo.png" alt="Synapse Systems logo" id = "logo" >
 		</a>
 		
-		<div class="dropdown"  style = "display: none;" >			
+		<div class = "dropdown2">
+			<a href="php/aboutUs.php"  >ABOUT US</a>
+			<a href="php/terms.php"  >TERMS OF USE</a>
+			<a href="php/myData.php" >ANALYZE DATA</a>
+			<a href="php/dataUploadAnalysis.php" >UPLOAD DATA</a>		
+		
+		</div>
+
+		<div class="dropdown" >			
 			<button class ="dropbtn"  style= "background-image: url('img/drop.png');" ></button>
 			
 			<div id="myDropdown" class="dropdown-content" >
@@ -41,62 +49,7 @@
 			</div>
 		</div>
 		
-		<div id = "dropdown2">
-			<a href="php/aboutUs.php"  >ABOUT US</a>
-			<a href="php/terms.php"  >TERMS OF USE</a>
-			<a href="php/myData.php" >ANALYZE DATA</a>
-			<a href="php/dataUploadAnalysis.php" >UPLOAD DATA</a>		
-		
-		</div>
-		
-		<!--
-		<div id="dropdown">
-			onclick="myFunction()"
-			<button  class="dropbtn" id = "databtn" >DATA</button>
-			
-			<button id ="dropbtn"  style= "background-image: url('img/drop.png');" >
-			
-			</button>
-		
-			
-		</div>
-			
-			
-			
-			<div id="dataDropdown" class="dropdown-content"> 
-				<a href="php/dataUploadAnalysis.php">UPLOAD/ANALYSIS</a>
-				<a href="php/aboutTerms.php">TERMS OF USE</a>
-				<a href="php/aboutUs.php">ABOUT US</a>
-			
-			</div>
-				
-			
-				<a href="dataExplore.php">EXPLORE</a>
-				<a href="myData.php">MY DATA</a>
-				<a href="dataUploadAnalysis.php">UPLOAD/ANALYSIS</a>
-			</div>
-			
-			
-			<button  class="dropbtn" id = "resourcesbtn" >RESOURCES</button>
-			
-			<div id="resourcesDropdown" class="dropdown-content">  id = "myDropdown
-				<a href="resourcesTutorials.php">TUTORIALS</a>
-				<a href="resourcesPublications.php">PUBLICATIONS</a>
-			</div>
-			
-			<button  class="dropbtn" id = "aboutbtn" >ABOUT</button>
-			
-			<div id="aboutDropdown" class="dropdown-content">  id = "myDropdown
-				<a href="aboutUs.php">ABOUT US</a>
-				<a href="aboutPricing.php">PRICING</a>  prime?
-				<a href="aboutTerms.php">TERMS OF USE</a>
-			</div>
-			
-			
-		</div> -->
-		
-		
-		
+
 		<!-- landing page welcome images/texts/scroll bying stuff-->
 		<div id = "landingDisplay">
 			<!-- CAROSEL -->

@@ -8,9 +8,9 @@
 	
 	logoBodyStart();
 
-	dropdowns();
-	
 	dropdown2();
+
+	dropdowns();
 	
 	
 		?>

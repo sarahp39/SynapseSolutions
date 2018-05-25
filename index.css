@@ -69,9 +69,13 @@
 }
 
 .dropdown {
+	visibility: visible;
 	display: inline-block;
 	width: 100%;
 	height: 60px;
+}
+.dropdown2{
+	visibility: hidden;
 }
 
 .dropdown-content {
@@ -100,22 +104,6 @@
 
 .show {
 	display:block;
-}
-
-#dropdown2 {
-	float: right;
-	margin-top: 30px;
-}
-
-#dropdown2 a {
-	float: right;
-	margin-right: 30px;
-	color: #B22222;
-	border: none;
-	font-size: 14px;
-	/*font-weight: bold;*/
-	font-family: "Helvetica";
-	letter-spacing: 3px;
 }
 
 /* The Modal (background) */
@@ -154,10 +142,8 @@
 	background-color: #fefefe;
 	margin-top: 15%;
 	margin-left: 40%;
-	/*margin: auto;*/
 	padding: 20px;
 	border: 1px solid #888;
-	/*width: 25%; /* Could be more or less, depending on screen size */
 	display: inline-block;
 }
 
@@ -166,9 +152,6 @@
 	margin-bottom: 10px;
 }
 
-#hiddenContent {
-	/*display: none;*/
-}
 
 #deleteFileDiv {
 	background-color: #fefefe;
@@ -302,7 +285,26 @@
 		margin-top: 15px;
 		font-size: 16px;
 	}
+	.dropdown{
+		visibility: hidden;
+	}
+	.dropdown2 {
+		visibility: visible;
+		display: block;
+		float: right;
+		margin-top: 30px;
+	}
 	
+	.dropdown2 a {
+		float: right;
+		margin-right: 30px;
+		color: #B22222;
+		border: none;
+		font-size: 14px;
+		/*font-weight: bold;*/
+		font-family: "Helvetica";
+		letter-spacing: 3px;
+	}
 	#col3{
 		display: inline-block;
 		margin: 20px;

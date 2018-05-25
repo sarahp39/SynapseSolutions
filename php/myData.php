@@ -5,12 +5,13 @@
 	head();
 	
 	topBanner();
-	
-	dropdowns();
-	
+
+	logoBodyStart();
+
 	dropdown2();
 	
-	logoBodyStart();
+	dropdowns();
+
 	
 	//hidden();
 ?>

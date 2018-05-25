@@ -93,7 +93,7 @@
 	function dropdowns() { //diff for index, links go to php/
 ?>
 
-		<div class="dropdown" style = "display: none;" >
+		<div class="dropdown" >
 						
 			<button class ="dropbtn"  style= "background-image: url('../img/drop.png');" >
 			
@@ -112,7 +112,7 @@
 	
 	function dropdown2() {
 ?>
-		<div id = "dropdown2">
+		<div class = "dropdown2">
 			<a href="aboutUs.php"  >ABOUT US</a>
 			<a href="terms.php"  >TERMS OF USE</a>
 			<a href="myData.php" >ANALYZE DATA</a>

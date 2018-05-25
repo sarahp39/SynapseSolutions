@@ -6,11 +6,13 @@
 	
 	topBanner();
 
+	logoBodyStart();
+
+	dropdown2();
+
 	dropdowns();
 	
-	dropdown2();
-	
-	logoBodyStart();
+
 		?>
 		
 		<!-- landing page welcome images/texts/scroll bying stuff-->

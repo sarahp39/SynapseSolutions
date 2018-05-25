@@ -7,10 +7,12 @@
 	topBanner();
 	
 	logoBodyStart();
+
+	dropdown2();
 	
 	dropdowns();
 	
-	dropdown2();
+
 	
 		?>
 	
