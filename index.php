@@ -16,7 +16,7 @@
 <!-- -->
 <html>
 	<head>
-		<title>Synapse Systems</title>
+		<title>Synapse Solutions</title>
 		
 		<link rel="stylesheet" type="text/css" href="index.css" />
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
