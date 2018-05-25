@@ -108,14 +108,18 @@ window.onload = function() {
 				if (this.readyState == 4 && this.status < 300) {
 					
 					auth = this.getResponseHeader("Authorization");
+					
 					console.log(auth);
 					localStorage.setItem('auth', auth);
 					
 					
 					
 					
+					
 					localStorage.setItem("userEmail", email);
 					//console.log(userEmail);
+					
+					
 					
 					//logToggle();
 					location.reload(); //refreshes page, which then runs the logToggle function from the beginning of the onload function
@@ -128,11 +132,12 @@ window.onload = function() {
 			
 			
 			ajax.send(json);
-			
-			//console.log("sign in toggle, " + auth);
-			
+						
+			console.log("reached here");
 			document.getElementById("signInModal").style.display = "none";
 			document.getElementById("signUpModal").style.display = "none";
+			
+			
 		});
 		
 		
@@ -179,11 +184,11 @@ window.onload = function() {
         }
         ajax.send(json);
 		
-		console.log("sign up toggle");
 		
 		//document.getElementById("loginModal").style.display = "none";
 		document.getElementById("signInModal").style.display = "none";
 		document.getElementById("signUpModal").style.display = "none";
+		
     });
 	
 	
@@ -210,9 +215,14 @@ window.onload = function() {
 				
 				localStorage.removeItem("userEmail");
 				
+				
+				
 				//logToggle();
 				
                 location.reload();
+				
+				
+				
             } else if (this.readyState == 4 && this.status >= 300) {
                 var err = document.getElementById("err");
                 err.innerHTML = this.responseText;
@@ -220,10 +230,7 @@ window.onload = function() {
         }
 		
         ajax.send();
-		
-		console.log("logout toggle");
-		
-		
+				
     });
 	
 	
@@ -320,12 +327,22 @@ function logToggle() {
 		
 		document.getElementById("logoutBtn").style.display = "none";
 		
+		// show the start button if not logged in
+		if (document.getElementById("startBtnDiv") != null) {
+			document.getElementById("startBtnDiv").style.display = "block";
+		}
+		
 	} else { //signed in
 		console.log("toggle: signed in");
 		document.getElementById("signInBtn").style.display = "none";
 		document.getElementById("signUpBtn").style.display = "none";
 		document.getElementById("or").style.display = "none";
 		document.getElementById("logoutBtn").style.display = "initial";
+		
+		// hide the start button if already logged in!!
+		if (document.getElementById("startBtnDiv") != null) {
+			document.getElementById("startBtnDiv").style.display = "none";
+		}
 	}
 	
 	

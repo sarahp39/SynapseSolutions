@@ -91,13 +91,16 @@
 		
 		<!-- landing page welcome images/texts/scroll bying stuff-->
 		<div id = "landingDisplay">
+			<a href = "http://greymattersjournal.com/brain-machine-interfaces/">
+				<img src = "img/greymattersBCI.png" alt = "Grey Matters BCI article" id = "bciArticle" >
+			</a>
 			
 		</div>
 		
 		
 		<div id = "bottomHalf">
 		
-		<p class="headerB">With Synapse Systems, you can . . .</p>
+			<p class="headerB">With Synapse Systems, you can . . .</p>
 			
 			<div id="col3">
 				<img src = "img/UploadIcon.png" alt = "Feature Badge" >
@@ -127,31 +130,4 @@
 	bottomBanner();
 ?>
 	
-	<!--NOT USED
-	<div id = "bottomBanner"> 
-	
-		<div id = "links">
-			<div id = "dataDiv">
-				<label>DATA</label>
-				<br><br>
-				<a href = "php/myData.php">MY DATA</a><br>
-				<a href = "php/dataUploadAnalysis.php">UPLOAD/ANALYSIS</a>
-			</div>
-			
-			<div id = "aboutDiv">
-				<label>ABOUT</label>
-				<br><br>
-				
-				<a href = "php/aboutUs.php">ABOUT US</a><br>
-				<a href = "php/terms.php">TERMS OF USE</a>
-			
-			</div>
-			
-			<div id = "socialMediaDiv">
-			
-			</div>
-	
-		</div>
-	</div>
--->
 </html>

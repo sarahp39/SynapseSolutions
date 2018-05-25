@@ -379,24 +379,31 @@
 	#body {
 		margin-left: 40px;
 		margin-right: 40px;
-		height: 100%;
+		/*height: 100%;*/
 	}
 	
 	/* index page */
 	#landingDisplay {
 		margin-top: 10px;
-		background-color: #B22222;
-		height: 200px;
+		/*background-color: #B22222;*/
+		/*height: 500px;*/
 		/*width: 100%;*/
 		margin-bottom: 50px;
+		/*overflow: auto;*/
+		
 	}
 	
-	#landingDisplay p {
+	#landingDisplay img {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	/*#landingDisplay p {
 		text-align: center;
 		color: white;
 		font-weight: bold;
 		font-size: 40px;
-	}
+	}*/
 	
 	/* FILE CONTENT PAGE */
 	

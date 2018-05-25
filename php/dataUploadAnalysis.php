@@ -9,7 +9,8 @@
 	dropdowns();
 	
 	logoBodyStart();
-		?>
+
+?>
 		
 
 		<!-- upload/analysis page main area -->
@@ -85,7 +86,9 @@
 					</form>
 					-->
 					
+					
 					<form id="upload-file" enctype="multipart/form-data" class="uploadForm">
+						<!--
 						<p> What is the format of your file? </p>
 						
 						<label class = "radio-inline"><input type="radio" name="fileFormat" value=".csv" checked> CSV </label>
@@ -98,6 +101,7 @@
 						
 						<label class = "radio-inline"><input type="radio" name="filePrivacy" value="private" checked> Private </label>
 						<label class = "radio-inline"><input type="radio" name="filePrivacy" value="public"> Public </label>
+						-->
 						
 						<input class="uploadForm__input" type="file" name="file" id="inputFile" accept=".txt">
 						
@@ -105,7 +109,7 @@
 					</form>
 					
 					
-						<button id = "fileSubmitBtn" >
+						<button class = "navBtn"  > <!--id = "fileSubmitBtn"-->
 							Submit
 						</button>
 					
