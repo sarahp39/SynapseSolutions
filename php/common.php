@@ -50,7 +50,7 @@
 					<input type="submit" name="Submit">
 				</fieldset>
 				
-				<div id="err"> Error message </div>
+				<!--<div id="err"> Error message </div>-->
 				
 				
 			</form>
@@ -93,7 +93,7 @@
 	function dropdowns() { //diff for index, links go to php/
 ?>
 
-		<div class="dropdown">
+		<div class="dropdown" style = "display: none;" >
 						
 			<button class ="dropbtn"  style= "background-image: url('../img/drop.png');" >
 			
@@ -107,6 +107,19 @@
 			</div>
 		</div>
 		
+<?php
+	}
+	
+	function dropdown2() {
+?>
+		<div id = "dropdown2">
+			<a href="dataUploadAnalysis.php" >UPLOAD DATA</a>
+			<a href="myData.php" >ANALYZE DATA</a>
+			<a href="terms.php"  >TERMS OF USE</a>
+			<a href="aboutUs.php"  >ABOUT US</a>
+		
+		</div>
+
 <?php
 	}
 	

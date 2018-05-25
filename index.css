@@ -102,6 +102,22 @@
 	display:block;
 }
 
+#dropdown2 {
+	float: right;
+	margin-top: 30px;
+}
+
+#dropdown2 a {
+	float: right;
+	margin-right: 30px;
+	color: #B22222;
+	border: none;
+	font-size: 14px;
+	/*font-weight: bold;*/
+	font-family: "Helvetica";
+	letter-spacing: 3px;
+}
+
 /* The Modal (background) */
 .modal {
 	display: none; /* Hidden by default */

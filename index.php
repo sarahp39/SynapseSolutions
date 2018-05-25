@@ -30,7 +30,7 @@
 			<img src = "img/logo.png" alt="Synapse Systems logo" id = "logo" >
 		</a>
 		
-		<div class="dropdown">			
+		<div class="dropdown" style = "display: none;" >			
 			<button class ="dropbtn"  style= "background-image: url('img/drop.png');" ></button>
 			
 			<div id="myDropdown" class="dropdown-content">
@@ -39,6 +39,14 @@
 				<a href="php/terms.php">TERMS OF USE</a>
 				<a href="php/aboutUs.php">ABOUT US</a>
 			</div>
+		</div>
+		
+		<div id = "dropdown2">
+			<a href="php/dataUploadAnalysis.php" >UPLOAD DATA</a>
+			<a href="php/myData.php" >ANALYZE DATA</a>
+			<a href="php/terms.php"  >TERMS OF USE</a>
+			<a href="php/aboutUs.php"  >ABOUT US</a>
+		
 		</div>
 		
 		<!--
