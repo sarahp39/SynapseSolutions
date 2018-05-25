@@ -238,6 +238,20 @@
 	margin: auto;
 	margin-top: 25px;
 }
+#landingDisplay{
+	width: 90%;
+	display: block;
+	margin: auto;
+}
+
+#landingDislay .articleBtns button{
+	display: inline-block;
+	margin: auto
+}
+#landingDisplay .myslides{
+	display: inline-block;
+	margin: auto;
+} 
 
 /* Terms of Use Page*/
 
@@ -375,14 +389,19 @@
 	#teamBios{
 		display: flex;
 	}
-	#teamBios .headerC{
-		display: block;
-	}
 	#teamBios p{
 		display: block;
 		height: min-content;
-		width: 80%;
+		width: 50%;
+		margin: auto;
 		
+	}
+	#teamBios .headerC{
+		width: 70%;
+		display: block;
+	}
+	#teamBios img{
+		width: 75%;
 	}
 
 

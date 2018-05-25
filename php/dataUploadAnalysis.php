@@ -19,8 +19,8 @@
 		<!-- upload/analysis page main area -->
 		<div id="uploadMainArea" class = "mainArea" > 
 			
-			<p id="uploadTitle" class  = "mainTitle" >
-				DATA UPLOAD/ANALYSIS
+			<p class="headerA" >
+				UPLOAD
 			</p>
 			
 			
@@ -32,17 +32,17 @@
 			
 			
 			<div id = "existingData" class = "generalBorder" >
-				<p class = "subHeading" >
+				<p class = "headerC" >
 					Already have data or reports?
 				</p>
 				
-				<p id = "uploadDesc" >
+				<p class = "headerC" >
 					Just make it public by changing the folder settings.
 				</p>
 				
 				<a href = "myData.php">
 					<button id = "myDataBtn">
-						Go to My Data
+						Go to Analysis
 					</button>
 				</a>
 				

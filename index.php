@@ -83,7 +83,8 @@
 		<!-- landing page welcome images/texts/scroll bying stuff-->
 		<div id = "landingDisplay">
 			<!-- CAROSEL -->
-			
+			<p class = "headerC"> Want to learn more about the Brain?</p>
+			<p class = "headerC"> Here are some articles from Grey Matters about the brain. Take a look!</p>
 			<a href = "http://greymattersjournal.com/brain-machine-interfaces/">
 				<img src = "img/greymattersBCI.png" alt = "Grey Matters BCI article" id = "bciArticle" class = "mySlides" >
 			</a>
@@ -95,9 +96,10 @@
 			</a>
 			
 			<!--buttons to scroll through articles -->
-			<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-			<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
-			
+			<div class = "articleBtns">
+				<button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+				<button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+			</div>
 		</div>
 		
 		
