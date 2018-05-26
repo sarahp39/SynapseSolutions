@@ -244,14 +244,32 @@
 	margin: auto;
 }
 
-#landingDislay .articleBtns button{
+#slideLeftBtnDiv {
 	display: inline-block;
-	margin: auto
 }
-#landingDisplay .myslides{
+
+#slideRightBtnDiv {
 	display: inline-block;
-	margin: auto;
+}
+
+#slideRightBtnDiv button {
+	height: 50px;
+	width: 50px;
+}
+
+#slideLeftBtnDiv button {
+	height: 50px;
+	width: 50px;
+}
+
+#landingDisplay a { /*.mySlides*/
+	display: inline-block;
+	margin: 0px;
 } 
+
+#carousel {
+	text-align: center;
+}
 
 /* Terms of Use Page*/
 
@@ -457,17 +475,10 @@
 		
 	}
 	
-	#landingDisplay img {
-		margin-left: auto;
-		margin-right: auto;
-	}
 	
-	/*#landingDisplay p {
-		text-align: center;
-		color: white;
-		font-weight: bold;
-		font-size: 40px;
-	}*/
+	
+	
+	
 	
 	/* FILE CONTENT PAGE */
 	
