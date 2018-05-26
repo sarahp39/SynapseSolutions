@@ -18,17 +18,17 @@
 		
 		<!-- landing page welcome images/texts/scroll bying stuff-->
 		<div class = "mainArea">
-			<p class = "mainTitle" >
+			<p class = "headerB" >
 				ANALYSIS
 			</p>
 			
 			<div id = "contentArea" >
-				<p id = "welcome" >
+				<p id = "welcome" class = "headerD" >
 					<!--content inserted by myData.js file-->
 				</p>
 				
 				<div id = "myTeam"  class = "generalBorder" >
-					<p class = "generalHeading" >
+					<p class = "headerC" >
 						My Team
 					</p>
 					
@@ -54,7 +54,7 @@
 					
 					
 				<div id = "myAccount"  class = "generalBorder" >
-					<p class = "generalHeading" >
+					<p class = "headerC" >
 						My Account
 					</p>
 					
