@@ -29,7 +29,7 @@
 					Already have data or reports?
 				</p>
 				
-				<p class = "headerC" >
+				<p>
 					Just make it public by changing the folder settings.
 				</p>
 				
@@ -48,11 +48,11 @@
 			
 			
 			<div id = "uploadData" class = "generalBorder" >
-				<p class = "subHeading" >
+				<p class = "headerC" >
 					Need to upload data or reports?
 				</p>
 				
-				<p id = "uploadDesc" >
+				<p>
 					Simply upload your data or reports using the form below.
 			
 				</p>

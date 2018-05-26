@@ -75,7 +75,7 @@
 	visibility: visible;
 	display: inline-block;
 	width: 100%;
-	height: 200px;
+	height: 100px;
 }
 .dropdown2{
 	visibility: hidden;
@@ -202,9 +202,12 @@
 }
 .headerD{
 	margin-top: 20px;
-	margin-bottom: 200%;
-	font-size: 20px;
+	font-size: 200%;
 	color: darkgrey;
+}
+p{
+	font-size: 150%;
+	text-align: center;
 }
 
 #col3{
@@ -227,10 +230,13 @@
 }
 
 .navBtn {
+	font-size: 150%;
 	background-color: #F2B053;
 	font-weight: bold;
 	padding: 10px;
 	border-radius: 5px;
+	display: block;
+	margin: auto;
 }
 /* Home Page*/
 
@@ -278,6 +284,8 @@
 	width: 80%;
 	margin: auto;
 }
+
+/* Upload Page */
 
 
 
@@ -354,19 +362,34 @@
 		display: flex;
 		
 	}
+	.navBtn {
+		size: 100%;
+		padding: 10px;
+		border-radius: 5px;
+	}
+
 	/* Headers */
 	.headerA{
-		font-size: 25px;
+
 		font-weight: bold;
 	}
 	.headerB{
-		font-size: 20px;
+
+		font-weight: bold;
 	}
 	.headerC{
-		font-size: 20px;
+
+		font-weight: bold;
 	}
 	.headerD{
-		font-size: 20px;
+
+		font-weight: bold;
+	}
+	p{
+		font-size: initial;
+		text-align: initial;
+		margin-top: 20px;
+		margin-bottom: 20px;
 	}
 	/* Home Page*/
 
@@ -754,13 +777,9 @@
 		border: 5px solid #B22222;
 		width: 100%;
 		padding: 20px;
-		/*height: 100px;*/
 		border-radius: 10px;
 		margin-bottom: 20px;
-		
-		/*display: flex;
-		flex-direction: column;
-		min-height: 100vh;*/
+
 	}
 	
 	#uploadData {
@@ -775,14 +794,14 @@
 	}
 	
 	#existingData p {
-		margin: 5px;
+		margin: 20px;
 		
 		/*flex: 1;*/
 	}
 	
 	#dataSpec {
 		align: left;
-		width: 50%;
+		width: 100%;
 	}
 	
 	#dataSpec p {
@@ -912,81 +931,4 @@
 		
 	}
 	
-	
-	
-	
-	
-	/* drop down styling OLD 
-	
-	#dropdown {
-		float: right;
-		margin-top: 20px;
-		margin-right: 70px;
-	}
-	
-	
-	
-	#dataDropdown {
-		margin-left: 70px;	
-	}
-	/*
-	#resourcesDropdown {
-		margin-left: 200px;
-	}
-	
-	#aboutDropdown {
-		margin-left: 385px;
-	}
-	
-	#dropdown button {
-		margin-left: 70px;
-	}
-	
-	#dropBtn {
-	   /*background-color: white;
-		color: #B22222;
-		font-weight: bold;
-		font-family: "Helvetica";
-		padding: 16px;
-		font-size: 16px;
-		border: none;
-		cursor: pointer;
-		height: 50px;
-		width: 50px;
-		
-		background-size: cover;
-	}
-	
-	.dropbtn:hover, .dropbtn:focus {
-		background-color: #B22222;
-		/*color: white;*/
-	
-	/*.dropdown {
-		position: relative;
-		display: inline-block;
-	}
-	
-	.dropdown-content {
-		display: none;
-		position: absolute;
-		background-color: #f1f1f1;
-		min-width: 160px;
-		overflow: auto;
-		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-		z-index: 1;
-	}
-	
-	.dropdown-content a {
-		color: black;
-		padding: 12px 16px;
-		text-decoration: none;
-		display: block;
-	}
-	
-	.dropdown a:hover {
-		background-color: #ddd
-	}
-	
-	.show {display:block;}
-	*/
 }
