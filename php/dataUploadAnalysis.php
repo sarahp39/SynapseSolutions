@@ -19,16 +19,9 @@
 		<!-- upload/analysis page main area -->
 		<div id="uploadMainArea" class = "mainArea" > 
 			
-			<p class="headerA" >
+			<p class="headerB" >
 				UPLOAD
 			</p>
-			
-			
-			<!--
-			<p id = "contributeDesc" >
-				Contributing to our brain loving society has never been easier.			
-			</p>
-			-->
 			
 			
 			<div id = "existingData" class = "generalBorder" >
@@ -36,12 +29,12 @@
 					Already have data or reports?
 				</p>
 				
-				<p class = "headerC" >
+				<p>
 					Just make it public by changing the folder settings.
 				</p>
 				
 				<a href = "myData.php">
-					<button id = "myDataBtn">
+					<button class = "navBtn">
 						Go to Analysis
 					</button>
 				</a>
@@ -55,11 +48,11 @@
 			
 			
 			<div id = "uploadData" class = "generalBorder" >
-				<p class = "subHeading" >
+				<p class = "headerC" >
 					Need to upload data or reports?
 				</p>
 				
-				<p id = "uploadDesc" >
+				<p>
 					Simply upload your data or reports using the form below.
 			
 				</p>
