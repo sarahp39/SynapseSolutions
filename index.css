@@ -26,12 +26,12 @@
 
 .logBtns {
 	float: right;
-	margin-top: 20px;
-	margin-right: 20px;
+	margin-top: 30px;
+	margin-right: 5%;
 	color: white;
 	background-color: #B22222;
 	border: none;
-	font-size: 200%;
+	font-size: 175%;
 	font-family: "Helvetica";
 	letter-spacing: 3px;
 }
@@ -184,6 +184,10 @@
 }
 
 /* Headers */
+p{
+	font-size: 150%;
+	text-align: center;
+}
 .headerA{
 	margin: 20px;
 	font-size: 200%;
@@ -205,10 +209,7 @@
 	font-size: 200%;
 	color: darkgrey;
 }
-p{
-	font-size: 150%;
-	text-align: center;
-}
+
 
 #col3{
 	display: block;
@@ -261,13 +262,17 @@ p{
 }
 
 #slideRightBtnDiv button {
-	height: 50px;
-	width: 50px;
+	height: 80px;
+	width: 80px;
+	font-size: 300%;
+	margin: 20px;
 }
 
 #slideLeftBtnDiv button {
-	height: 50px;
-	width: 50px;
+	height: 80px;
+	width: 80px;
+	font-size: 300%;
+	margin: 20px;
 }
 .placeholder{
 	display: inline-block;
@@ -314,6 +319,25 @@ p{
 }
 
 /* Upload Page */
+
+
+/* Analyze Page */
+input{
+	display: inline-block;
+}
+
+.name{
+	display: inline-block;
+	width: 90%;
+}
+#fileOptionBtns{
+	margin: auto;
+}
+#fileOptionBtns button{
+	display: inline-block;
+	width: 49%;
+	margin-bottom: 10px;
+}
 
 
 
@@ -457,7 +481,19 @@ p{
 	#teamBios img{
 		width: 75%;
 	}
-
+	#slideRightBtnDiv button {
+		height: 50px;
+		width: 50px;
+	}
+	
+	#slideLeftBtnDiv button {
+		height: 50px;
+		width: 50px;
+	}
+	#landingDisplay {
+		margin-top: 10px;
+		margin-bottom: 50px;
+	}
 
 	/* general stuff bt pages */
 	.mainArea {
@@ -501,15 +537,7 @@ p{
 	}
 	
 	/* index page */
-	#landingDisplay {
-		margin-top: 10px;
-		/*background-color: #B22222;*/
-		/*height: 500px;*/
-		/*width: 100%;*/
-		margin-bottom: 50px;
-		/*overflow: auto;*/
-		
-	}
+	
 	
 	
 	
@@ -714,12 +742,13 @@ p{
 	}
 	
 	#teamContact input {
-		float: left;
+		display: inline-block;
 		margin-right: 10px;
 	}
 	
 	#name {
 		text-align: left;
+		display: inline-block;
 		
 	}
 	

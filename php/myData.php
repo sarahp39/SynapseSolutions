@@ -61,7 +61,7 @@
 					<div class = "accountHeads">
 						<p id = "userName" >User Name: </p>
 						<p id = "userEmail" >Email: </p>
-						<p id = "userPlan" >User Plan: Standard Plan</p>
+						<p id = "userPlan" >User Plan: FREE</p>
 					</div>
 					
 				</div>

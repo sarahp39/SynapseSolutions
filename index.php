@@ -99,11 +99,11 @@
 				</a>
 				
 				<div id = "slideLeftBtnDiv">
-					<button class="w3-button w3-display-left"  onclick="plusDivs(-1)">&#10094;</button>
+					<button class="navBtn"  onclick="plusDivs(-1)">&#10094;</button>
 				</div>
 				<div class = "placeholder"></div>
 				<div id = "slideRightBtnDiv">
-					<button class="w3-button w3-display-right"  onclick="plusDivs(+1)">&#10095;</button>
+					<button class="navBtn"  onclick="plusDivs(+1)">&#10095;</button>
 				</div>
 			</div>
 			

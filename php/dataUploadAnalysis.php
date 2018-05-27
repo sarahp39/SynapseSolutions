@@ -58,59 +58,20 @@
 				</p>
 				
 				<div id = "dataSpec" > <!--class from bootstrap -->
-				
-				<!--
-					<form action="">  inside quotes, put /page.php
-						
-						<p> What is the format of your file? </p>
-						
-						<label class = "radio-inline"><input type="radio" name="fileFormat" value="csv" checked> CSV </label>
-						<label class = "radio-inline"><input type="radio" name="fileFormat" value="doc"> DOC </label>
-						<label class = "radio-inline"><input type="radio" name="fileFormat" value="edf"> EDF </label>
-						
-						
-						
-						<p> Do you want this to be public or private (please refer to our privacy policy)? </p>
-						
-						<label class = "radio-inline"><input type="radio" name="filePrivacy" value="private" checked> Private </label>
-						<label class = "radio-inline"><input type="radio" name="filePrivacy" value="public"> Public </label>
-						
-						<div id = "dataSubmit">
-							<input type="submit" value="Submit">
-						</div>
-						
-					</form>
-					-->
-					
 					
 					<form id="upload-file" enctype="multipart/form-data" class="uploadForm">
 												
-						
 						<input class="uploadForm__input" type="file" name="file" id="inputFile" accept=".txt">
 						
-						
 					</form>
-					
 					
 						<button class = "navBtn" id = "fileSubmitBtn"-->
 							Submit
 						</button>
 					
-					
-				
 				</div>
 			
 			</div>
-			
-			<!--<div id = "termsModal" class = "modal" > 
-			
-			
-				<span class = "close">&times;</span>
-				<p>I agree to the above stated terms and conditions.</p>
-				<input type="checkbox" id="termsCheckbox">
-				
-				
-			</div>-->
 			
 			<div id = "termsModal" class = "modal">
 				
