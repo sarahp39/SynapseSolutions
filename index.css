@@ -269,11 +269,21 @@ p{
 	height: 50px;
 	width: 50px;
 }
+.placeholder{
+	display: inline-block;
+	height: 10px;
+	width: 60%;
+}
 
 #landingDisplay a { /*.mySlides*/
-	display: inline-block;
+	display: block;
 	margin: 0px;
+	width: 100%;
 } 
+#landingDisplay img{
+	display: block;
+	width: 100%;
+}
 
 #carousel {
 	text-align: center;

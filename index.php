@@ -85,13 +85,9 @@
 		
 			<!-- MY CAROSEL -->
 			<p class = "headerC"> Want to learn more about the Brain?</p>
-			<p class = "headerC"> Here are some articles from Grey Matters about the brain. Take a look!</p>
+			<p class = "headerC"> Scroll through these Grey Matters Articles: </p>
 			
 			<div id = "carousel" >
-				<div id = "slideLeftBtnDiv">
-					<button class="w3-button w3-display-left"  onclick="plusDivs(-1)">&#10094;</button>
-				</div>
-				
 				<a href = "http://greymattersjournal.com/brain-machine-interfaces/">
 					<img src = "img/greymattersBCI.png" alt = "Grey Matters BCI article" id = "bciArticle" class = "mySlides" >
 				</a>
@@ -102,46 +98,16 @@
 					<img src = "img/greymattersRest.png" alt = "Grey Matters rest article" id = "restArticle" class = "mySlides" >
 				</a>
 				
-				<!--buttons to scroll through articles
-				<div class = "articleBtns"></div>-->
-				
+				<div id = "slideLeftBtnDiv">
+					<button class="w3-button w3-display-left"  onclick="plusDivs(-1)">&#10094;</button>
+				</div>
+				<div class = "placeholder"></div>
 				<div id = "slideRightBtnDiv">
 					<button class="w3-button w3-display-right"  onclick="plusDivs(+1)">&#10095;</button>
 				</div>
 			</div>
 			
-			<!--
-			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-				<ol class="carousel-indicators">
-					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-				</ol>
-				<div class="carousel-inner" role="listbox">
-					<div class="carousel-item active">
-						<img class="d-block img-fluid" src="img/greymattersBCI.png" alt="First slide">
-					</div>
-					<div class="carousel-item">
-						<img class="d-block img-fluid" src="img/greymattersDehydration.png" alt="Second slide">
-					</div>
-					<div class="carousel-item">
-						<img class="d-block img-fluid" src="img/greymattersRest.png" alt="Third slide">
-					</div>
-				</div>
-				<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
 			
-				<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>
-			</div>
-			-->
-		</div>
-		
-		
 	</div> <!-- body id-->
 	
 <?php
