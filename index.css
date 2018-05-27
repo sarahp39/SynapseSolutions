@@ -322,13 +322,14 @@ p{
 
 
 /* Analyze Page */
-input{
+input [type = radio]{
 	display: inline-block;
 }
 
 .name{
 	display: inline-block;
-	width: 90%;
+	width: 95%;
+	text-align: left;
 }
 #fileOptionBtns{
 	margin: auto;
@@ -484,11 +485,16 @@ input{
 	#slideRightBtnDiv button {
 		height: 50px;
 		width: 50px;
+		font-size: 100%;
 	}
 	
 	#slideLeftBtnDiv button {
 		height: 50px;
 		width: 50px;
+		font-size: 100%;
+	}
+	.placeholder{
+		width: 80%;
 	}
 	#landingDisplay {
 		margin-top: 10px;
@@ -498,10 +504,6 @@ input{
 	/* general stuff bt pages */
 	.mainArea {
 		text-align: center;
-	
-		/*position: relative;
-		float: left;*/
-		
 		width: 100%;
 		height: 100%;
 	}
@@ -509,7 +511,6 @@ input{
 	.mainTitle {
 		color: #B22222;
 		font-size: 20px;
-		/*text-align: center;*/
 		font-weight: bold;
 		font-family: "Helvetica";
 		letter-spacing: 3px;
@@ -746,7 +747,7 @@ input{
 		margin-right: 10px;
 	}
 	
-	#name {
+	.name {
 		text-align: left;
 		display: inline-block;
 		
