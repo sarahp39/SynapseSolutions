@@ -68,8 +68,6 @@
 				
 				
 				
-				
-				
 				<div id = "myFiles" class = "generalBorder" >
 					<p class = "subHeading" >
 						My Files
