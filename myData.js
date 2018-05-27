@@ -10,12 +10,21 @@
 	// IF USER IS CURRENTLY LOGGED IN
     if (localStorage.getItem("auth") != null) { //A USER IS LOGGED IN
 	
-	
+		var em = localStorage.getItem("userEmail") + "firstName";
+		
+		var userInfo = JSON.parse(localStorage.getItem(em));
+		
+		console.log(JSON.parse(localStorage.getItem(em)));
+		
+		
 		//GRAB USER EMAIL TO WELCOME P TAG OF MY DATA PAGE
-		document.getElementById("welcome").innerHTML = "Hello, " + localStorage.getItem("userEmail") + " welcome to your Analysis page!";
+		document.getElementById("welcome").innerHTML = "Hello " + userInfo.FirstName + ", welcome to your Analysis page!";
+		
+				
 		
 		//document.getElementById("userName").innerHTML = localStorage.getItem( get the user name!
-		document.getElementById("userEmail").innerHTML = localStorage.getItem("userEmail");
+		document.getElementById("userEmail").innerHTML += localStorage.getItem("userEmail");
+		document.getElementById("userName").innerHTML += userInfo.UserName;
 		
 	
 		var selectedFile;

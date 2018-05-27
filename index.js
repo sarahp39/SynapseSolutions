@@ -113,11 +113,7 @@ window.onload = function() {
 					
 					auth = this.getResponseHeader("Authorization");
 					
-					console.log(auth);
 					localStorage.setItem('auth', auth);
-					
-					
-					
 					
 					
 					localStorage.setItem("userEmail", email);
@@ -177,6 +173,10 @@ window.onload = function() {
                 localStorage.setItem('auth', auth);
 				
 				localStorage.setItem("userEmail", email);
+				
+				var combo = email + "firstName";
+				
+				localStorage.setItem(combo, JSON.stringify(obj));
 				
 				//logToggle();
 				

@@ -59,10 +59,9 @@
 					</p>
 					
 					<div class = "accountHeads">
-						<p id = "userName" >mathi</p>
-						<p id = "userEmail" > </p>
-						<p>*********</p>
-						<p id = "userPlan" >Standard Plan</p>
+						<p id = "userName" >User Name: </p>
+						<p id = "userEmail" >Email: </p>
+						<p id = "userPlan" >User Plan: Standard Plan</p>
 					</div>
 					
 				</div>
