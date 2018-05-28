@@ -119,7 +119,10 @@ window.onload = function() {
 					localStorage.setItem("userEmail", email);
 					//console.log(userEmail);
 					
-					
+					//new
+					var combo = email + "firstName";
+                    //new
+                    localStorage.setItem(combo, this.responseText);
 					
 					//logToggle();
 					location.reload(); //refreshes page, which then runs the logToggle function from the beginning of the onload function
