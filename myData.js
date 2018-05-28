@@ -18,13 +18,13 @@
 		
 		
 		//GRAB USER EMAIL TO WELCOME P TAG OF MY DATA PAGE
-		document.getElementById("welcome").innerHTML = "Hello " + userInfo.FirstName + ", welcome to your Analysis page!";
+		document.getElementById("welcome").innerHTML = "Hello " + userInfo.firstName + ", welcome to your Analysis page!";
 		
 				
 		
 		//document.getElementById("userName").innerHTML = localStorage.getItem( get the user name!
 		document.getElementById("userEmail").innerHTML += localStorage.getItem("userEmail");
-		document.getElementById("userName").innerHTML += userInfo.UserName;
+		document.getElementById("userName").innerHTML += userInfo.userName;
 		
 	
 		var selectedFile;
