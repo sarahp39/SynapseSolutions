@@ -28,7 +28,7 @@ if (localStorage.getItem("auth") != null) { //A USER IS LOGGED IN
 		
 		var auth = localStorage.getItem("auth");
 		
-		console.log("enter my data page");
+		//console.log("enter my data page");
 				
 		xml.open("GET", "https://api.synapse-solutions.net/v1/sumfile/?subject=test&session=rest", true); //specfile
 		
@@ -39,10 +39,16 @@ if (localStorage.getItem("auth") != null) { //A USER IS LOGGED IN
 		xml.onreadystatechange = function() {
 			if (this.readyState == 4 && this.status == 200) {
 				var content = JSON.parse(this.responseText);
+				var count = 0;
 				
 				for (t in content) {
+					count++;
 					document.getElementById("key").innerHTML += t + "<br>";
 					document.getElementById("value").innerHTML += content[t] + "<br>";
+					
+					if (count == 9) {
+						break;
+					}
 				}
 				
 				//console.log(content);
