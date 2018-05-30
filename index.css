@@ -694,16 +694,14 @@ input [type = radio]{
 	#key {
 		text-align: left;
 		font-weight: bold;
-		display: inline-block;
+		display: block;
 		margin-left: 100px;
-		
 		float: left;
 	}
 	
 	#value {
-		display: inline-block;
+		display: block;
 		text-align: right;
-	
 		float: right;
 		margin-right: 100px;
 	}
@@ -722,7 +720,6 @@ input [type = radio]{
 	}
 	
 	#myTeam {
-		/*display: inline-block;*/
 		float: left;
 		width: 60%;
 		margin-right: 10%;
@@ -738,12 +735,6 @@ input [type = radio]{
 		width: 50%;
 	}
 	
-	#accountHeads p {
-		
-		
-		
-	}
-	
 	#teamContact input {
 		display: inline-block;
 		margin-right: 10px;
@@ -752,6 +743,7 @@ input [type = radio]{
 	.name {
 		text-align: left;
 		display: inline-block;
+		width: 95%;
 		
 	}
 	
@@ -759,11 +751,6 @@ input [type = radio]{
 		width: 60%;
 		margin-left: 50%;
 		
-	}
-	
-	#fileOptionBtns {
-		/*float: right;*/
-		/*margin-right: 20px;*/
 	}
 	
 	#fileOptionBtns button {
@@ -819,10 +806,6 @@ input [type = radio]{
 	
 	#uploadMainArea {
 		text-align: center;
-	
-		/*position: relative;
-		float: left;*/
-		
 		width: 100%;
 		height: 100%;
 	}
@@ -843,18 +826,14 @@ input [type = radio]{
 		padding: 20px;
 		border-radius: 10px;
 		margin-bottom: 20px;
-		
-		/*overflow: auto;*/
 	}
 	
 	#existingData p {
 		margin: 20px;
-		
-		/*flex: 1;*/
 	}
 	
 	#dataSpec {
-		align: left;
+		text-align: left;
 		width: 100%;
 	}
 	
@@ -947,14 +926,6 @@ input [type = radio]{
 		margin-right: 50px;
 		margin-left: 50px;
 	}
-	
-	/* #bottomHalf p {
-		font-family: "Helvetica";
-		font-size: 20px;
-		font-weight: bold;
-		color: #B22222;
-		margin-bottom: 30px; 
-	} */
 	
 	#startBtnDiv {
 		margin-top: 40px;
