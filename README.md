@@ -1,6 +1,31 @@
 # SynapseSystems
-2018 Capstone Project
+2018 Capstone Project - This ReadMe contains the front end portion of our project. 
 
-An electroencephalogram (EEG) is considered one of the most accessible and non-invasive methods to evaluate electrical activity in the brain. The Cognition and Cortical Dynamics Laboratory (CCDL) in the University of Washington’s (UW) Department of Psychology use EEG data in order to better understand how the brain changes, adapts, or deals with the ever present fluctuations in information processing demands. 
+## Project Overview
+Currently, researchers throughout multiple universities working with brain signal data (more specifically, electroencephalogram or EEG data) face many issues in trying to clean, filter, and analyze their data. They are having to utilize multiple different tools and are stuck with using simple spreadsheets which require them to manually edit the data line by line as well as program scripts difficult to work with as they are written in R. There is a lack of visualizations and a non-existent user interface.
 
-Currently, the data is processed using scripting with the programming language R. The lab is sharing their scripting with others in Github. Therefore, this would not only affect the lab in University of Washington; additionally, researchers in California Polytechnic University who currently use this open source code will also be affected as well as other universities. However, their current code infrastructure is error prone and inflexible with no user interface. For this Capstone Project, we plan to create an API for the raw data. Afterwards, we aim to create a website utilizing the API while providing personalization for output statistics. We want to build something that both researchers and the common person can use and share.
+As a solution to these problem, we have collaborated with Dr. Stocco’s Cognition and Corticol Dynamics Laboratory at the University of Washington and created Synapse Solutions.
+
+Synapse Solutions provides a live server, accessible from any computer and even on mobile, on which researchers are now able to clean, filter, and analyze their EEG data in just a few steps. Our tool allows researchers to upload their data files and visualize the EEG graphs. They can click on the graph produced to set parameters such as an alpha peak. In addition, they can visually compare data from the same channel of the brain cap (used in the collection of the EEG data) between two different data files.
+
+## Contents
+
+- [Front End](#front-end)
+- [Back End](#back-end)
+- [Screen Shots](#screen-shots)
+- [Authors](#authors)
+
+## Front End
+As Synapse Solutions is a web tool, we took advantage of PHP as a way to reduce code redundancy through the website as every page follows a specific basic design. We also employed some Bootstrap libraries along with our own CSS code for the design and styles. HTML and javascript are the primary languages used for the front-end functionality development of our tool. 
+
+## Back End
+* Back End Repo - https://github.com/fredhw/synapse-api
+* ReadMe for Back End - https://github.com/fredhw/synapse-api/blob/master/README.md
+
+## Screen Shots
+Coming Soon
+
+## Authors
+- [Frederick Wijaya](https://github.com/fredhw) 
+- [Mathi Manalavan](https://github.com/nila12)
+- [Sarah Phillips](https://github.com/sarahp39)
