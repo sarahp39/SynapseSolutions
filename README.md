@@ -23,7 +23,25 @@ As Synapse Solutions is a web tool, we took advantage of PHP as a way to reduce 
 * ReadMe for Back End - https://github.com/fredhw/synapse-api/blob/master/README.md
 
 ## Screen Shots
-Coming Soon
+### Business Pages
+#### The Landing Page
+![Landing-Page](https://github.com/sarahp39/SynapseSolutions/blob/master/landingpage.png)
+#### The About Page
+![About-Page](https://github.com/sarahp39/SynapseSolutions/blob/master/aboutpage.png)
+
+### Data Visualization Pages
+#### Analysis Page
+![Analysis](https://github.com/sarahp39/SynapseSolutions/blob/master/analysispage.png)
+#### Summary Page
+![Summary](https://github.com/sarahp39/SynapseSolutions/blob/master/summary.PNG)
+#### Spectra Pages
+![Spectra1](https://github.com/sarahp39/SynapseSolutions/blob/master/spectra1.png)
+![Spectra2](https://github.com/sarahp39/SynapseSolutions/blob/master/spectra2.png)
+#### Coherence Pages
+![Coherence](https://github.com/sarahp39/SynapseSolutions/blob/master/coherence.PNG)
+#### Compare Pages
+![Compare](https://github.com/sarahp39/SynapseSolutions/blob/master/compare.png)
+
 
 ## Authors
 - [Frederick Wijaya](https://github.com/fredhw) 
